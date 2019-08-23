@@ -186,6 +186,12 @@
     <node concept="PrWs8" id="z8dq5oaFAo" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="1TJgyj" id="1R$YNjG0gVD" role="1TKVEi">
+      <property role="IQ2ns" value="2154122726506303209" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="type" />
+      <ref role="20lvS9" node="1R$YNjG08Ko" resolve="AbstractType" />
+    </node>
   </node>
   <node concept="1TIwiD" id="z8dq5oaX51">
     <property role="EcuMT" value="632814714730828097" />
@@ -212,6 +218,38 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="z8dq5oaX51" resolve="PropertyReference" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="1R$YNjG08Kn">
+    <property role="EcuMT" value="2154122726506269719" />
+    <property role="TrG5h" value="String" />
+    <property role="3GE5qa" value="type" />
+    <property role="34LRSv" value="String" />
+    <ref role="1TJDcQ" node="1R$YNjG08Ko" resolve="AbstractType" />
+  </node>
+  <node concept="1TIwiD" id="1R$YNjG08Ko">
+    <property role="EcuMT" value="2154122726506269720" />
+    <property role="TrG5h" value="AbstractType" />
+    <property role="R5$K7" value="true" />
+    <property role="3GE5qa" value="type" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="1R$YNjG0v7G">
+    <property role="EcuMT" value="2154122726506361324" />
+    <property role="3GE5qa" value="value" />
+    <property role="TrG5h" value="NumberValue" />
+    <property role="34LRSv" value="number" />
+    <ref role="1TJDcQ" node="z8dq5o9mcs" resolve="AbstractValue" />
+    <node concept="1TJgyi" id="1R$YNjG0v7H" role="1TKVEl">
+      <property role="IQ2nx" value="2154122726506361325" />
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1R$YNjG5YD4">
+    <property role="EcuMT" value="2154122726507801156" />
+    <property role="3GE5qa" value="type" />
+    <property role="TrG5h" value="Number" />
+    <ref role="1TJDcQ" node="1R$YNjG08Ko" resolve="AbstractType" />
   </node>
 </model>
 

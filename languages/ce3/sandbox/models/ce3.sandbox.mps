@@ -12,7 +12,9 @@
       <concept id="632814714729880902" name="ce3.structure.ComponentReference" flags="ng" index="1gPmzB">
         <reference id="632814714729880903" name="target" index="1gPmzA" />
       </concept>
-      <concept id="632814714730756503" name="ce3.structure.PropDeclaration" flags="ng" index="1gSCKQ" />
+      <concept id="632814714730756503" name="ce3.structure.PropDeclaration" flags="ng" index="1gSCKQ">
+        <child id="2154122726506303209" name="type" index="3LTvnt" />
+      </concept>
       <concept id="632814714730828097" name="ce3.structure.PropertyReference" flags="ng" index="1gSYjw">
         <reference id="632814714730828098" name="target" index="1gSYjz" />
       </concept>
@@ -37,6 +39,10 @@
       <concept id="632814714727273491" name="ce3.structure.Attribute" flags="ng" index="1vfq6M">
         <child id="632814714730406688" name="value" index="1gVlq1" />
       </concept>
+      <concept id="2154122726506269719" name="ce3.structure.String" flags="ng" index="3LT7sz" />
+      <concept id="2154122726506361324" name="ce3.structure.NumberValue" flags="ng" index="3LTgFo">
+        <property id="2154122726506361325" name="value" index="3LTgFp" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -48,9 +54,16 @@
     <property role="TrG5h" value="Main" />
     <node concept="1gSCKQ" id="z8dq5oaX4Z" role="1gSCK2">
       <property role="TrG5h" value="greeting" />
+      <node concept="3LT7sz" id="1R$YNjG6$b_" role="3LTvnt" />
     </node>
     <node concept="1vfq6I" id="1R$YNjFKlad" role="1vfq6G">
       <node concept="1vfq6I" id="1R$YNjFKyyH" role="1vfq6V">
+        <node concept="1vfq6M" id="1R$YNjG0vMc" role="1vfq6L">
+          <property role="TrG5h" value="class" />
+          <node concept="3LTgFo" id="1R$YNjG0vMe" role="1gVlq1">
+            <property role="3LTgFp" value="5" />
+          </node>
+        </node>
         <node concept="1vfq6I" id="1R$YNjFKyyN" role="1vfq6V">
           <node concept="1gVlqW" id="1R$YNjFKyyT" role="1vfq6V">
             <property role="1gVlqZ" value="Hello, world!" />
@@ -60,6 +73,14 @@
           </node>
         </node>
         <node concept="1vfq6I" id="1R$YNjFU6ld" role="1vfq6V">
+          <node concept="1vfq6M" id="1R$YNjFZhvS" role="1vfq6L">
+            <property role="TrG5h" value="name" />
+            <node concept="1gSYO3" id="1R$YNjFZhAn" role="1gVlq1">
+              <node concept="1gSYjw" id="1R$YNjFZhAw" role="1gSYO2">
+                <ref role="1gSYjz" node="z8dq5oaX4Z" resolve="greeting" />
+              </node>
+            </node>
+          </node>
           <node concept="1gPmzB" id="1R$YNjFU6lm" role="1gPmzY">
             <ref role="1gPmzA" to="nfbi:z8dq5o7lP4" resolve="meta" />
           </node>
@@ -84,12 +105,6 @@
           </node>
         </node>
         <node concept="1vfq6I" id="1R$YNjFKyzd" role="1vfq6V">
-          <node concept="1vfq6M" id="1R$YNjFKyzh" role="1vfq6L">
-            <property role="TrG5h" value="greeting" />
-            <node concept="1gVlqW" id="1R$YNjFKyzl" role="1gVlq1">
-              <property role="1gVlqZ" value="Hi, there!" />
-            </node>
-          </node>
           <node concept="1gPmzB" id="1R$YNjFKFhM" role="1gPmzY">
             <ref role="1gPmzA" node="z8dq5o92H9" resolve="Subcomponent" />
           </node>
@@ -106,9 +121,9 @@
   <node concept="1gUFML" id="z8dq5o8L6U">
     <property role="TrG5h" value="index" />
     <node concept="1vfq6I" id="z8dq5o8L6V" role="1gUFMO">
-      <node concept="1vfq6M" id="z8dq5oaDAu" role="1vfq6L">
+      <node concept="1vfq6M" id="1R$YNjG0G7v" role="1vfq6L">
         <property role="TrG5h" value="greeting" />
-        <node concept="1gVlqW" id="z8dq5oaDAy" role="1gVlq1">
+        <node concept="1gVlqW" id="1R$YNjG6$bB" role="1gVlq1">
           <property role="1gVlqZ" value="Hello, world!" />
         </node>
       </node>
