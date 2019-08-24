@@ -1,5 +1,5 @@
-import HelloWorld from './languages/ce3/sandbox/source_gen/ce3/sandbox/HelloWorld';
+import Main from './Main.svelte';
 
-const app = new HelloWorld({
+const app = new Main({
   target: document.body,
 });

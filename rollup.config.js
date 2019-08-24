@@ -1,4 +1,5 @@
 import resolve from 'rollup-plugin-node-resolve';
+import svelte from 'rollup-plugin-svelte';
 // import commonjs from 'rollup-plugin-commonjs';
 
 export default {
@@ -8,6 +9,7 @@ export default {
     format: 'iife',
   },
   plugins: [
+    svelte(),
     resolve({
       // jail: '../',
       jail: '/home/rasen/MPSProjects/ce3/',

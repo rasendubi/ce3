@@ -46,9 +46,17 @@
   </registry>
   <node concept="1vfq6F" id="6H8W5cC25U6">
     <property role="TrG5h" value="HelloWorld" />
+    <node concept="1gSCKQ" id="6H8W5cCjfLW" role="1gSCK2">
+      <property role="TrG5h" value="time" />
+    </node>
     <node concept="1vfq6I" id="6H8W5cC25U8" role="1vfq6G">
       <node concept="1gVlqW" id="6H8W5cC2SQ7" role="1vfq6V">
-        <property role="1gVlqZ" value="Hello, world!" />
+        <property role="1gVlqZ" value="Hello, world!: " />
+      </node>
+      <node concept="1gSYO3" id="6H8W5cCjfM1" role="1vfq6V">
+        <node concept="1gSYjw" id="6H8W5cCjfM8" role="1gSYO2">
+          <ref role="1gSYjz" node="6H8W5cCjfLW" resolve="time" />
+        </node>
       </node>
       <node concept="1gPmzB" id="6H8W5cC2SQ2" role="1gPmzY">
         <ref role="1gPmzA" to="nfbi:6H8W5cC25Ua" resolve="p" />
@@ -150,13 +158,13 @@
       <node concept="1gVlqW" id="6H8W5cChnvr" role="1vfq6V">
         <property role="1gVlqZ" value="Too Nested: " />
       </node>
-      <node concept="1gSYO3" id="6H8W5cCff4b" role="1vfq6V">
-        <node concept="1gSYjw" id="6H8W5cCff4h" role="1gSYO2">
-          <ref role="1gSYjz" node="6H8W5cCff46" resolve="hello" />
-        </node>
-      </node>
       <node concept="1gPmzB" id="6H8W5cCff44" role="1gPmzY">
         <ref role="1gPmzA" to="nfbi:z8dq5o7lP2" resolve="div" />
+      </node>
+    </node>
+    <node concept="1gSYO3" id="6H8W5cChnw6" role="1vfq6G">
+      <node concept="1gSYjw" id="6H8W5cChnwf" role="1gSYO2">
+        <ref role="1gSYjz" node="6H8W5cCff46" resolve="hello" />
       </node>
     </node>
   </node>
