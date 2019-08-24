@@ -2,3 +2,6 @@
 source_gen.caches
 source_gen
 classes_gen
+
+/node_modules/
+/bundle.js

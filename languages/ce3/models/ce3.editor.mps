@@ -312,8 +312,9 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
-      <node concept="3F1sOY" id="z8dq5nXqRa" role="3EZMnx">
+      <node concept="3F2HdR" id="6H8W5cC7Px6" role="3EZMnx">
         <ref role="1NtTu8" to="xp1n:z8dq5nXpgd" resolve="node" />
+        <node concept="2iRkQZ" id="6H8W5cC7Pxr" role="2czzBx" />
       </node>
       <node concept="l2Vlx" id="z8dq5nXqQq" role="2iSdaV" />
     </node>
@@ -771,9 +772,6 @@
     <property role="3GE5qa" value="component" />
     <ref role="1XX52x" to="xp1n:z8dq5oaFAn" resolve="PropDeclaration" />
     <node concept="3EZMnI" id="z8dq5oaOl3" role="2wV5jI">
-      <node concept="3F0ifn" id="z8dq5oaOla" role="3EZMnx">
-        <property role="3F0ifm" value="property" />
-      </node>
       <node concept="3F0A7n" id="z8dq5oaOlg" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>

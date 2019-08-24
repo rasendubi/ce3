@@ -64,7 +64,7 @@
       <property role="IQ2ns" value="632814714727273485" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="node" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="z8dq5o9mcs" resolve="AbstractValue" />
     </node>
   </node>
