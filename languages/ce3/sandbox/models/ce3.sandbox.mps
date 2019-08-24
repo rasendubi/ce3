@@ -65,6 +65,32 @@
         <ref role="1gPmzA" to="nfbi:z8dq5o7lP2" resolve="div" />
       </node>
     </node>
+    <node concept="1vfq6I" id="6H8W5cC9cHI" role="1vfq6G">
+      <node concept="1gPmzB" id="6H8W5cC9cHX" role="1gPmzY">
+        <ref role="1gPmzA" node="6H8W5cC9cGV" resolve="Nested" />
+      </node>
+    </node>
+    <node concept="1vfq6I" id="6H8W5cCcLfe" role="1vfq6G">
+      <node concept="1vfq6I" id="6H8W5cCcLf$" role="1vfq6V">
+        <node concept="1gPmzB" id="6H8W5cCcLfA" role="1gPmzY">
+          <ref role="1gPmzA" node="6H8W5cC9cGV" resolve="Nested" />
+        </node>
+      </node>
+      <node concept="1gPmzB" id="6H8W5cCcLfv" role="1gPmzY">
+        <ref role="1gPmzA" to="nfbi:z8dq5o7lP2" resolve="div" />
+      </node>
+    </node>
+  </node>
+  <node concept="1vfq6F" id="6H8W5cC9cGV">
+    <property role="TrG5h" value="Nested" />
+    <node concept="1vfq6I" id="6H8W5cC9cH1" role="1vfq6G">
+      <node concept="1gVlqW" id="6H8W5cC9cH8" role="1vfq6V">
+        <property role="1gVlqZ" value="Hello from nested component" />
+      </node>
+      <node concept="1gPmzB" id="6H8W5cC9cH3" role="1gPmzY">
+        <ref role="1gPmzA" to="nfbi:6H8W5cC25Ua" resolve="p" />
+      </node>
+    </node>
   </node>
 </model>
 
