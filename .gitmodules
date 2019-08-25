@@ -1,0 +1,3 @@
+[submodule "ecmascript4mps"]
+	path = ecmascript4mps
+	url = https://github.com/mar9000/ecmascript4mps.git
