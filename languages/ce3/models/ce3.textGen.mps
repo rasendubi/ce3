@@ -7,7 +7,6 @@
   </languages>
   <imports>
     <import index="xp1n" ref="r:395e98fe-b3ea-4727-942d-fb86b5669154(ce3.structure)" />
-    <import index="2spv" ref="r:784d9ed3-8a35-4c83-aeef-2a08502f24bb(ce3.textGen)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="vhh2" ref="r:c7dffafc-3cf1-4bb7-b2ec-920042423f7d(ce3.behavior)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
