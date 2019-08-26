@@ -37,6 +37,7 @@
         <child id="632814714730406688" name="value" index="1gVlq1" />
       </concept>
       <concept id="2154122726506269719" name="ce3.structure.String" flags="ng" index="3LT7sz" />
+      <concept id="2154122726507801156" name="ce3.structure.Number" flags="ng" index="3LWL5K" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -48,9 +49,7 @@
     <property role="TrG5h" value="HelloWorld" />
     <node concept="1gSCKQ" id="6H8W5cCjfLW" role="1gSCK2">
       <property role="TrG5h" value="time" />
-    </node>
-    <node concept="1gSCKQ" id="6H8W5cCoD5R" role="1gSCK2">
-      <property role="TrG5h" value="blah" />
+      <node concept="3LWL5K" id="2rpxWh_5EUs" role="3LTvnt" />
     </node>
     <node concept="1vfq6I" id="6H8W5cC25U8" role="1vfq6G">
       <node concept="1gVlqW" id="6H8W5cC2SQ7" role="1vfq6V">
@@ -99,8 +98,10 @@
     <node concept="1vfq6I" id="6H8W5cCcLfe" role="1vfq6G">
       <node concept="1vfq6M" id="6H8W5cCdexX" role="1vfq6L">
         <property role="TrG5h" value="class" />
-        <node concept="1gVlqW" id="6H8W5cCdexZ" role="1gVlq1">
-          <property role="1gVlqZ" value="hello" />
+        <node concept="1gSYO3" id="2rpxWh_5EFP" role="1gVlq1">
+          <node concept="1gSYjw" id="2rpxWh_5EFX" role="1gSYO2">
+            <ref role="1gSYjz" node="6H8W5cCjfLW" resolve="time" />
+          </node>
         </node>
       </node>
       <node concept="1vfq6I" id="6H8W5cCcLf$" role="1vfq6V">
@@ -118,6 +119,11 @@
       </node>
       <node concept="1gPmzB" id="6H8W5cCcLfv" role="1gPmzY">
         <ref role="1gPmzA" to="nfbi:z8dq5o7lP2" resolve="div" />
+      </node>
+    </node>
+    <node concept="1vfq6I" id="2rpxWh_ao9L" role="1vfq6G">
+      <node concept="1gPmzB" id="2rpxWh_aoaE" role="1gPmzY">
+        <ref role="1gPmzA" node="2rpxWh_5OwN" resolve="Simple" />
       </node>
     </node>
   </node>
@@ -158,6 +164,7 @@
     <property role="TrG5h" value="TooNested" />
     <node concept="1gSCKQ" id="6H8W5cCff46" role="1gSCK2">
       <property role="TrG5h" value="hello" />
+      <node concept="3LT7sz" id="2rpxWh_5EUp" role="3LTvnt" />
     </node>
     <node concept="1vfq6I" id="6H8W5cCff42" role="1vfq6G">
       <node concept="1gVlqW" id="6H8W5cChnvr" role="1vfq6V">
@@ -170,6 +177,17 @@
     <node concept="1gSYO3" id="6H8W5cChnw6" role="1vfq6G">
       <node concept="1gSYjw" id="6H8W5cChnwf" role="1gSYO2">
         <ref role="1gSYjz" node="6H8W5cCff46" resolve="hello" />
+      </node>
+    </node>
+  </node>
+  <node concept="1vfq6F" id="2rpxWh_5OwN">
+    <property role="TrG5h" value="Simple" />
+    <node concept="1vfq6I" id="2rpxWh_5OwP" role="1vfq6G">
+      <node concept="1gVlqW" id="2rpxWh_5OwZ" role="1vfq6V">
+        <property role="1gVlqZ" value="simple value" />
+      </node>
+      <node concept="1gPmzB" id="2rpxWh_5OwS" role="1gPmzY">
+        <ref role="1gPmzA" to="nfbi:6H8W5cC25Ua" resolve="p" />
       </node>
     </node>
   </node>

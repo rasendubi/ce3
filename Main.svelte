@@ -9,4 +9,6 @@
 </script>
 
 Hello from Main ({x})
-<HelloWorld time={x} />
+{#if x % 10 !== 0}
+  <HelloWorld time={x} />
+{/if}
