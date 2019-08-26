@@ -106,8 +106,10 @@
       <node concept="1vfq6I" id="6H8W5cCcLf$" role="1vfq6V">
         <node concept="1vfq6M" id="6H8W5cCe8Fw" role="1vfq6L">
           <property role="TrG5h" value="hello" />
-          <node concept="1gVlqW" id="6H8W5cCe8Fy" role="1gVlq1">
-            <property role="1gVlqZ" value="hi" />
+          <node concept="1gSYO3" id="2rpxWh_4B30" role="1gVlq1">
+            <node concept="1gSYjw" id="2rpxWh_4B38" role="1gSYO2">
+              <ref role="1gSYjz" node="6H8W5cCjfLW" resolve="time" />
+            </node>
           </node>
         </node>
         <node concept="1gPmzB" id="6H8W5cCcLfA" role="1gPmzY">
