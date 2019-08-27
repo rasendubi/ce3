@@ -2,7 +2,7 @@
 <model ref="r:fa9532a7-3e46-4a03-96f4-b42c447249bf(main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="a4829704-6b1b-4b3f-8122-a4a2e6ac90ff" name="org.mar9000.mps.ecmascript" version="0" />
+    <use id="a4829704-6b1b-4b3f-8122-a4a2e6ac90ff" name="org.mar9000.mps.ecmascript" version="11" />
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
   <imports>
@@ -196,7 +196,6 @@
         <child id="5897985433066182785" name="identifier" index="3PzO81" />
       </concept>
       <concept id="8569071899955716053" name="org.mar9000.mps.ecmascript.structure.JSAssignmentExpression" flags="ng" index="2djMEC">
-        <property id="8569071899956274599" name="operator" index="2dhT3q" />
         <child id="8569071899956275191" name="left" index="2dhTaa" />
         <child id="8569071899956275324" name="right" index="2dhTO1" />
       </concept>
@@ -406,7 +405,7 @@
   </node>
   <node concept="1dSqrf" id="2rpxWhzwcbK">
     <property role="TrG5h" value="map_Component" />
-    <property role="1$8h_y" value="ES2016" />
+    <property role="1$8h_y" value="1Ry0cLTKIQQ/ES2016" />
     <node concept="n94m4" id="2rpxWhzwcbL" role="lGtFl">
       <ref role="n9lRv" to="xp1n:z8dq5nXpga" resolve="Component" />
     </node>
@@ -653,7 +652,6 @@
                   <node concept="1dSoBd" id="2rpxWh$jaVa" role="2dhUP1">
                     <node concept="1dSo_L" id="2rpxWh$wJdU" role="1dSoGN">
                       <node concept="2djMEC" id="2rpxWh$wJe3" role="1dwvF7">
-                        <property role="2dhT3q" value="=" />
                         <node concept="29jwqa" id="2rpxWh$wJdS" role="2dhTaa">
                           <ref role="29jwqb" node="2rpxWh$n84n" />
                         </node>
@@ -995,7 +993,7 @@
                     </node>
                   </node>
                   <node concept="2dhUHT" id="2rpxWh$HjUw" role="1dwHBg">
-                    <property role="2dhUDU" value="in" />
+                    <property role="2dhUDU" value="7rFtnRVFhkQ/in" />
                     <node concept="2dhBij" id="2rpxWh$HjUG" role="2dhUC2">
                       <property role="3S2$_t" value="property1" />
                       <node concept="17Uvod" id="2rpxWh$Hkrz" role="lGtFl">
@@ -1296,7 +1294,7 @@
       <node concept="1Koe21" id="2rpxWh$vKpi" role="1lVwrX">
         <node concept="1dSqrf" id="2rpxWh$vLEC" role="1Koe22">
           <property role="TrG5h" value="blah" />
-          <property role="1$8h_y" value="ES2016" />
+          <property role="1$8h_y" value="1Ry0cLTKIQQ/ES2016" />
           <node concept="1mvZBA" id="2rpxWh$vLEI" role="1dSqon">
             <node concept="2dhBij" id="2rpxWh$vLEK" role="1msNCI">
               <property role="3S2$_t" value="./Subcomponent" />
@@ -1440,7 +1438,7 @@
       <node concept="1Koe21" id="2rpxWh$wU1R" role="1lVwrX">
         <node concept="1dSqrf" id="2rpxWh$wUhp" role="1Koe22">
           <property role="TrG5h" value="blah" />
-          <property role="1$8h_y" value="ES2015" />
+          <property role="1$8h_y" value="1Ry0cLTKIQN/ES2015" />
           <node concept="1mt9qu" id="2rpxWh$wUhB" role="1dSqon">
             <node concept="1mvZK$" id="2rpxWh$wUhC" role="1mt8cI">
               <property role="TrG5h" value="_svelte" />
@@ -1460,7 +1458,6 @@
           <node concept="1dSrUV" id="2rpxWh$wUhW" role="1dSqon" />
           <node concept="1dSo_L" id="2rpxWh$wUiy" role="1dSqon">
             <node concept="2djMEC" id="2rpxWh$wUiV" role="1dwvF7">
-              <property role="2dhT3q" value="=" />
               <node concept="29jwqa" id="2rpxWh$wUiw" role="2dhTaa">
                 <ref role="29jwqb" node="2rpxWh$wUhF" />
                 <node concept="1ZhdrF" id="2rpxWh$wUm5" role="lGtFl">
@@ -1666,7 +1663,7 @@
       <node concept="1Koe21" id="2rpxWh$xCXK" role="1lVwrX">
         <node concept="1dSqrf" id="2rpxWh$xCXS" role="1Koe22">
           <property role="TrG5h" value="blah" />
-          <property role="1$8h_y" value="ES2016" />
+          <property role="1$8h_y" value="1Ry0cLTKIQQ/ES2016" />
           <node concept="1dSo$T" id="2rpxWh$xCXY" role="1dSqon">
             <node concept="2dhZhe" id="2rpxWh$xCXZ" role="1dSoH_">
               <node concept="1dSrUG" id="2rpxWh$xCY0" role="2dhZiP" />
@@ -1728,7 +1725,7 @@
       <node concept="1Koe21" id="2rpxWh$Dx9u" role="1lVwrX">
         <node concept="1dSqrf" id="2rpxWh$Dx9A" role="1Koe22">
           <property role="TrG5h" value="blah" />
-          <property role="1$8h_y" value="ES2016" />
+          <property role="1$8h_y" value="1Ry0cLTKIQQ/ES2016" />
           <node concept="1mt9qu" id="2rpxWh$DxdJ" role="1dSqon">
             <node concept="1mvZK$" id="2rpxWh$DxdK" role="1mt8cI">
               <property role="TrG5h" value="_svelte" />
@@ -1749,7 +1746,6 @@
           <node concept="1dSrUV" id="2rpxWh$Dxbn" role="1dSqon" />
           <node concept="1dSo_L" id="2rpxWh$Dxct" role="1dSqon">
             <node concept="2djMEC" id="2rpxWh$DxcK" role="1dwvF7">
-              <property role="2dhT3q" value="=" />
               <node concept="29jwqa" id="2rpxWh$Dxcr" role="2dhTaa">
                 <ref role="29jwqb" node="2rpxWh$Dxb9" />
                 <node concept="1ZhdrF" id="2rpxWh$Dxfx" role="lGtFl">
@@ -1830,7 +1826,7 @@
       <node concept="1Koe21" id="2rpxWh$BUQp" role="1lVwrX">
         <node concept="1dSqrf" id="2rpxWh$BV1J" role="1Koe22">
           <property role="TrG5h" value="blah" />
-          <property role="1$8h_y" value="ES2016" />
+          <property role="1$8h_y" value="1Ry0cLTKIQQ/ES2016" />
           <node concept="1mt9qu" id="2rpxWh$BV2S" role="1dSqon">
             <node concept="1mvZK$" id="2rpxWh$BV3h" role="1mt8cI">
               <property role="TrG5h" value="_svelte" />
@@ -2031,7 +2027,7 @@
       <node concept="1Koe21" id="2rpxWh$D5yy" role="1lVwrX">
         <node concept="1dSqrf" id="2rpxWh$D5J0" role="1Koe22">
           <property role="TrG5h" value="blah" />
-          <property role="1$8h_y" value="ES2016" />
+          <property role="1$8h_y" value="1Ry0cLTKIQQ/ES2016" />
           <node concept="1mt9qu" id="2rpxWh$D5J1" role="1dSqon">
             <node concept="1mvZK$" id="2rpxWh$D5J2" role="1mt8cI">
               <property role="TrG5h" value="_svelte" />
@@ -2221,7 +2217,7 @@
       <node concept="1Koe21" id="2rpxWh$Dijq" role="1lVwrX">
         <node concept="1dSqrf" id="2rpxWh$Dijr" role="1Koe22">
           <property role="TrG5h" value="blah" />
-          <property role="1$8h_y" value="ES2016" />
+          <property role="1$8h_y" value="1Ry0cLTKIQQ/ES2016" />
           <node concept="1mt9qu" id="2rpxWh$Dijs" role="1dSqon">
             <node concept="1mvZK$" id="2rpxWh$Dijt" role="1mt8cI">
               <property role="TrG5h" value="_svelte" />
@@ -2416,7 +2412,7 @@
       <node concept="1Koe21" id="2rpxWh$DjGJ" role="1lVwrX">
         <node concept="1dSqrf" id="2rpxWh$DjGK" role="1Koe22">
           <property role="TrG5h" value="blah" />
-          <property role="1$8h_y" value="ES2016" />
+          <property role="1$8h_y" value="1Ry0cLTKIQQ/ES2016" />
           <node concept="1mt9qu" id="2rpxWh$DjGL" role="1dSqon">
             <node concept="1mvZK$" id="2rpxWh$DjGM" role="1mt8cI">
               <property role="TrG5h" value="_svelte" />
@@ -2586,7 +2582,7 @@
       <node concept="1Koe21" id="2rpxWh$DlNA" role="1lVwrX">
         <node concept="1dSqrf" id="2rpxWh$DlNB" role="1Koe22">
           <property role="TrG5h" value="blah" />
-          <property role="1$8h_y" value="ES2016" />
+          <property role="1$8h_y" value="1Ry0cLTKIQQ/ES2016" />
           <node concept="1mt9qu" id="2rpxWh$DlNC" role="1dSqon">
             <node concept="1mvZK$" id="2rpxWh$DlND" role="1mt8cI">
               <property role="TrG5h" value="_svelte" />
@@ -2746,7 +2742,7 @@
       <node concept="1Koe21" id="2rpxWh$DmNQ" role="1lVwrX">
         <node concept="1dSqrf" id="2rpxWh$DmNR" role="1Koe22">
           <property role="TrG5h" value="blah" />
-          <property role="1$8h_y" value="ES2016" />
+          <property role="1$8h_y" value="1Ry0cLTKIQQ/ES2016" />
           <node concept="1mt9qu" id="2rpxWh$DmNS" role="1dSqon">
             <node concept="1mvZK$" id="2rpxWh$DmNT" role="1mt8cI">
               <property role="TrG5h" value="_svelte" />
@@ -2902,7 +2898,7 @@
       <node concept="1Koe21" id="2rpxWh$T7fI" role="1lVwrX">
         <node concept="1dSqrf" id="2rpxWh$T7fQ" role="1Koe22">
           <property role="TrG5h" value="blah" />
-          <property role="1$8h_y" value="ES2016" />
+          <property role="1$8h_y" value="1Ry0cLTKIQQ/ES2016" />
           <node concept="1dSo_L" id="2rpxWh$T7fX" role="1dSqon">
             <node concept="2dhBij" id="2rpxWh$T7fW" role="1dwvF7">
               <property role="2dhBvH" value="value" />
@@ -2934,7 +2930,7 @@
       <node concept="1Koe21" id="2rpxWh$DM0H" role="1lVwrX">
         <node concept="1dSqrf" id="2rpxWh$DM0P" role="1Koe22">
           <property role="TrG5h" value="blah" />
-          <property role="1$8h_y" value="ES2016" />
+          <property role="1$8h_y" value="1Ry0cLTKIQQ/ES2016" />
           <node concept="1dSo_L" id="2rpxWh$DM0Z" role="1dSqon">
             <node concept="2dhU8L" id="2rpxWh$DM0V" role="1dwvF7">
               <node concept="1dSrUG" id="2rpxWh$DM17" role="2dhUP6">
@@ -3079,7 +3075,7 @@
       <node concept="1Koe21" id="2rpxWh$HSvv" role="1lVwrX">
         <node concept="1dSqrf" id="2rpxWh$HSvB" role="1Koe22">
           <property role="TrG5h" value="blah" />
-          <property role="1$8h_y" value="ES2016" />
+          <property role="1$8h_y" value="1Ry0cLTKIQQ/ES2016" />
           <node concept="1dSo_L" id="2rpxWh$HSwx" role="1dSqon">
             <node concept="2dhBij" id="2rpxWh$HSww" role="1dwvF7">
               <property role="2dhBvH" value="update children" />
@@ -3159,7 +3155,7 @@
       <node concept="1Koe21" id="2rpxWh_4U7v" role="1lVwrX">
         <node concept="1dSqrf" id="2rpxWh_4Un1" role="1Koe22">
           <property role="TrG5h" value="blah" />
-          <property role="1$8h_y" value="ES2016" />
+          <property role="1$8h_y" value="1Ry0cLTKIQQ/ES2016" />
           <node concept="1dSo$T" id="2rpxWh_4Un4" role="1dSqon">
             <node concept="2dhZhe" id="2rpxWh_4Un5" role="1dSoH_">
               <node concept="1dSrUG" id="2rpxWh_4Un6" role="2dhZiP" />
@@ -3304,7 +3300,7 @@
       <node concept="1Koe21" id="2rpxWh$HRyH" role="1lVwrX">
         <node concept="1dSqrf" id="2rpxWh$HRyP" role="1Koe22">
           <property role="TrG5h" value="blah" />
-          <property role="1$8h_y" value="ES2016" />
+          <property role="1$8h_y" value="1Ry0cLTKIQQ/ES2016" />
           <node concept="1mt9qu" id="2rpxWh$HR_S" role="1dSqon">
             <node concept="1mvZK$" id="2rpxWh$HRBk" role="1mt8cI">
               <property role="TrG5h" value="_svelte" />
@@ -3504,7 +3500,7 @@
       <node concept="1Koe21" id="2rpxWh$HTMn" role="1lVwrX">
         <node concept="1dSqrf" id="2rpxWh$HTMo" role="1Koe22">
           <property role="TrG5h" value="blah" />
-          <property role="1$8h_y" value="ES2016" />
+          <property role="1$8h_y" value="1Ry0cLTKIQQ/ES2016" />
           <node concept="1mt9qu" id="2rpxWh$HTMp" role="1dSqon">
             <node concept="1mvZK$" id="2rpxWh$HTMq" role="1mt8cI">
               <property role="TrG5h" value="_svelte" />
@@ -3812,7 +3808,7 @@
       <node concept="1Koe21" id="2rpxWh_5825" role="1lVwrX">
         <node concept="1dSqrf" id="2rpxWh_5826" role="1Koe22">
           <property role="TrG5h" value="blah" />
-          <property role="1$8h_y" value="ES2016" />
+          <property role="1$8h_y" value="1Ry0cLTKIQQ/ES2016" />
           <node concept="1mt9qu" id="2rpxWh_5827" role="1dSqon">
             <node concept="1mvZK$" id="2rpxWh_5828" role="1mt8cI">
               <property role="TrG5h" value="_svelte" />
@@ -4149,7 +4145,7 @@
       <node concept="1Koe21" id="2rpxWh_cYIg" role="1lVwrX">
         <node concept="1dSqrf" id="2rpxWh_cYIh" role="1Koe22">
           <property role="TrG5h" value="blah" />
-          <property role="1$8h_y" value="ES2016" />
+          <property role="1$8h_y" value="1Ry0cLTKIQQ/ES2016" />
           <node concept="1mt9qu" id="2rpxWh_cYIi" role="1dSqon">
             <node concept="1mvZK$" id="2rpxWh_cYIj" role="1mt8cI">
               <property role="TrG5h" value="_svelte" />
@@ -4274,7 +4270,7 @@
     <node concept="1Koe21" id="2rpxWh_cXAg" role="jxRDz">
       <node concept="1dSqrf" id="2rpxWh_cXPM" role="1Koe22">
         <property role="TrG5h" value="blah" />
-        <property role="1$8h_y" value="ES2016" />
+        <property role="1$8h_y" value="1Ry0cLTKIQQ/ES2016" />
         <node concept="1mt9qu" id="2rpxWh_cXPX" role="1dSqon">
           <node concept="1mvZK$" id="2rpxWh_cXQT" role="1mt8cI">
             <property role="TrG5h" value="_svelte" />
