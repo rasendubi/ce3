@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="rh3e" ref="r:33c6cc84-4a64-455a-8222-df658e689ef1(org.mar9000.mps.ecmascript.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -354,6 +355,58 @@
     <property role="TrG5h" value="Boolean" />
     <property role="34LRSv" value="Boolean" />
     <ref role="1TJDcQ" node="1R$YNjG08Ko" resolve="AbstractType" />
+  </node>
+  <node concept="1TIwiD" id="7Nww1niAkcx">
+    <property role="EcuMT" value="8998332886702179105" />
+    <property role="3GE5qa" value="value" />
+    <property role="TrG5h" value="ForeignFunction" />
+    <ref role="1TJDcQ" node="z8dq5o9mcs" resolve="AbstractValue" />
+    <node concept="1TJgyj" id="7Nww1niAkcy" role="1TKVEi">
+      <property role="IQ2ns" value="8998332886702179106" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="fn" />
+      <ref role="20lvS9" to="rh3e:7rFtnRVFdtc" resolve="JSFunctionExpression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7Nww1niAkc$">
+    <property role="EcuMT" value="8998332886702179108" />
+    <property role="3GE5qa" value="value" />
+    <property role="TrG5h" value="CallExpression" />
+    <ref role="1TJDcQ" node="z8dq5o9mcs" resolve="AbstractValue" />
+    <node concept="1TJgyj" id="7Nww1niAkc_" role="1TKVEi">
+      <property role="IQ2ns" value="8998332886702179109" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="callee" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="z8dq5o9mcs" resolve="AbstractValue" />
+    </node>
+    <node concept="1TJgyj" id="7Nww1niAkcB" role="1TKVEi">
+      <property role="IQ2ns" value="8998332886702179111" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="args" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="z8dq5o9mcs" resolve="AbstractValue" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7Nww1niEe_9">
+    <property role="EcuMT" value="8998332886703204681" />
+    <property role="3GE5qa" value="type" />
+    <property role="TrG5h" value="Function" />
+    <ref role="1TJDcQ" node="1R$YNjG08Ko" resolve="AbstractType" />
+    <node concept="1TJgyj" id="7Nww1niEe_a" role="1TKVEi">
+      <property role="IQ2ns" value="8998332886703204682" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="args" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="1R$YNjG08Ko" resolve="AbstractType" />
+    </node>
+    <node concept="1TJgyj" id="7Nww1niEe_c" role="1TKVEi">
+      <property role="IQ2ns" value="8998332886703204684" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="result" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="1R$YNjG08Ko" resolve="AbstractType" />
+    </node>
   </node>
 </model>
 

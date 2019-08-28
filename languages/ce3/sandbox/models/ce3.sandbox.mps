@@ -9,6 +9,13 @@
   </imports>
   <registry>
     <language id="70550421-e6c9-4d59-a12a-7918a95c5525" name="ce3">
+      <concept id="8998332886702179108" name="ce3.structure.CallExpression" flags="ng" index="2IuscL">
+        <child id="8998332886702179109" name="callee" index="2IuscK" />
+        <child id="8998332886702179111" name="args" index="2IuscM" />
+      </concept>
+      <concept id="8998332886702179105" name="ce3.structure.ForeignFunction" flags="ng" index="2IuscO">
+        <child id="8998332886702179106" name="fn" index="2IuscR" />
+      </concept>
       <concept id="4679049915687043167" name="ce3.structure.BinaryOperation" flags="ng" index="3ed_d4">
         <property id="4679049915687109352" name="op" index="3edl7N" />
         <child id="4679049915687043168" name="left" index="3ed_dV" />
@@ -43,6 +50,30 @@
         <property id="2154122726506361325" name="value" index="3LTgFp" />
       </concept>
       <concept id="2154122726507801156" name="ce3.structure.Number" flags="ng" index="3LWL5K" />
+    </language>
+    <language id="a4829704-6b1b-4b3f-8122-a4a2e6ac90ff" name="org.mar9000.mps.ecmascript">
+      <concept id="8569071899956281838" name="org.mar9000.mps.ecmascript.structure.JSStringLiteral" flags="ng" index="2dhBij">
+        <property id="8569071899956282000" name="doubleQuotedValue" index="2dhBvH" />
+      </concept>
+      <concept id="8569071899956270924" name="org.mar9000.mps.ecmascript.structure.JSFunctionExpression" flags="ng" index="2dhU8L">
+        <child id="8569071899956271164" name="body" index="2dhUP1" />
+        <child id="8569071899956271163" name="params" index="2dhUP6" />
+      </concept>
+      <concept id="8569071899956272644" name="org.mar9000.mps.ecmascript.structure.JSBinaryExpression" flags="ng" index="2dhUHT">
+        <property id="8569071899956272903" name="operator" index="2dhUDU" />
+        <child id="8569071899956273023" name="left" index="2dhUC2" />
+        <child id="8569071899956273025" name="right" index="2dhUFW" />
+      </concept>
+      <concept id="201656743171252964" name="org.mar9000.mps.ecmascript.structure.JSIdentifierReference" flags="ng" index="1dx8Xp">
+        <reference id="201656743171252965" name="identifier" index="1dx8Xo" />
+      </concept>
+      <concept id="201656743169484150" name="org.mar9000.mps.ecmascript.structure.JSReturnStatement" flags="ng" index="1dSozb">
+        <child id="201656743173163119" name="argument" index="1dEAni" />
+      </concept>
+      <concept id="201656743169483888" name="org.mar9000.mps.ecmascript.structure.JSBlockStatement" flags="ng" index="1dSoBd">
+        <child id="201656743169484430" name="body" index="1dSoGN" />
+      </concept>
+      <concept id="201656743169479441" name="org.mar9000.mps.ecmascript.structure.JSIdentifier" flags="ng" index="1dSrUG" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -147,21 +178,49 @@
     <node concept="1vfq6I" id="6H8W5cCcLfe" role="1vfq6G">
       <node concept="1vfq6M" id="6H8W5cCdexX" role="1vfq6L">
         <property role="TrG5h" value="class" />
-        <node concept="3ed_d4" id="43JkLIfgLHR" role="1gVlq1">
-          <property role="3edl7N" value="43JkLIeQdSD/opRem" />
-          <node concept="1gSYO3" id="43JkLIfgLIF" role="3ed_dV">
-            <ref role="3e$uYC" node="6H8W5cCjfLW" resolve="time" />
+        <node concept="2IuscL" id="7Nww1niAYCH" role="1gVlq1">
+          <node concept="3ed_d4" id="7Nww1niBOva" role="2IuscM">
+            <property role="3edl7N" value="43JkLIeQdSD/opRem" />
+            <node concept="1gSYO3" id="7Nww1niBOvq" role="3ed_dV">
+              <ref role="3e$uYC" node="6H8W5cCjfLW" resolve="time" />
+            </node>
+            <node concept="3LTgFo" id="7Nww1niBOwn" role="3ed_dY">
+              <property role="3LTgFp" value="3" />
+            </node>
           </node>
-          <node concept="3LTgFo" id="43JkLIfgLJy" role="3ed_dY">
-            <property role="3LTgFp" value="3" />
+          <node concept="2IuscO" id="7Nww1niAYCV" role="2IuscK">
+            <node concept="2dhU8L" id="7Nww1niByXu" role="2IuscR">
+              <node concept="1dSrUG" id="7Nww1niByXy" role="2dhUP6">
+                <property role="TrG5h" value="c" />
+              </node>
+              <node concept="1dSoBd" id="7Nww1niByXv" role="2dhUP1">
+                <node concept="1dSozb" id="7Nww1niByX$" role="1dSoGN">
+                  <node concept="2dhUHT" id="7Nww1niByXQ" role="1dEAni">
+                    <property role="2dhUDU" value="7rFtnRVFhfR/boPlus" />
+                    <node concept="2dhBij" id="7Nww1niByXI" role="2dhUC2">
+                      <property role="2dhBvH" value="class_" />
+                    </node>
+                    <node concept="1dx8Xp" id="7Nww1niByXU" role="2dhUFW">
+                      <ref role="1dx8Xo" node="7Nww1niByXy" resolve="c" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
       <node concept="1vfq6I" id="6H8W5cCcLf$" role="1vfq6V">
         <node concept="1vfq6M" id="6H8W5cCe8Fw" role="1vfq6L">
           <property role="TrG5h" value="hello" />
-          <node concept="1gSYO3" id="43JkLIe_gNo" role="1gVlq1">
-            <ref role="3e$uYC" node="6H8W5cCjfLW" resolve="time" />
+          <node concept="3ed_d4" id="43JkLIfnHr6" role="1gVlq1">
+            <property role="3edl7N" value="43JkLIeQdSD/opRem" />
+            <node concept="1gSYO3" id="43JkLIfnHs4" role="3ed_dV">
+              <ref role="3e$uYC" node="6H8W5cCjfLW" resolve="time" />
+            </node>
+            <node concept="3LTgFo" id="43JkLIfnHt3" role="3ed_dY">
+              <property role="3LTgFp" value="3" />
+            </node>
           </node>
         </node>
         <node concept="1gPmzB" id="6H8W5cCcLfA" role="1gPmzY">
