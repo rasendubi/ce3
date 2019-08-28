@@ -360,11 +360,13 @@
     <property role="EcuMT" value="8998332886702179105" />
     <property role="3GE5qa" value="value" />
     <property role="TrG5h" value="ForeignFunction" />
+    <property role="34LRSv" value="foreign fn" />
     <ref role="1TJDcQ" node="z8dq5o9mcs" resolve="AbstractValue" />
     <node concept="1TJgyj" id="7Nww1niAkcy" role="1TKVEi">
       <property role="IQ2ns" value="8998332886702179106" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="fn" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="rh3e:7rFtnRVFdtc" resolve="JSFunctionExpression" />
     </node>
   </node>
