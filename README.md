@@ -15,8 +15,8 @@ The compiled components can be used as any other Svelte components:
    <Nested time={10} />
    ```
 2. Instantiated from the main js file:
-   ```svelte
-   import Main from './languages/ce3/sandbox/source_gen/ce3/sandbox/Main;
+   ```js
+   import Main from './languages/ce3/sandbox/source_gen/ce3/sandbox/Main';
 
    const app = new Main({
      target: document.body,
