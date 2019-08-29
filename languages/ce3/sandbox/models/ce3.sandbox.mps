@@ -55,25 +55,19 @@
       <concept id="8569071899956281838" name="org.mar9000.mps.ecmascript.structure.JSStringLiteral" flags="ng" index="2dhBij">
         <property id="8569071899956282000" name="doubleQuotedValue" index="2dhBvH" />
       </concept>
-      <concept id="8569071899956270924" name="org.mar9000.mps.ecmascript.structure.JSFunctionExpression" flags="ng" index="2dhU8L">
-        <child id="8569071899956271164" name="body" index="2dhUP1" />
-        <child id="8569071899956271163" name="params" index="2dhUP6" />
-      </concept>
       <concept id="8569071899956272644" name="org.mar9000.mps.ecmascript.structure.JSBinaryExpression" flags="ng" index="2dhUHT">
         <property id="8569071899956272903" name="operator" index="2dhUDU" />
         <child id="8569071899956273023" name="left" index="2dhUC2" />
         <child id="8569071899956273025" name="right" index="2dhUFW" />
       </concept>
-      <concept id="201656743171252964" name="org.mar9000.mps.ecmascript.structure.JSIdentifierReference" flags="ng" index="1dx8Xp">
-        <reference id="201656743171252965" name="identifier" index="1dx8Xo" />
+      <concept id="7659502065125150576" name="org.mar9000.mps.ecmascript.structure.JSArrowFunction" flags="ng" index="2eqWJV">
+        <child id="7659502065125160121" name="parameters" index="2eqZ0M" />
+        <child id="7659502065125160131" name="body" index="2eqZ18" />
       </concept>
-      <concept id="201656743169484150" name="org.mar9000.mps.ecmascript.structure.JSReturnStatement" flags="ng" index="1dSozb">
-        <child id="201656743173163119" name="argument" index="1dEAni" />
+      <concept id="204049982422779253" name="org.mar9000.mps.ecmascript.structure.JSBindingIdentifierReference" flags="ng" index="2WqeGl">
+        <reference id="204049982422779256" name="bindingIdentifier" index="2WqeGo" />
       </concept>
-      <concept id="201656743169483888" name="org.mar9000.mps.ecmascript.structure.JSBlockStatement" flags="ng" index="1dSoBd">
-        <child id="201656743169484430" name="body" index="1dSoGN" />
-      </concept>
-      <concept id="201656743169479441" name="org.mar9000.mps.ecmascript.structure.JSIdentifier" flags="ng" index="1dSrUG" />
+      <concept id="6713311115387176128" name="org.mar9000.mps.ecmascript.structure.JSBindingIdentifier" flags="ng" index="1mvZK$" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -189,21 +183,17 @@
             </node>
           </node>
           <node concept="2IuscO" id="7Nww1niAYCV" role="2IuscK">
-            <node concept="2dhU8L" id="7Nww1niByXu" role="2IuscR">
-              <node concept="1dSrUG" id="7Nww1niByXy" role="2dhUP6">
-                <property role="TrG5h" value="c" />
+            <node concept="2eqWJV" id="7Nww1niMDf9" role="2IuscR">
+              <node concept="1mvZK$" id="2uMaiCrjoKj" role="2eqZ0M">
+                <property role="TrG5h" value="x" />
               </node>
-              <node concept="1dSoBd" id="7Nww1niByXv" role="2dhUP1">
-                <node concept="1dSozb" id="7Nww1niByX$" role="1dSoGN">
-                  <node concept="2dhUHT" id="7Nww1niByXQ" role="1dEAni">
-                    <property role="2dhUDU" value="7rFtnRVFhfR/boPlus" />
-                    <node concept="2dhBij" id="7Nww1niByXI" role="2dhUC2">
-                      <property role="2dhBvH" value="class_" />
-                    </node>
-                    <node concept="1dx8Xp" id="7Nww1niByXU" role="2dhUFW">
-                      <ref role="1dx8Xo" node="7Nww1niByXy" resolve="c" />
-                    </node>
-                  </node>
+              <node concept="2dhUHT" id="2uMaiCrjoKs" role="2eqZ18">
+                <property role="2dhUDU" value="7rFtnRVFhfR/boPlus" />
+                <node concept="2dhBij" id="2uMaiCrjoKo" role="2dhUC2">
+                  <property role="2dhBvH" value="class_" />
+                </node>
+                <node concept="2WqeGl" id="2uMaiCrjoKw" role="2dhUFW">
+                  <ref role="2WqeGo" node="2uMaiCrjoKj" resolve="x" />
                 </node>
               </node>
             </node>

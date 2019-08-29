@@ -367,7 +367,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="fn" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" to="rh3e:7rFtnRVFdtc" resolve="JSFunctionExpression" />
+      <ref role="20lvS9" to="rh3e:6Dc18J$9WXK" resolve="JSArrowFunction" />
     </node>
   </node>
   <node concept="1TIwiD" id="7Nww1niAkc$">

@@ -12,6 +12,7 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="vhh2" ref="r:c7dffafc-3cf1-4bb7-b2ec-920042423f7d(ce3.behavior)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
+    <import index="3aej" ref="r:747ff8d1-828a-41db-8304-ef0626966e67(org.mar9000.mps.ecmascript.editor)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -123,6 +124,9 @@
       </concept>
       <concept id="7291101478617127464" name="jetbrains.mps.lang.editor.structure.IExtensibleTransformationMenuPart" flags="ng" index="1joUw2">
         <child id="8954657570916349207" name="features" index="2jZA2a" />
+      </concept>
+      <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ng" index="1k5N5V">
+        <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
       </concept>
       <concept id="1223387125302" name="jetbrains.mps.lang.editor.structure.QueryFunction_Boolean" flags="in" index="3nzxsE" />
       <concept id="3308396621974580100" name="jetbrains.mps.lang.editor.structure.SubstituteMenu_Default" flags="ng" index="3p36aQ" />
@@ -1364,7 +1368,8 @@
     <ref role="1XX52x" to="xp1n:7Nww1niAkcx" resolve="ForeignFunction" />
     <node concept="3EZMnI" id="7Nww1niAYDa" role="2wV5jI">
       <node concept="3F0ifn" id="7Nww1niAYDs" role="3EZMnx">
-        <property role="3F0ifm" value="foreign" />
+        <property role="3F0ifm" value="foreign fn" />
+        <ref role="1k5W1q" to="3aej:bcrrPfrAxm" resolve="ECMAKeyWord" />
       </node>
       <node concept="3F1sOY" id="7Nww1niAYDN" role="3EZMnx">
         <ref role="1NtTu8" to="xp1n:7Nww1niAkcy" resolve="fn" />
