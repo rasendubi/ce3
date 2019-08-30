@@ -271,7 +271,9 @@
       <concept id="204049982422779253" name="org.mar9000.mps.ecmascript.structure.JSBindingIdentifierReference" flags="ng" index="2WqeGl">
         <reference id="204049982422779256" name="bindingIdentifier" index="2WqeGo" />
       </concept>
-      <concept id="2799417920953054530" name="org.mar9000.mps.ecmascript.structure.JSSuperExpression" flags="ng" index="12Bna6" />
+      <concept id="2799417920953054530" name="org.mar9000.mps.ecmascript.structure.JSSuperCall" flags="ng" index="12Bna6">
+        <child id="5036353722909383786" name="arguments" index="2WRAlG" />
+      </concept>
       <concept id="201656743171252964" name="org.mar9000.mps.ecmascript.structure.JSIdentifierReference" flags="ng" index="1dx8Xp">
         <reference id="201656743171252965" name="identifier" index="1dx8Xo" />
       </concept>
@@ -1220,9 +1222,8 @@
         </node>
         <node concept="3PT0iG" id="2rpxWh$hc3m" role="2wi7L_">
           <node concept="1dSo_L" id="2rpxWh$iD99" role="3PTNxU">
-            <node concept="2dhSm$" id="2rpxWh$iD9g" role="1dwvF7">
-              <node concept="12Bna6" id="2rpxWh$iD98" role="2dhSgj" />
-              <node concept="2WqeGl" id="2rpxWh$iD9n" role="2dhSgd">
+            <node concept="12Bna6" id="2rpxWh$iD98" role="1dwvF7">
+              <node concept="2WqeGl" id="ikQZJLZ6Ad" role="2WRAlG">
                 <ref role="2WqeGo" node="2rpxWh$hcew" resolve="options" />
               </node>
             </node>
