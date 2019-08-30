@@ -25,6 +25,7 @@
         <reference id="632814714729880903" name="target" index="1gPmzA" />
       </concept>
       <concept id="632814714730756503" name="ce3.structure.PropDeclaration" flags="ng" index="1gSCKQ">
+        <child id="4104270065600006009" name="defaultValue" index="yFGMo" />
         <child id="2154122726506303209" name="type" index="3LTvnt" />
       </concept>
       <concept id="632814714730829986" name="ce3.structure.PropertyValue" flags="ng" index="1gSYO3">
@@ -80,10 +81,13 @@
     <node concept="1gSCKQ" id="6H8W5cCjfLW" role="1gSCK2">
       <property role="TrG5h" value="time" />
       <node concept="3LWL5K" id="43JkLIeU$4H" role="3LTvnt" />
+      <node concept="3LTgFo" id="3zPiY4qq0PM" role="yFGMo">
+        <property role="3LTgFp" value="0" />
+      </node>
     </node>
     <node concept="1gSCKQ" id="43JkLIffujO" role="1gSCK2">
       <property role="TrG5h" value="blah" />
-      <node concept="3LWL5K" id="43JkLIffujS" role="3LTvnt" />
+      <node concept="3LT7sz" id="3zPiY4qq0QF" role="3LTvnt" />
     </node>
     <node concept="1vfq6I" id="6H8W5cC25U8" role="1vfq6G">
       <node concept="1gVlqW" id="6H8W5cC2SQ7" role="1vfq6V">
@@ -231,6 +235,9 @@
     <property role="TrG5h" value="Nested" />
     <node concept="1gSCKQ" id="6H8W5cCe8FE" role="1gSCK2">
       <property role="TrG5h" value="hello" />
+      <node concept="1gVlqW" id="3zPiY4qq20C" role="yFGMo">
+        <property role="1gVlqZ" value="&lt;Nested.hello default value&gt;" />
+      </node>
     </node>
     <node concept="1vfq6I" id="6H8W5cC9cH1" role="1vfq6G">
       <node concept="1gVlqW" id="6H8W5cC9cH8" role="1vfq6V">

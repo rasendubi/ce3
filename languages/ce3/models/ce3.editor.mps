@@ -898,6 +898,9 @@
           <property role="Vb096" value="g1_qRwE/darkGreen" />
         </node>
         <node concept="VPxyj" id="z8dq5oa2Bg" role="3F10Kt" />
+        <node concept="11LMrY" id="3zPiY4qq2OS" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="3F0A7n" id="z8dq5o9MNT" role="3EZMnx">
         <ref role="1NtTu8" to="xp1n:z8dq5o9mcu" resolve="value" />
@@ -911,11 +914,11 @@
           <property role="Vb096" value="g1_qRwE/darkGreen" />
         </node>
         <node concept="VPxyj" id="z8dq5oa2Bn" role="3F10Kt" />
+        <node concept="11L4FC" id="3zPiY4qq2P1" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="l2Vlx" id="z8dq5o9MNJ" role="2iSdaV" />
-      <node concept="15ARfc" id="z8dq5o9UHu" role="3F10Kt">
-        <property role="3$6WeP" value="0" />
-      </node>
     </node>
   </node>
   <node concept="24kQdi" id="z8dq5oaOl1">
@@ -934,6 +937,12 @@
       </node>
       <node concept="3F1sOY" id="1R$YNjG0hsr" role="3EZMnx">
         <ref role="1NtTu8" to="xp1n:1R$YNjG0gVD" resolve="type" />
+      </node>
+      <node concept="3F0ifn" id="3zPiY4qmSu2" role="3EZMnx">
+        <property role="3F0ifm" value="=" />
+      </node>
+      <node concept="3F1sOY" id="3zPiY4qmSug" role="3EZMnx">
+        <ref role="1NtTu8" to="xp1n:3zPiY4qmStT" resolve="defaultValue" />
       </node>
     </node>
   </node>

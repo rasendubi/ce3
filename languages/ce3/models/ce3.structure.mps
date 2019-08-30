@@ -207,6 +207,12 @@
       <property role="20kJfa" value="type" />
       <ref role="20lvS9" node="1R$YNjG08Ko" resolve="AbstractType" />
     </node>
+    <node concept="1TJgyj" id="3zPiY4qmStT" role="1TKVEi">
+      <property role="IQ2ns" value="4104270065600006009" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="defaultValue" />
+      <ref role="20lvS9" node="z8dq5o9mcs" resolve="AbstractValue" />
+    </node>
   </node>
   <node concept="1TIwiD" id="z8dq5oaXyy">
     <property role="EcuMT" value="632814714730829986" />
