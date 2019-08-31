@@ -199,11 +199,11 @@
                                 </node>
                               </node>
                               <node concept="zfrQC" id="43JkLIfkr5E" role="2OqNvi">
-                                <ref role="1A9B2P" to="rh3e:bcrrPfieb$" resolve="JSIdentifierReference" />
+                                <ref role="1A9B2P" to="rh3e:bkVA2YJ0lP" resolve="JSBindingIdentifierReference" />
                               </node>
                             </node>
-                            <node concept="3TrEf2" id="43JkLIfkr5F" role="2OqNvi">
-                              <ref role="3Tt5mk" to="rh3e:bcrrPfieb_" resolve="identifier" />
+                            <node concept="3TrEf2" id="5y6nqid98Gu" role="2OqNvi">
+                              <ref role="3Tt5mk" to="rh3e:bkVA2YJ0lS" resolve="bindingIdentifier" />
                             </node>
                           </node>
                           <node concept="2oxUTD" id="43JkLIfkr5G" role="2OqNvi">
@@ -342,11 +342,11 @@
                                   </node>
                                 </node>
                                 <node concept="zfrQC" id="43JkLIfkr6_" role="2OqNvi">
-                                  <ref role="1A9B2P" to="rh3e:bcrrPfieb$" resolve="JSIdentifierReference" />
+                                  <ref role="1A9B2P" to="rh3e:bkVA2YJ0lP" resolve="JSBindingIdentifierReference" />
                                 </node>
                               </node>
-                              <node concept="3TrEf2" id="43JkLIfkr6A" role="2OqNvi">
-                                <ref role="3Tt5mk" to="rh3e:bcrrPfieb_" resolve="identifier" />
+                              <node concept="3TrEf2" id="5y6nqid98Q$" role="2OqNvi">
+                                <ref role="3Tt5mk" to="rh3e:bkVA2YJ0lS" resolve="bindingIdentifier" />
                               </node>
                             </node>
                             <node concept="2oxUTD" id="43JkLIfkr6B" role="2OqNvi">
@@ -466,7 +466,7 @@
       <node concept="37vLTG" id="43JkLIfnkG0" role="3clF46">
         <property role="TrG5h" value="changed" />
         <node concept="3Tqbb2" id="43JkLIfnkGF" role="1tU5fm">
-          <ref role="ehGHo" to="rh3e:bcrrPfbtch" resolve="JSIdentifier" />
+          <ref role="ehGHo" to="rh3e:5OEuegbloj0" resolve="JSBindingIdentifier" />
         </node>
       </node>
       <node concept="37vLTG" id="43JkLIfnkAT" role="3clF46">
