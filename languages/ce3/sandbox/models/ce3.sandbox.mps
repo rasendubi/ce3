@@ -9,13 +9,6 @@
   </imports>
   <registry>
     <language id="70550421-e6c9-4d59-a12a-7918a95c5525" name="ce3">
-      <concept id="8998332886702179108" name="ce3.structure.CallExpression" flags="ng" index="2IuscL">
-        <child id="8998332886702179109" name="callee" index="2IuscK" />
-        <child id="8998332886702179111" name="args" index="2IuscM" />
-      </concept>
-      <concept id="8998332886702179105" name="ce3.structure.ForeignFunction" flags="ng" index="2IuscO">
-        <child id="8998332886702179106" name="fn" index="2IuscR" />
-      </concept>
       <concept id="4679049915687043167" name="ce3.structure.BinaryOperation" flags="ng" index="3ed_d4">
         <property id="4679049915687109352" name="op" index="3edl7N" />
         <child id="4679049915687043168" name="left" index="3ed_dV" />
@@ -52,24 +45,6 @@
       </concept>
       <concept id="2154122726507801156" name="ce3.structure.Number" flags="ng" index="3LWL5K" />
     </language>
-    <language id="a4829704-6b1b-4b3f-8122-a4a2e6ac90ff" name="org.mar9000.mps.ecmascript">
-      <concept id="8569071899956281838" name="org.mar9000.mps.ecmascript.structure.JSStringLiteral" flags="ng" index="2dhBij">
-        <property id="8569071899956282000" name="doubleQuotedValue" index="2dhBvH" />
-      </concept>
-      <concept id="8569071899956272644" name="org.mar9000.mps.ecmascript.structure.JSBinaryExpression" flags="ng" index="2dhUHT">
-        <property id="8569071899956272903" name="operator" index="2dhUDU" />
-        <child id="8569071899956273023" name="left" index="2dhUC2" />
-        <child id="8569071899956273025" name="right" index="2dhUFW" />
-      </concept>
-      <concept id="7659502065125150576" name="org.mar9000.mps.ecmascript.structure.JSArrowFunction" flags="ng" index="2eqWJV">
-        <child id="7659502065125160121" name="parameters" index="2eqZ0M" />
-        <child id="7659502065125160131" name="body" index="2eqZ18" />
-      </concept>
-      <concept id="204049982422779253" name="org.mar9000.mps.ecmascript.structure.JSBindingIdentifierReference" flags="ng" index="2WqeGl">
-        <reference id="204049982422779256" name="bindingIdentifier" index="2WqeGo" />
-      </concept>
-      <concept id="6713311115387176128" name="org.mar9000.mps.ecmascript.structure.JSBindingIdentifier" flags="ng" index="1mvZK$" />
-    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -80,10 +55,10 @@
     <property role="TrG5h" value="HelloWorld" />
     <node concept="1gSCKQ" id="6H8W5cCjfLW" role="1gSCK2">
       <property role="TrG5h" value="time" />
-      <node concept="3LTgFo" id="3zPiY4qq0PM" role="yFGMo">
+      <node concept="3LWL5K" id="43JkLIeU$4H" role="3LTvnt" />
+      <node concept="3LTgFo" id="7okf8FR9vwn" role="yFGMo">
         <property role="3LTgFp" value="0" />
       </node>
-      <node concept="3LWL5K" id="43JkLIeU$4H" role="3LTvnt" />
     </node>
     <node concept="1gSCKQ" id="43JkLIffujO" role="1gSCK2">
       <property role="TrG5h" value="blah" />
@@ -105,11 +80,11 @@
           <node concept="1gSYO3" id="43JkLIeRNqs" role="3ed_dV">
             <ref role="3e$uYC" node="6H8W5cCjfLW" resolve="time" />
           </node>
-          <node concept="3LTgFo" id="43JkLIfgIiq" role="3ed_dY">
+          <node concept="3LTgFo" id="7okf8FR9vxP" role="3ed_dY">
             <property role="3LTgFp" value="3" />
           </node>
         </node>
-        <node concept="3LTgFo" id="43JkLIeRNqC" role="3ed_dY">
+        <node concept="3LTgFo" id="7okf8FR9vxE" role="3ed_dY">
           <property role="3LTgFp" value="0" />
         </node>
       </node>
@@ -174,33 +149,21 @@
       </node>
     </node>
     <node concept="1vfq6I" id="6H8W5cCcLfe" role="1vfq6G">
-      <node concept="1vfq6M" id="6H8W5cCdexX" role="1vfq6L">
+      <node concept="1vfq6M" id="7okf8FRa6m4" role="1vfq6L">
         <property role="TrG5h" value="class" />
-        <node concept="2IuscL" id="7Nww1niAYCH" role="1gVlq1">
-          <node concept="3ed_d4" id="7Nww1niBOva" role="2IuscM">
+        <node concept="3ed_d4" id="7okf8FRayze" role="1gVlq1">
+          <property role="3edl7N" value="43JkLIeQdS3/opPlus" />
+          <node concept="3ed_d4" id="7okf8FRay$C" role="3ed_dY">
             <property role="3edl7N" value="43JkLIeQdSD/opRem" />
-            <node concept="1gSYO3" id="7Nww1niBOvq" role="3ed_dV">
-              <ref role="3e$uYC" node="6H8W5cCjfLW" resolve="time" />
-            </node>
-            <node concept="3LTgFo" id="7Nww1niBOwn" role="3ed_dY">
+            <node concept="3LTgFo" id="7okf8FRay_E" role="3ed_dY">
               <property role="3LTgFp" value="3" />
             </node>
-          </node>
-          <node concept="2IuscO" id="7Nww1niAYCV" role="2IuscK">
-            <node concept="2eqWJV" id="7Nww1niMDf9" role="2IuscR">
-              <node concept="1mvZK$" id="2uMaiCrjoKj" role="2eqZ0M">
-                <property role="TrG5h" value="x" />
-              </node>
-              <node concept="2dhUHT" id="2uMaiCrjoKs" role="2eqZ18">
-                <property role="2dhUDU" value="7rFtnRVFhfR/boPlus" />
-                <node concept="2dhBij" id="2uMaiCrjoKo" role="2dhUC2">
-                  <property role="2dhBvH" value="class_" />
-                </node>
-                <node concept="2WqeGl" id="2uMaiCrjoKw" role="2dhUFW">
-                  <ref role="2WqeGo" node="2uMaiCrjoKj" resolve="x" />
-                </node>
-              </node>
+            <node concept="1gSYO3" id="7okf8FRay$q" role="3ed_dV">
+              <ref role="3e$uYC" node="6H8W5cCjfLW" resolve="time" />
             </node>
+          </node>
+          <node concept="1gVlqW" id="7okf8FRayz2" role="3ed_dV">
+            <property role="1gVlqZ" value="class_" />
           </node>
         </node>
       </node>
