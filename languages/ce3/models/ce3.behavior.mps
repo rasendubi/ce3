@@ -873,12 +873,6 @@
     <node concept="2YIFZL" id="43JkLIeTG6H" role="jymVt">
       <property role="TrG5h" value="isLogicalOperator" />
       <node concept="3clFbS" id="43JkLIeTG6K" role="3clF47">
-        <node concept="3cpWs8" id="43JkLIf5J7m" role="3cqZAp">
-          <node concept="3cpWsn" id="43JkLIf5J7p" role="3cpWs9">
-            <property role="TrG5h" value="x" />
-            <node concept="17QB3L" id="43JkLIf5J7k" role="1tU5fm" />
-          </node>
-        </node>
         <node concept="3clFbF" id="43JkLIeTLmo" role="3cqZAp">
           <node concept="3X5UdL" id="43JkLIeTLmq" role="3clFbG">
             <node concept="37vLTw" id="43JkLIeTLmr" role="3X5Ude">
