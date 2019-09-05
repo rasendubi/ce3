@@ -320,7 +320,7 @@
         <node concept="mw_s8" id="43JkLIeWXLk" role="1ZfhKB">
           <node concept="2pJPEk" id="43JkLIeWXLg" role="mwGJk">
             <node concept="2pJPED" id="43JkLIeWXLv" role="2pJPEn">
-              <ref role="2pJxaS" to="xp1n:1R$YNjG08Kn" resolve="String" />
+              <ref role="2pJxaS" to="xp1n:1R$YNjG08Kn" resolve="StringType" />
             </node>
           </node>
         </node>
@@ -690,7 +690,7 @@
         <node concept="mw_s8" id="43JkLIeWXMC" role="1ZfhKB">
           <node concept="2pJPEk" id="43JkLIeWXMw" role="mwGJk">
             <node concept="2pJPED" id="43JkLIeWXMN" role="2pJPEn">
-              <ref role="2pJxaS" to="xp1n:1R$YNjG5YD4" resolve="Number" />
+              <ref role="2pJxaS" to="xp1n:1R$YNjG5YD4" resolve="NumberType" />
             </node>
           </node>
         </node>
@@ -730,7 +730,7 @@
             <node concept="mw_s8" id="43JkLIeWXVp" role="1ZfhKB">
               <node concept="2pJPEk" id="43JkLIeWXVq" role="mwGJk">
                 <node concept="2pJPED" id="43JkLIeWXVr" role="2pJPEn">
-                  <ref role="2pJxaS" to="xp1n:1R$YNjG5YD4" resolve="Number" />
+                  <ref role="2pJxaS" to="xp1n:1R$YNjG5YD4" resolve="NumberType" />
                 </node>
               </node>
             </node>
@@ -751,7 +751,7 @@
             <node concept="mw_s8" id="43JkLIeWXVP" role="1ZfhKB">
               <node concept="2pJPEk" id="43JkLIeWXVQ" role="mwGJk">
                 <node concept="2pJPED" id="43JkLIeWXVR" role="2pJPEn">
-                  <ref role="2pJxaS" to="xp1n:1R$YNjG5YD4" resolve="Number" />
+                  <ref role="2pJxaS" to="xp1n:1R$YNjG5YD4" resolve="NumberType" />
                 </node>
               </node>
             </node>
@@ -767,7 +767,7 @@
             <node concept="mw_s8" id="43JkLIeWXW1" role="1ZfhKB">
               <node concept="2pJPEk" id="43JkLIeWXW2" role="mwGJk">
                 <node concept="2pJPED" id="43JkLIeWXW3" role="2pJPEn">
-                  <ref role="2pJxaS" to="xp1n:1R$YNjG5YD4" resolve="Number" />
+                  <ref role="2pJxaS" to="xp1n:1R$YNjG5YD4" resolve="NumberType" />
                 </node>
               </node>
             </node>
@@ -804,7 +804,7 @@
             <node concept="mw_s8" id="43JkLIeWXWd" role="1ZfhKB">
               <node concept="2pJPEk" id="43JkLIeWXWe" role="mwGJk">
                 <node concept="2pJPED" id="43JkLIeWXWp" role="2pJPEn">
-                  <ref role="2pJxaS" to="xp1n:43JkLIeS7Br" resolve="Boolean" />
+                  <ref role="2pJxaS" to="xp1n:43JkLIeS7Br" resolve="BooleanType" />
                 </node>
               </node>
             </node>
@@ -825,7 +825,7 @@
             <node concept="mw_s8" id="43JkLIeWXWM" role="1ZfhKB">
               <node concept="2pJPEk" id="43JkLIeWXWN" role="mwGJk">
                 <node concept="2pJPED" id="43JkLIeWXWO" role="2pJPEn">
-                  <ref role="2pJxaS" to="xp1n:43JkLIeS7Br" resolve="Boolean" />
+                  <ref role="2pJxaS" to="xp1n:43JkLIeS7Br" resolve="BooleanType" />
                 </node>
               </node>
             </node>
@@ -841,7 +841,7 @@
             <node concept="mw_s8" id="43JkLIeWXXe" role="1ZfhKB">
               <node concept="2pJPEk" id="43JkLIeWXXf" role="mwGJk">
                 <node concept="2pJPED" id="43JkLIeWXXg" role="2pJPEn">
-                  <ref role="2pJxaS" to="xp1n:43JkLIeS7Br" resolve="Boolean" />
+                  <ref role="2pJxaS" to="xp1n:43JkLIeS7Br" resolve="BooleanType" />
                 </node>
               </node>
             </node>
@@ -899,7 +899,7 @@
             <node concept="mw_s8" id="43JkLIeWXXq" role="1ZfhKB">
               <node concept="2pJPEk" id="43JkLIeWXXr" role="mwGJk">
                 <node concept="2pJPED" id="43JkLIeWXXs" role="2pJPEn">
-                  <ref role="2pJxaS" to="xp1n:43JkLIeS7Br" resolve="Boolean" />
+                  <ref role="2pJxaS" to="xp1n:43JkLIeS7Br" resolve="BooleanType" />
                 </node>
               </node>
             </node>

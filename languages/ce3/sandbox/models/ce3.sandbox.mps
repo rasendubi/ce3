@@ -9,6 +9,13 @@
   </imports>
   <registry>
     <language id="70550421-e6c9-4d59-a12a-7918a95c5525" name="ce3">
+      <concept id="6972358298721371130" name="ce3.structure.ParamReference" flags="ng" index="qMw$k">
+        <reference id="6972358298721371131" name="param" index="qMw$l" />
+      </concept>
+      <concept id="8998332886702179108" name="ce3.structure.CallExpression" flags="ng" index="2IuscL">
+        <child id="8998332886702179109" name="callee" index="2IuscK" />
+        <child id="8998332886702179111" name="args" index="2IuscM" />
+      </concept>
       <concept id="4679049915687043167" name="ce3.structure.BinaryOperation" flags="ng" index="3ed_d4">
         <property id="4679049915687109352" name="op" index="3edl7N" />
         <child id="4679049915687043168" name="left" index="3ed_dV" />
@@ -39,11 +46,16 @@
       <concept id="632814714727273491" name="ce3.structure.Attribute" flags="ng" index="1vfq6M">
         <child id="632814714730406688" name="value" index="1gVlq1" />
       </concept>
-      <concept id="2154122726506269719" name="ce3.structure.String" flags="ng" index="3LT7sz" />
+      <concept id="8348239190576416475" name="ce3.structure.Function" flags="ng" index="1H_U6b">
+        <child id="8348239190577387027" name="expr" index="1HxJ53" />
+        <child id="8348239190576416476" name="params" index="1H_U6c" />
+      </concept>
+      <concept id="8348239190576416478" name="ce3.structure.ParamDeclaration" flags="ng" index="1H_U6e" />
+      <concept id="2154122726506269719" name="ce3.structure.StringType" flags="ng" index="3LT7sz" />
       <concept id="2154122726506361324" name="ce3.structure.NumberValue" flags="ng" index="3LTgFo">
         <property id="2154122726506361325" name="value" index="3LTgFp" />
       </concept>
-      <concept id="2154122726507801156" name="ce3.structure.Number" flags="ng" index="3LWL5K" />
+      <concept id="2154122726507801156" name="ce3.structure.NumberType" flags="ng" index="3LWL5K" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -149,21 +161,31 @@
       </node>
     </node>
     <node concept="1vfq6I" id="6H8W5cCcLfe" role="1vfq6G">
-      <node concept="1vfq6M" id="7okf8FRa6m4" role="1vfq6L">
+      <node concept="1vfq6M" id="7fqTP0uno2c" role="1vfq6L">
         <property role="TrG5h" value="class" />
-        <node concept="3ed_d4" id="7okf8FRayze" role="1gVlq1">
-          <property role="3edl7N" value="7fqTP0ui_hM/opConcat" />
-          <node concept="3ed_d4" id="7okf8FRay$C" role="3ed_dY">
-            <property role="3edl7N" value="43JkLIeQdSD/opRem" />
-            <node concept="3LTgFo" id="7okf8FRay_E" role="3ed_dY">
-              <property role="3LTgFp" value="3" />
+        <node concept="2IuscL" id="632MITU3HqH" role="1gVlq1">
+          <node concept="1H_U6b" id="632MITU3HqI" role="2IuscK">
+            <node concept="1H_U6e" id="632MITU3HqJ" role="1H_U6c">
+              <property role="TrG5h" value="x" />
             </node>
-            <node concept="1gSYO3" id="7okf8FRay$q" role="3ed_dV">
-              <ref role="3e$uYC" node="6H8W5cCjfLW" resolve="time" />
+            <node concept="3ed_d4" id="632MITU3HqK" role="1HxJ53">
+              <property role="3edl7N" value="7fqTP0ui_hM/opConcat" />
+              <node concept="1gVlqW" id="632MITU3HqL" role="3ed_dV">
+                <property role="1gVlqZ" value="class_" />
+              </node>
+              <node concept="qMw$k" id="632MITU3HqM" role="3ed_dY">
+                <ref role="qMw$l" node="632MITU3HqJ" resolve="x" />
+              </node>
             </node>
           </node>
-          <node concept="1gVlqW" id="7okf8FRayz2" role="3ed_dV">
-            <property role="1gVlqZ" value="class_" />
+          <node concept="3ed_d4" id="632MITU40Zs" role="2IuscM">
+            <property role="3edl7N" value="43JkLIeQdSD/opRem" />
+            <node concept="3LTgFo" id="632MITU410w" role="3ed_dY">
+              <property role="3LTgFp" value="3" />
+            </node>
+            <node concept="1gSYO3" id="632MITU40Zn" role="3ed_dV">
+              <ref role="3e$uYC" node="6H8W5cCjfLW" resolve="time" />
+            </node>
           </node>
         </node>
       </node>
