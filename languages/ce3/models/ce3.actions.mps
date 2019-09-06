@@ -69,10 +69,14 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
       </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
     </language>
   </registry>
   <node concept="37WguZ" id="632MITU3FaG">
     <property role="3GE5qa" value="value" />
+    <property role="TrG5h" value="expressions" />
     <node concept="37WvkG" id="632MITU3FaH" role="37WGs$">
       <ref role="37XkoT" to="xp1n:7Nww1niAkc$" resolve="CallExpression" />
       <node concept="37Y9Zx" id="632MITU3FaI" role="37ZfLb">

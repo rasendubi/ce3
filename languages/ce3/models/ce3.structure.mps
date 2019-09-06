@@ -375,7 +375,7 @@
     <property role="3GE5qa" value="value" />
     <property role="TrG5h" value="ForeignFunction" />
     <property role="34LRSv" value="foreign fn" />
-    <ref role="1TJDcQ" node="7fqTP0ujjXE" resolve="AbstractFunction" />
+    <ref role="1TJDcQ" node="z8dq5o9mcs" resolve="AbstractValue" />
     <node concept="1TJgyj" id="7Nww1niAkcy" role="1TKVEi">
       <property role="IQ2ns" value="8998332886702179106" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -428,13 +428,6 @@
     <property role="3F6X1D" value="8508492163559304368" />
     <property role="TrG5h" value="_NumberString" />
     <property role="FLfZY" value="-?[0-9]+(\\.[0-9]*)?([Ee][\\+\\-]?[0-9]+)?" />
-  </node>
-  <node concept="1TIwiD" id="7fqTP0ujjXE">
-    <property role="EcuMT" value="8348239190576414570" />
-    <property role="3GE5qa" value="value" />
-    <property role="TrG5h" value="AbstractFunction" />
-    <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="7fqTP0ujkrr">
     <property role="EcuMT" value="8348239190576416475" />
