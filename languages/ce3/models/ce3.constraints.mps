@@ -145,5 +145,15 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="3zjuB6EJGz$">
+    <property role="3GE5qa" value="value" />
+    <ref role="1M2myG" to="xp1n:632MITU2cfU" resolve="ParamReference" />
+    <node concept="1N5Pfh" id="3zjuB6EJGz_" role="1Mr941">
+      <ref role="1N5Vy1" to="xp1n:632MITU2cfV" resolve="param" />
+      <node concept="1dDu$B" id="3zjuB6EJGzB" role="1N6uqs">
+        <ref role="1dDu$A" to="xp1n:7fqTP0ujkru" resolve="ParamDeclaration" />
+      </node>
+    </node>
+  </node>
 </model>
 

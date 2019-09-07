@@ -72,10 +72,6 @@
         <property role="3LTgFp" value="0" />
       </node>
     </node>
-    <node concept="1gSCKQ" id="43JkLIffujO" role="1gSCK2">
-      <property role="TrG5h" value="blah" />
-      <node concept="3LT7sz" id="3zPiY4qq0QF" role="3LTvnt" />
-    </node>
     <node concept="1vfq6I" id="6H8W5cC25U8" role="1vfq6G">
       <node concept="1gVlqW" id="6H8W5cC2SQ7" role="1vfq6V">
         <property role="1gVlqZ" value="Hello, world: " />
@@ -226,7 +222,7 @@
     </node>
     <node concept="1vfq6I" id="6H8W5cC9cH1" role="1vfq6G">
       <node concept="1gVlqW" id="6H8W5cC9cH8" role="1vfq6V">
-        <property role="1gVlqZ" value="Hello from nested component: " />
+        <property role="1gVlqZ" value="Nested: " />
       </node>
       <node concept="1gSYO3" id="43JkLIe_gML" role="1vfq6V">
         <ref role="3e$uYC" node="6H8W5cCe8FE" resolve="hello" />
@@ -253,16 +249,16 @@
       <property role="TrG5h" value="hello" />
       <node concept="3LT7sz" id="2rpxWh_5EUp" role="3LTvnt" />
     </node>
-    <node concept="1vfq6I" id="6H8W5cCff42" role="1vfq6G">
-      <node concept="1gVlqW" id="6H8W5cChnvr" role="1vfq6V">
-        <property role="1gVlqZ" value="Too Nested: " />
+    <node concept="1vfq6I" id="3zjuB6EKnwi" role="1vfq6G">
+      <node concept="1gVlqW" id="3zjuB6EKnwr" role="1vfq6V">
+        <property role="1gVlqZ" value="TooNested: " />
       </node>
-      <node concept="1gPmzB" id="6H8W5cCff44" role="1gPmzY">
+      <node concept="1gSYO3" id="3zjuB6EKnwG" role="1vfq6V">
+        <ref role="3e$uYC" node="6H8W5cCff46" resolve="hello" />
+      </node>
+      <node concept="1gPmzB" id="3zjuB6EKnwm" role="1gPmzY">
         <ref role="1gPmzA" to="nfbi:z8dq5o7lP2" resolve="div" />
       </node>
-    </node>
-    <node concept="1gSYO3" id="43JkLIe_gNf" role="1vfq6G">
-      <ref role="3e$uYC" node="6H8W5cCff46" resolve="hello" />
     </node>
   </node>
   <node concept="1vfq6F" id="2rpxWh_5OwN">
