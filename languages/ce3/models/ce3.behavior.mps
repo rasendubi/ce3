@@ -16,6 +16,7 @@
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
     <import index="6xgk" ref="r:6e9ad488-5df2-49e4-8c01-8a7f3812adf7(jetbrains.mps.lang.scopes.runtime)" />
+    <import index="rh3e" ref="r:33c6cc84-4a64-455a-8222-df658e689ef1(org.mar9000.mps.ecmascript.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -1347,7 +1348,42 @@
     <property role="3GE5qa" value="value" />
     <ref role="13h7C2" to="xp1n:7Nww1niAkcx" resolve="ForeignFunction" />
     <node concept="13hLZK" id="3zjuB6Ey3VE" role="13h7CW">
-      <node concept="3clFbS" id="3zjuB6Ey3VF" role="2VODD2" />
+      <node concept="3clFbS" id="3zjuB6Ey3VF" role="2VODD2">
+        <node concept="3clFbF" id="1$Cap2uPTuV" role="3cqZAp">
+          <node concept="37vLTI" id="1$Cap2uPTXn" role="3clFbG">
+            <node concept="2ShNRf" id="1$Cap2uPU0$" role="37vLTx">
+              <node concept="3zrR0B" id="1$Cap2uPTXY" role="2ShVmc">
+                <node concept="3Tqbb2" id="1$Cap2uPTXZ" role="3zrR0E">
+                  <ref role="ehGHo" to="rh3e:6Dc18J$9WXK" resolve="JSArrowFunction" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="1$Cap2uPTAN" role="37vLTJ">
+              <node concept="13iPFW" id="1$Cap2uPTuU" role="2Oq$k0" />
+              <node concept="3TrEf2" id="1$Cap2uPTJ6" role="2OqNvi">
+                <ref role="3Tt5mk" to="xp1n:7Nww1niAkcy" resolve="fn" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6U217Jhj2pF" role="3cqZAp">
+          <node concept="37vLTI" id="6U217Jhj2Ql" role="3clFbG">
+            <node concept="2OqwBi" id="6U217Jhj2zJ" role="37vLTJ">
+              <node concept="13iPFW" id="6U217Jhj2pD" role="2Oq$k0" />
+              <node concept="3TrEf2" id="6U217Jhj2HV" role="2OqNvi">
+                <ref role="3Tt5mk" to="xp1n:1$Cap2uRI2H" resolve="type" />
+              </node>
+            </node>
+            <node concept="2ShNRf" id="6U217Jhj47P" role="37vLTx">
+              <node concept="3zrR0B" id="6U217Jhj45Z" role="2ShVmc">
+                <node concept="3Tqbb2" id="6U217Jhj460" role="3zrR0E">
+                  <ref role="ehGHo" to="xp1n:7Nww1niEe_9" resolve="FunctionType" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="13i0hz" id="3zjuB6Ey3VW" role="13h7CS">
       <property role="TrG5h" value="isInlinable" />

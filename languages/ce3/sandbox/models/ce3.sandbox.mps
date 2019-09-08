@@ -50,7 +50,9 @@
         <child id="8348239190577387027" name="expr" index="1HxJ53" />
         <child id="8348239190576416476" name="params" index="1H_U6c" />
       </concept>
-      <concept id="8348239190576416478" name="ce3.structure.ParamDeclaration" flags="ng" index="1H_U6e" />
+      <concept id="8348239190576416478" name="ce3.structure.ParamDeclaration" flags="ng" index="1H_U6e">
+        <child id="8348239190576416481" name="type" index="1H_U6L" />
+      </concept>
       <concept id="2154122726506269719" name="ce3.structure.StringType" flags="ng" index="3LT7sz" />
       <concept id="2154122726506361324" name="ce3.structure.NumberValue" flags="ng" index="3LTgFo">
         <property id="2154122726506361325" name="value" index="3LTgFp" />
@@ -163,6 +165,7 @@
           <node concept="1H_U6b" id="632MITU3HqI" role="2IuscK">
             <node concept="1H_U6e" id="632MITU3HqJ" role="1H_U6c">
               <property role="TrG5h" value="x" />
+              <node concept="3LWL5K" id="6U217JhjnRw" role="1H_U6L" />
             </node>
             <node concept="3ed_d4" id="632MITU3HqK" role="1HxJ53">
               <property role="3edl7N" value="7fqTP0ui_hM/opConcat" />
