@@ -3,7 +3,6 @@
   <persistence version="9" />
   <languages>
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="4" />
-    <use id="70550421-e6c9-4d59-a12a-7918a95c5525" name="ce3" version="0" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -84,14 +83,6 @@
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
-    <language id="70550421-e6c9-4d59-a12a-7918a95c5525" name="ce3">
-      <concept id="8998332886703204681" name="ce3.structure.FunctionType" flags="ng" index="2Ii6_s">
-        <child id="8998332886703204684" name="result" index="2Ii6_p" />
-        <child id="8998332886703204682" name="params" index="2Ii6_v" />
-      </concept>
-      <concept id="4679049915687533019" name="ce3.structure.BooleanType" flags="ng" index="3e3MF0" />
-      <concept id="2154122726506269719" name="ce3.structure.StringType" flags="ng" index="3LT7sz" />
-    </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
@@ -99,19 +90,19 @@
       </concept>
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
-      <concept id="1196350785110" name="jetbrains.mps.lang.quotation.structure.AbstractAntiquotation" flags="ng" index="2c44t0">
-        <child id="1196350785111" name="expression" index="2c44t1" />
-      </concept>
-      <concept id="1196350785118" name="jetbrains.mps.lang.quotation.structure.ListAntiquotation" flags="ng" index="2c44t8" />
-      <concept id="1196350785112" name="jetbrains.mps.lang.quotation.structure.Antiquotation" flags="ng" index="2c44te" />
-      <concept id="1196350785113" name="jetbrains.mps.lang.quotation.structure.Quotation" flags="nn" index="2c44tf">
-        <child id="1196350785114" name="quotedNode" index="2c44tc" />
+      <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
+        <reference id="5455284157994012188" name="link" index="2pIpSl" />
+        <child id="1595412875168045827" name="initValue" index="28nt2d" />
       </concept>
       <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
         <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
       </concept>
       <concept id="5455284157993863840" name="jetbrains.mps.lang.quotation.structure.NodeBuilderNode" flags="nn" index="2pJPED">
         <reference id="5455284157993910961" name="concept" index="2pJxaS" />
+        <child id="5455284157993911099" name="values" index="2pJxcM" />
+      </concept>
+      <concept id="8182547171709752110" name="jetbrains.mps.lang.quotation.structure.NodeBuilderExpression" flags="nn" index="36biLy">
+        <child id="8182547171709752112" name="expression" index="36biLW" />
       </concept>
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
@@ -209,6 +200,10 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7">
+        <property id="8575328350543493365" name="message" index="huDt6" />
+        <property id="2423417345669755629" name="filter" index="1eyWvh" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -1204,21 +1199,33 @@
           <node concept="3x8VRR" id="1$Cap2uKgZH" role="2OqNvi" />
         </node>
       </node>
+      <node concept="3clFbH" id="6U217JhxI6W" role="3cqZAp" />
       <node concept="1Z5TYs" id="1$Cap2uKfRX" role="3cqZAp">
+        <node concept="15s5l7" id="6U217JhxI6T" role="lGtFl">
+          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Error: type node&lt;&gt; is not a subtype of node&lt;AbstractType&gt;&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c8959034a(jetbrains.mps.lang.quotation.typesystem)/8182547171709457029]&quot;;" />
+          <property role="huDt6" value="Error: type node&lt;&gt; is not a subtype of node&lt;AbstractType&gt;" />
+        </node>
+        <node concept="15s5l7" id="6U217JhxI6R" role="lGtFl">
+          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Error: type list&lt;node&lt;&gt;&gt; is not a subtype of sequence&lt;node&lt;AbstractType&gt;&gt;&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c8959034a(jetbrains.mps.lang.quotation.typesystem)/8182547171709457731]&quot;;" />
+          <property role="huDt6" value="Error: type list&lt;node&lt;&gt;&gt; is not a subtype of sequence&lt;node&lt;AbstractType&gt;&gt;" />
+        </node>
         <node concept="mw_s8" id="1$Cap2uKfSD" role="1ZfhKB">
-          <node concept="2c44tf" id="1$Cap2uKLwm" role="mwGJk">
-            <node concept="2Ii6_s" id="1$Cap2uKLx9" role="2c44tc">
-              <node concept="3e3MF0" id="1$Cap2uKLyF" role="2Ii6_p">
-                <node concept="2c44te" id="1$Cap2uKLyS" role="lGtFl">
-                  <node concept="1Z$b5t" id="1$Cap2uKLz2" role="2c44t1">
-                    <ref role="1Z$eMM" node="1$Cap2uKfTZ" resolve="resultType" />
+          <node concept="2pJPEk" id="6U217JhxHTm" role="mwGJk">
+            <node concept="2pJPED" id="6U217JhxHTh" role="2pJPEn">
+              <ref role="2pJxaS" to="xp1n:7Nww1niEe_9" resolve="FunctionType" />
+              <node concept="2pIpSj" id="6U217JhxHTj" role="2pJxcM">
+                <ref role="2pIpSl" to="xp1n:7Nww1niEe_a" resolve="params" />
+                <node concept="36biLy" id="6U217JhxHTi" role="28nt2d">
+                  <node concept="37vLTw" id="1$Cap2uKLyh" role="36biLW">
+                    <ref role="3cqZAo" node="1$Cap2uKfwL" resolve="paramTypes" />
                   </node>
                 </node>
               </node>
-              <node concept="3LT7sz" id="1$Cap2uKLxv" role="2Ii6_v">
-                <node concept="2c44t8" id="1$Cap2uKLxU" role="lGtFl">
-                  <node concept="37vLTw" id="1$Cap2uKLyh" role="2c44t1">
-                    <ref role="3cqZAo" node="1$Cap2uKfwL" resolve="paramTypes" />
+              <node concept="2pIpSj" id="6U217JhxHTl" role="2pJxcM">
+                <ref role="2pIpSl" to="xp1n:7Nww1niEe_c" resolve="result" />
+                <node concept="36biLy" id="6U217JhxHTk" role="28nt2d">
+                  <node concept="1Z$b5t" id="1$Cap2uKLz2" role="36biLW">
+                    <ref role="1Z$eMM" node="1$Cap2uKfTZ" resolve="resultType" />
                   </node>
                 </node>
               </node>
