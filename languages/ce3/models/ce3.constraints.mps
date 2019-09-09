@@ -154,5 +154,15 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="61mvAMDIjbM">
+    <property role="3GE5qa" value="value" />
+    <ref role="1M2myG" to="xp1n:61mvAMDH$tB" resolve="ComputedValue" />
+    <node concept="1N5Pfh" id="61mvAMDIjbN" role="1Mr941">
+      <ref role="1N5Vy1" to="xp1n:61mvAMDH$tC" resolve="computed" />
+      <node concept="1dDu$B" id="61mvAMDIjbP" role="1N6uqs">
+        <ref role="1dDu$A" to="xp1n:6U217Jhytf1" resolve="ComputedProperty" />
+      </node>
+    </node>
+  </node>
 </model>
 

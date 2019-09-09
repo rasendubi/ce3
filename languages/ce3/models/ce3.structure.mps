@@ -540,5 +540,17 @@
       <ref role="20lvS9" node="z8dq5o9mcs" resolve="AbstractValue" />
     </node>
   </node>
+  <node concept="1TIwiD" id="61mvAMDH$tB">
+    <property role="EcuMT" value="6941874880807061351" />
+    <property role="3GE5qa" value="value" />
+    <property role="TrG5h" value="ComputedValue" />
+    <ref role="1TJDcQ" node="z8dq5o9mcs" resolve="AbstractValue" />
+    <node concept="1TJgyj" id="61mvAMDH$tC" role="1TKVEi">
+      <property role="IQ2ns" value="6941874880807061352" />
+      <property role="20kJfa" value="computed" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6U217Jhytf1" resolve="ComputedProperty" />
+    </node>
+  </node>
 </model>
 

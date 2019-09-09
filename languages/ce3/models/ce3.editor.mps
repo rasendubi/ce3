@@ -2480,5 +2480,18 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="61mvAMDH$tM">
+    <property role="3GE5qa" value="value" />
+    <ref role="1XX52x" to="xp1n:61mvAMDH$tB" resolve="ComputedValue" />
+    <node concept="1iCGBv" id="61mvAMDH$tO" role="2wV5jI">
+      <ref role="1NtTu8" to="xp1n:61mvAMDH$tC" resolve="computed" />
+      <node concept="1sVBvm" id="61mvAMDH$tQ" role="1sWHZn">
+        <node concept="3F0A7n" id="61mvAMDH$u0" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
