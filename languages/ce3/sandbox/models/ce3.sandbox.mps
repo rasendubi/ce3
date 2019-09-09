@@ -16,6 +16,10 @@
         <child id="8998332886702179109" name="callee" index="2IuscK" />
         <child id="8998332886702179111" name="args" index="2IuscM" />
       </concept>
+      <concept id="7962932020987417537" name="ce3.structure.ComputedProperty" flags="ng" index="2Z2XuU">
+        <child id="7962932020987417603" name="type" index="2Z2X1S" />
+        <child id="7962932020987417540" name="value" index="2Z2XuZ" />
+      </concept>
       <concept id="4679049915687043167" name="ce3.structure.BinaryOperation" flags="ng" index="3ed_d4">
         <property id="4679049915687109352" name="op" index="3edl7N" />
         <child id="4679049915687043168" name="left" index="3ed_dV" />
@@ -35,6 +39,7 @@
         <property id="632814714730406686" name="value" index="1gVlqZ" />
       </concept>
       <concept id="632814714727273482" name="ce3.structure.Component" flags="ng" index="1vfq6F">
+        <child id="7962932020987309252" name="declarations" index="2Z2yyZ" />
         <child id="632814714730756515" name="props" index="1gSCK2" />
         <child id="632814714727273485" name="node" index="1vfq6G" />
       </concept>
@@ -213,6 +218,19 @@
       <node concept="1gPmzB" id="2rpxWh_aoaE" role="1gPmzY">
         <ref role="1gPmzA" node="2rpxWh_5OwN" resolve="Simple" />
       </node>
+    </node>
+    <node concept="2Z2XuU" id="6U217JhyU6v" role="2Z2yyZ">
+      <property role="TrG5h" value="time3" />
+      <node concept="3ed_d4" id="6U217JhyU6F" role="2Z2XuZ">
+        <property role="3edl7N" value="43JkLIeQdSD/opRem" />
+        <node concept="3LTgFo" id="6U217JhyU7U" role="3ed_dY">
+          <property role="3LTgFp" value="3" />
+        </node>
+        <node concept="1gSYO3" id="6U217JhyU6_" role="3ed_dV">
+          <ref role="3e$uYC" node="6H8W5cCjfLW" resolve="time" />
+        </node>
+      </node>
+      <node concept="3LWL5K" id="6U217Jhzj4B" role="2Z2X1S" />
     </node>
   </node>
   <node concept="1vfq6F" id="6H8W5cC9cGV">
