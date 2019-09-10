@@ -520,7 +520,7 @@
   <node concept="1TIwiD" id="6U217Jhytf1">
     <property role="EcuMT" value="7962932020987417537" />
     <property role="3GE5qa" value="component.declaration" />
-    <property role="TrG5h" value="ComputedProperty" />
+    <property role="TrG5h" value="ComputedPropertyDeclaration" />
     <property role="34LRSv" value="computed" />
     <ref role="1TJDcQ" node="6U217Jhy2N0" resolve="ComponentDeclaration" />
     <node concept="1TJgyj" id="6U217Jhytg3" role="1TKVEi">
@@ -549,7 +549,42 @@
       <property role="IQ2ns" value="6941874880807061352" />
       <property role="20kJfa" value="computed" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="6U217Jhytf1" resolve="ComputedProperty" />
+      <ref role="20lvS9" node="6U217Jhytf1" resolve="ComputedPropertyDeclaration" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="61mvAMDKfbL">
+    <property role="EcuMT" value="6941874880807760625" />
+    <property role="3GE5qa" value="component.declaration" />
+    <property role="TrG5h" value="StateDeclaration" />
+    <property role="34LRSv" value="state" />
+    <ref role="1TJDcQ" node="6U217Jhy2N0" resolve="ComponentDeclaration" />
+    <node concept="1TJgyj" id="61mvAMDKfbO" role="1TKVEi">
+      <property role="IQ2ns" value="6941874880807760628" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="type" />
+      <ref role="20lvS9" node="1R$YNjG08Ko" resolve="AbstractType" />
+    </node>
+    <node concept="1TJgyj" id="61mvAMDKfbQ" role="1TKVEi">
+      <property role="IQ2ns" value="6941874880807760630" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="initialValue" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="z8dq5o9mcs" resolve="AbstractValue" />
+    </node>
+    <node concept="PrWs8" id="61mvAMDKfbM" role="PzmwI">
+      <ref role="PrY4T" node="1$Cap2uHc8K" resolve="ICe3Name" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="61mvAMDL7R6">
+    <property role="EcuMT" value="6941874880807992774" />
+    <property role="3GE5qa" value="value" />
+    <property role="TrG5h" value="StateValue" />
+    <ref role="1TJDcQ" node="z8dq5o9mcs" resolve="AbstractValue" />
+    <node concept="1TJgyj" id="61mvAMDL7R7" role="1TKVEi">
+      <property role="IQ2ns" value="6941874880807992775" />
+      <property role="20kJfa" value="state" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="61mvAMDKfbL" resolve="StateDeclaration" />
     </node>
   </node>
 </model>

@@ -1681,7 +1681,7 @@
     </node>
     <node concept="1YaCAy" id="61mvAMDJTNn" role="1YuTPh">
       <property role="TrG5h" value="computedProperty" />
-      <ref role="1YaFvo" to="xp1n:6U217Jhytf1" resolve="ComputedProperty" />
+      <ref role="1YaFvo" to="xp1n:6U217Jhytf1" resolve="ComputedPropertyDeclaration" />
     </node>
   </node>
 </model>

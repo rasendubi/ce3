@@ -160,7 +160,17 @@
     <node concept="1N5Pfh" id="61mvAMDIjbN" role="1Mr941">
       <ref role="1N5Vy1" to="xp1n:61mvAMDH$tC" resolve="computed" />
       <node concept="1dDu$B" id="61mvAMDIjbP" role="1N6uqs">
-        <ref role="1dDu$A" to="xp1n:6U217Jhytf1" resolve="ComputedProperty" />
+        <ref role="1dDu$A" to="xp1n:6U217Jhytf1" resolve="ComputedPropertyDeclaration" />
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="61mvAMDL7Rx">
+    <property role="3GE5qa" value="value" />
+    <ref role="1M2myG" to="xp1n:61mvAMDL7R6" resolve="StateValue" />
+    <node concept="1N5Pfh" id="61mvAMDL7Ry" role="1Mr941">
+      <ref role="1N5Vy1" to="xp1n:61mvAMDL7R7" resolve="state" />
+      <node concept="1dDu$B" id="61mvAMDL7RA" role="1N6uqs">
+        <ref role="1dDu$A" to="xp1n:61mvAMDKfbL" resolve="StateDeclaration" />
       </node>
     </node>
   </node>
