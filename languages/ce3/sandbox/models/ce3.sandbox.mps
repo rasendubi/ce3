@@ -20,7 +20,11 @@
         <child id="7962932020987417603" name="type" index="2Z2X1S" />
         <child id="7962932020987417540" name="value" index="2Z2XuZ" />
       </concept>
-      <concept id="6941874880807992774" name="ce3.structure.StateValue" flags="ng" index="39$weE">
+      <concept id="6941874880808974020" name="ce3.structure.StateAssignment" flags="ng" index="39xgyC">
+        <child id="6941874880809247403" name="value" index="39wtN7" />
+        <child id="6941874880808974021" name="state" index="39xgyD" />
+      </concept>
+      <concept id="6941874880807992774" name="ce3.structure.StateReference" flags="ng" index="39$weE">
         <reference id="6941874880807992775" name="state" index="39$weF" />
       </concept>
       <concept id="6941874880807760625" name="ce3.structure.StateDeclaration" flags="ng" index="39_CMt">
@@ -313,11 +317,11 @@
       <property role="TrG5h" value="timeDiff" />
       <node concept="3ed_d4" id="61mvAMDOtap" role="2Z2XuZ">
         <property role="3edl7N" value="43JkLIeQdSb/opMinus" />
-        <node concept="39$weE" id="61mvAMDOtbV" role="3ed_dY">
-          <ref role="39$weF" node="61mvAMDL6It" resolve="initialTime" />
-        </node>
         <node concept="1gSYO3" id="61mvAMDOtah" role="3ed_dV">
           <ref role="3e$uYC" node="6H8W5cCjfLW" resolve="time" />
+        </node>
+        <node concept="39$weE" id="61mvAMDOtbV" role="3ed_dY">
+          <ref role="39$weF" node="61mvAMDL6It" resolve="initialTime" />
         </node>
       </node>
     </node>
@@ -409,6 +413,52 @@
     </node>
     <node concept="39S3$b" id="61mvAMDOv2U" role="1vfq6G">
       <ref role="39S3$4" node="61mvAMDOv1Q" resolve="diff" />
+    </node>
+  </node>
+  <node concept="1vfq6F" id="61mvAMDORq6">
+    <property role="3GE5qa" value="examples" />
+    <property role="TrG5h" value="StateWithHanlers" />
+    <node concept="39_CMt" id="61mvAMDORq9" role="2Z2yyZ">
+      <property role="TrG5h" value="clicks" />
+      <node concept="3LTgFo" id="61mvAMDORqd" role="39_CMq">
+        <property role="3LTgFp" value="0" />
+      </node>
+    </node>
+    <node concept="2Z2XuU" id="61mvAMDORqq" role="2Z2yyZ">
+      <property role="TrG5h" value="handleClick" />
+      <node concept="1H_U6b" id="61mvAMDORqQ" role="2Z2XuZ">
+        <node concept="39xgyC" id="61mvAMDR0Z7" role="1HxJ53">
+          <node concept="39$weE" id="61mvAMDRppj" role="39xgyD">
+            <ref role="39$weF" node="61mvAMDORq9" resolve="clicks" />
+          </node>
+          <node concept="3ed_d4" id="61mvAMDRppE" role="39wtN7">
+            <property role="3edl7N" value="43JkLIeQdS3/opPlus" />
+            <node concept="3LTgFo" id="61mvAMDRpq2" role="3ed_dY">
+              <property role="3LTgFp" value="1" />
+            </node>
+            <node concept="39$weE" id="61mvAMDRppu" role="3ed_dV">
+              <ref role="39$weF" node="61mvAMDORq9" resolve="clicks" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="39$weE" id="61mvAMDRpqe" role="1vfq6G">
+      <ref role="39$weF" node="61mvAMDORq9" resolve="clicks" />
+    </node>
+    <node concept="1vfq6I" id="61mvAMDRpqj" role="1vfq6G">
+      <node concept="1vfq6M" id="61mvAMDRpqC" role="1vfq6L">
+        <property role="TrG5h" value="on:click" />
+        <node concept="39S3$b" id="61mvAMDRpqE" role="1gVlq1">
+          <ref role="39S3$4" node="61mvAMDORqq" resolve="handleClick" />
+        </node>
+      </node>
+      <node concept="1gVlqW" id="61mvAMDRpqr" role="1vfq6V">
+        <property role="1gVlqZ" value="Click me" />
+      </node>
+      <node concept="1gPmzB" id="61mvAMDRpqn" role="1gPmzY">
+        <ref role="1gPmzA" to="nfbi:61mvAMDRpqm" resolve="button" />
+      </node>
     </node>
   </node>
 </model>

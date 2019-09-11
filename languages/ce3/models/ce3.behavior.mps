@@ -1651,7 +1651,7 @@
   </node>
   <node concept="13h7C7" id="61mvAMDMrzH">
     <property role="3GE5qa" value="value" />
-    <ref role="13h7C2" to="xp1n:61mvAMDL7R6" resolve="StateValue" />
+    <ref role="13h7C2" to="xp1n:61mvAMDL7R6" resolve="StateReference" />
     <node concept="13i0hz" id="61mvAMDMrzS" role="13h7CS">
       <property role="TrG5h" value="dependencies" />
       <ref role="13i0hy" node="43JkLIfdLvm" resolve="dependencies" />

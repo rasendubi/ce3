@@ -2609,7 +2609,7 @@
   </node>
   <node concept="24kQdi" id="61mvAMDL7Rh">
     <property role="3GE5qa" value="value" />
-    <ref role="1XX52x" to="xp1n:61mvAMDL7R6" resolve="StateValue" />
+    <ref role="1XX52x" to="xp1n:61mvAMDL7R6" resolve="StateReference" />
     <node concept="1iCGBv" id="61mvAMDL7Rj" role="2wV5jI">
       <ref role="1NtTu8" to="xp1n:61mvAMDL7R7" resolve="state" />
       <node concept="1sVBvm" id="61mvAMDL7Rl" role="1sWHZn">
@@ -2618,6 +2618,23 @@
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="61mvAMDR0YA">
+    <property role="3GE5qa" value="value.io" />
+    <ref role="1XX52x" to="xp1n:61mvAMDORr4" resolve="StateAssignment" />
+    <node concept="3EZMnI" id="61mvAMDR0YH" role="2wV5jI">
+      <node concept="3F1sOY" id="61mvAMDR0YO" role="3EZMnx">
+        <ref role="1NtTu8" to="xp1n:61mvAMDORr5" resolve="state" />
+      </node>
+      <node concept="3F0ifn" id="61mvAMDR0YU" role="3EZMnx">
+        <property role="3F0ifm" value=":=" />
+        <ref role="1k5W1q" node="3zjuB6EGhrr" resolve="Ce3Punctuation" />
+      </node>
+      <node concept="3F1sOY" id="61mvAMDR0Z2" role="3EZMnx">
+        <ref role="1NtTu8" to="xp1n:61mvAMDPUaF" resolve="value" />
+      </node>
+      <node concept="l2Vlx" id="61mvAMDR0YK" role="2iSdaV" />
     </node>
   </node>
 </model>

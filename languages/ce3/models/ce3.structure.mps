@@ -578,13 +578,40 @@
   <node concept="1TIwiD" id="61mvAMDL7R6">
     <property role="EcuMT" value="6941874880807992774" />
     <property role="3GE5qa" value="value" />
-    <property role="TrG5h" value="StateValue" />
+    <property role="TrG5h" value="StateReference" />
     <ref role="1TJDcQ" node="z8dq5o9mcs" resolve="AbstractValue" />
     <node concept="1TJgyj" id="61mvAMDL7R7" role="1TKVEi">
       <property role="IQ2ns" value="6941874880807992775" />
       <property role="20kJfa" value="state" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="61mvAMDKfbL" resolve="StateDeclaration" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="61mvAMDORr3">
+    <property role="EcuMT" value="6941874880808974019" />
+    <property role="3GE5qa" value="value.io" />
+    <property role="TrG5h" value="IOStatement" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" node="z8dq5o9mcs" resolve="AbstractValue" />
+  </node>
+  <node concept="1TIwiD" id="61mvAMDORr4">
+    <property role="EcuMT" value="6941874880808974020" />
+    <property role="3GE5qa" value="value.io" />
+    <property role="TrG5h" value="StateAssignment" />
+    <ref role="1TJDcQ" node="61mvAMDORr3" resolve="IOStatement" />
+    <node concept="1TJgyj" id="61mvAMDORr5" role="1TKVEi">
+      <property role="IQ2ns" value="6941874880808974021" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="state" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="61mvAMDL7R6" resolve="StateReference" />
+    </node>
+    <node concept="1TJgyj" id="61mvAMDPUaF" role="1TKVEi">
+      <property role="IQ2ns" value="6941874880809247403" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="z8dq5o9mcs" resolve="AbstractValue" />
     </node>
   </node>
 </model>
