@@ -207,6 +207,31 @@
             <ref role="1gPmzA" to="nfbi:6H8W5cC9cFs" resolve="li" />
           </node>
         </node>
+        <node concept="1vfq6I" id="61mvAMDVeWe" role="1vfq6V">
+          <node concept="1vfq6I" id="61mvAMDVeX1" role="1vfq6V">
+            <node concept="1gVlqW" id="61mvAMDVfPM" role="1vfq6V">
+              <property role="1gVlqZ" value="click me" />
+            </node>
+            <node concept="1vfq6M" id="61mvAMDVeX8" role="1vfq6L">
+              <property role="TrG5h" value="on:click" />
+              <node concept="39S3$b" id="61mvAMDVeXa" role="1gVlq1">
+                <ref role="39S3$4" node="61mvAMDVeSP" resolve="handleClick" />
+              </node>
+            </node>
+            <node concept="1gPmzB" id="61mvAMDVeX4" role="1gPmzY">
+              <ref role="1gPmzA" to="nfbi:61mvAMDRpqm" resolve="button" />
+            </node>
+          </node>
+          <node concept="1gVlqW" id="61mvAMDVeWN" role="1vfq6V">
+            <property role="1gVlqZ" value=" clicks: " />
+          </node>
+          <node concept="39$weE" id="61mvAMDVeXl" role="1vfq6V">
+            <ref role="39$weF" node="61mvAMDVeS4" resolve="clicks" />
+          </node>
+          <node concept="1gPmzB" id="61mvAMDVeWI" role="1gPmzY">
+            <ref role="1gPmzA" to="nfbi:6H8W5cC9cFs" resolve="li" />
+          </node>
+        </node>
         <node concept="1gPmzB" id="6H8W5cC9cFw" role="1gPmzY">
           <ref role="1gPmzA" to="nfbi:6H8W5cC9cFt" resolve="ul" />
         </node>
@@ -325,6 +350,31 @@
         </node>
       </node>
     </node>
+    <node concept="39_CMt" id="61mvAMDVeS4" role="2Z2yyZ">
+      <property role="TrG5h" value="clicks" />
+      <node concept="3LTgFo" id="61mvAMDVeSr" role="39_CMq">
+        <property role="3LTgFp" value="0" />
+      </node>
+    </node>
+    <node concept="2Z2XuU" id="61mvAMDVeSP" role="2Z2yyZ">
+      <property role="TrG5h" value="handleClick" />
+      <node concept="1H_U6b" id="61mvAMDVeTD" role="2Z2XuZ">
+        <node concept="39xgyC" id="61mvAMDVeUy" role="1HxJ53">
+          <node concept="39$weE" id="61mvAMDVeUN" role="39xgyD">
+            <ref role="39$weF" node="61mvAMDVeS4" resolve="clicks" />
+          </node>
+          <node concept="3ed_d4" id="61mvAMDVeVa" role="39wtN7">
+            <property role="3edl7N" value="43JkLIeQdS3/opPlus" />
+            <node concept="3LTgFo" id="61mvAMDVeVy" role="3ed_dY">
+              <property role="3LTgFp" value="1" />
+            </node>
+            <node concept="39$weE" id="61mvAMDVeUY" role="3ed_dV">
+              <ref role="39$weF" node="61mvAMDVeS4" resolve="clicks" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="1vfq6F" id="6H8W5cC9cGV">
     <property role="TrG5h" value="Nested" />
@@ -411,13 +461,19 @@
         </node>
       </node>
     </node>
+    <node concept="1gVlqW" id="61mvAMDVdZK" role="1vfq6G">
+      <property role="1gVlqZ" value="Diff: " />
+    </node>
     <node concept="39S3$b" id="61mvAMDOv2U" role="1vfq6G">
       <ref role="39S3$4" node="61mvAMDOv1Q" resolve="diff" />
     </node>
   </node>
   <node concept="1vfq6F" id="61mvAMDORq6">
     <property role="3GE5qa" value="examples" />
-    <property role="TrG5h" value="StateWithHanlers" />
+    <property role="TrG5h" value="StateWithHandlers" />
+    <node concept="1gVlqW" id="61mvAMDVe0w" role="1vfq6G">
+      <property role="1gVlqZ" value="Clicks: " />
+    </node>
     <node concept="39_CMt" id="61mvAMDORq9" role="2Z2yyZ">
       <property role="TrG5h" value="clicks" />
       <node concept="3LTgFo" id="61mvAMDORqd" role="39_CMq">
@@ -445,6 +501,9 @@
     </node>
     <node concept="39$weE" id="61mvAMDRpqe" role="1vfq6G">
       <ref role="39$weF" node="61mvAMDORq9" resolve="clicks" />
+    </node>
+    <node concept="1gVlqW" id="61mvAMDVe0X" role="1vfq6G">
+      <property role="1gVlqZ" value=" " />
     </node>
     <node concept="1vfq6I" id="61mvAMDRpqj" role="1vfq6G">
       <node concept="1vfq6M" id="61mvAMDRpqC" role="1vfq6L">

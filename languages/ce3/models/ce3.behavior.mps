@@ -41,6 +41,7 @@
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
+      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
@@ -1702,6 +1703,35 @@
     </node>
     <node concept="13hLZK" id="61mvAMDMrzI" role="13h7CW">
       <node concept="3clFbS" id="61mvAMDMrzJ" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="61mvAMDS5iQ">
+    <ref role="13h7C2" to="xp1n:z8dq5nXpgj" resolve="Attribute" />
+    <node concept="13i0hz" id="61mvAMDS5j1" role="13h7CS">
+      <property role="TrG5h" value="isEvent" />
+      <node concept="3Tm1VV" id="61mvAMDS5j2" role="1B3o_S" />
+      <node concept="10P_77" id="61mvAMDS5jh" role="3clF45" />
+      <node concept="3clFbS" id="61mvAMDS5j4" role="3clF47">
+        <node concept="3cpWs6" id="61mvAMDS5jG" role="3cqZAp">
+          <node concept="2OqwBi" id="61mvAMDS5YS" role="3cqZAk">
+            <node concept="2OqwBi" id="61mvAMDS5u1" role="2Oq$k0">
+              <node concept="13iPFW" id="61mvAMDS5k9" role="2Oq$k0" />
+              <node concept="3TrcHB" id="61mvAMDS5Am" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+            <node concept="liA8E" id="61mvAMDS6dt" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String)" resolve="startsWith" />
+              <node concept="Xl_RD" id="61mvAMDS6e7" role="37wK5m">
+                <property role="Xl_RC" value="on:" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13hLZK" id="61mvAMDS5iR" role="13h7CW">
+      <node concept="3clFbS" id="61mvAMDS5iS" role="2VODD2" />
     </node>
   </node>
 </model>
