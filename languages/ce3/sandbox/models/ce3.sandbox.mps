@@ -12,6 +12,9 @@
       <concept id="6972358298721371130" name="ce3.structure.ParamReference" flags="ng" index="qMw$k">
         <reference id="6972358298721371131" name="param" index="qMw$l" />
       </concept>
+      <concept id="5165103937916978855" name="ce3.structure.MultiStatement" flags="ng" index="wbmgd">
+        <child id="5165103937916978856" name="statements" index="wbmg2" />
+      </concept>
       <concept id="8998332886702179108" name="ce3.structure.CallExpression" flags="ng" index="2IuscL">
         <child id="8998332886702179109" name="callee" index="2IuscK" />
         <child id="8998332886702179111" name="args" index="2IuscM" />
@@ -518,6 +521,85 @@
       <node concept="1gPmzB" id="61mvAMDRpqn" role="1gPmzY">
         <ref role="1gPmzA" to="nfbi:61mvAMDRpqm" resolve="button" />
       </node>
+    </node>
+  </node>
+  <node concept="1vfq6F" id="4uI8EDBxDNN">
+    <property role="3GE5qa" value="examples" />
+    <property role="TrG5h" value="MultiStatement" />
+    <node concept="39_CMt" id="4uI8EDBxDRB" role="2Z2yyZ">
+      <property role="TrG5h" value="prev" />
+      <node concept="3LTgFo" id="4uI8EDBxDRN" role="39_CMq">
+        <property role="3LTgFp" value="0" />
+      </node>
+    </node>
+    <node concept="39_CMt" id="4uI8EDBxDNO" role="2Z2yyZ">
+      <property role="TrG5h" value="x" />
+      <node concept="3LTgFo" id="4uI8EDBxDNS" role="39_CMq">
+        <property role="3LTgFp" value="1" />
+      </node>
+    </node>
+    <node concept="39_CMt" id="4uI8EDBxDO1" role="2Z2yyZ">
+      <property role="TrG5h" value="y" />
+      <node concept="3LTgFo" id="4uI8EDBxDO9" role="39_CMq">
+        <property role="3LTgFp" value="1" />
+      </node>
+    </node>
+    <node concept="2Z2XuU" id="4uI8EDBxDP3" role="2Z2yyZ">
+      <property role="TrG5h" value="handleClick" />
+      <node concept="1H_U6b" id="4uI8EDByyQd" role="2Z2XuZ">
+        <node concept="wbmgd" id="4uI8EDBxDPp" role="1HxJ53">
+          <node concept="39xgyC" id="4uI8EDBxDRS" role="wbmg2">
+            <node concept="39$weE" id="4uI8EDBxDS2" role="39xgyD">
+              <ref role="39$weF" node="4uI8EDBxDRB" resolve="prev" />
+            </node>
+            <node concept="39$weE" id="4uI8EDBxDS5" role="39wtN7">
+              <ref role="39$weF" node="4uI8EDBxDNO" resolve="x" />
+            </node>
+          </node>
+          <node concept="39xgyC" id="4uI8EDByyOa" role="wbmg2">
+            <node concept="39$weE" id="4uI8EDByyOq" role="39xgyD">
+              <ref role="39$weF" node="4uI8EDBxDNO" resolve="x" />
+            </node>
+            <node concept="39$weE" id="4uI8EDByyOt" role="39wtN7">
+              <ref role="39$weF" node="4uI8EDBxDO1" resolve="y" />
+            </node>
+          </node>
+          <node concept="39xgyC" id="4uI8EDByyOG" role="wbmg2">
+            <node concept="39$weE" id="4uI8EDByyOZ" role="39xgyD">
+              <ref role="39$weF" node="4uI8EDBxDO1" resolve="y" />
+            </node>
+            <node concept="3ed_d4" id="4uI8EDByyP6" role="39wtN7">
+              <property role="3edl7N" value="43JkLIeQdS3/opPlus" />
+              <node concept="39$weE" id="4uI8EDByyPm" role="3ed_dY">
+                <ref role="39$weF" node="4uI8EDBxDRB" resolve="prev" />
+              </node>
+              <node concept="39$weE" id="4uI8EDByyP2" role="3ed_dV">
+                <ref role="39$weF" node="4uI8EDBxDNO" resolve="x" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1vfq6I" id="4uI8EDByyPX" role="1vfq6G">
+      <node concept="1gVlqW" id="4uI8EDByyR5" role="1vfq6V">
+        <property role="1gVlqZ" value="Click me" />
+      </node>
+      <node concept="1vfq6M" id="4uI8EDByyQ5" role="1vfq6L">
+        <property role="TrG5h" value="on:click" />
+        <node concept="39S3$b" id="4uI8EDByyQ7" role="1gVlq1">
+          <ref role="39S3$4" node="4uI8EDBxDP3" resolve="handleClick" />
+        </node>
+      </node>
+      <node concept="1gPmzB" id="4uI8EDByyQ1" role="1gPmzY">
+        <ref role="1gPmzA" to="nfbi:61mvAMDRpqm" resolve="button" />
+      </node>
+    </node>
+    <node concept="1gVlqW" id="4uI8EDByyRn" role="1vfq6G">
+      <property role="1gVlqZ" value=" " />
+    </node>
+    <node concept="39$weE" id="4uI8EDByyRG" role="1vfq6G">
+      <ref role="39$weF" node="4uI8EDBxDO1" resolve="y" />
     </node>
   </node>
 </model>
