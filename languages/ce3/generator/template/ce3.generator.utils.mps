@@ -226,7 +226,7 @@
                                 </node>
                               </node>
                               <node concept="zfrQC" id="43JkLIfkr5P" role="2OqNvi">
-                                <ref role="1A9B2P" to="rh3e:bcrrPfbtch" resolve="JSIdentifier" />
+                                <ref role="1A9B2P" to="rh3e:3gNR5ykuI6e" resolve="JSIdentifierName" />
                               </node>
                             </node>
                             <node concept="3TrcHB" id="43JkLIfkr5Q" role="2OqNvi">
@@ -369,7 +369,7 @@
                                   </node>
                                 </node>
                                 <node concept="zfrQC" id="43JkLIfkr6K" role="2OqNvi">
-                                  <ref role="1A9B2P" to="rh3e:bcrrPfbtch" resolve="JSIdentifier" />
+                                  <ref role="1A9B2P" to="rh3e:3gNR5ykuI6e" resolve="JSIdentifierName" />
                                 </node>
                               </node>
                               <node concept="3TrcHB" id="43JkLIfkr6L" role="2OqNvi">
