@@ -2,6 +2,7 @@
   import HelloWorld from './languages/ce3/sandbox/source_gen/ce3/sandbox/HelloWorld';
   import StateSimple from './languages/ce3/sandbox/source_gen/ce3/sandbox/StateSimple';
   import StateWithHandlers from './languages/ce3/sandbox/source_gen/ce3/sandbox/StateWithHandlers';
+  import MultiStatement from './languages/ce3/sandbox/source_gen/ce3/sandbox/MultiStatement';
 
   let x = 0;
 
@@ -23,4 +24,9 @@ StateSimple:
 StateWithHandlers:
 <div>
   <StateWithHandlers />
+</div>
+<hr />
+MultiStatement:
+<div>
+ <MultiStatement />
 </div>
