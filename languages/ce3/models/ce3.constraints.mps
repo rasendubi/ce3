@@ -174,5 +174,15 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="4X3wJ0o1F$z">
+    <property role="3GE5qa" value="value.let" />
+    <ref role="1M2myG" to="xp1n:4X3wJ0o1E31" resolve="LetBindingReference" />
+    <node concept="1N5Pfh" id="4X3wJ0o1F$$" role="1Mr941">
+      <ref role="1N5Vy1" to="xp1n:4X3wJ0o1E32" resolve="binding" />
+      <node concept="1dDu$B" id="4X3wJ0o1F$A" role="1N6uqs">
+        <ref role="1dDu$A" to="xp1n:4uI8EDBK9dD" resolve="Binding" />
+      </node>
+    </node>
+  </node>
 </model>
 

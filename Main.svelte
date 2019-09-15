@@ -3,6 +3,8 @@
   import StateSimple from './languages/ce3/sandbox/source_gen/ce3/sandbox/StateSimple';
   import StateWithHandlers from './languages/ce3/sandbox/source_gen/ce3/sandbox/StateWithHandlers';
   import MultiStatement from './languages/ce3/sandbox/source_gen/ce3/sandbox/MultiStatement';
+  import Let from './languages/ce3/sandbox/source_gen/ce3/sandbox/Let';
+  import LetFibonnaci from './languages/ce3/sandbox/source_gen/ce3/sandbox/LetFibonnaci';
 
   let x = 0;
 
@@ -11,11 +13,6 @@
   }, 1000)
 </script>
 
-Hello from Main ({x})
-{#if x % 10 !== 0}
-  <HelloWorld time={x} />
-{/if}
-<hr />
 StateSimple:
 <div>
   <StateSimple time={x} />
@@ -30,3 +27,18 @@ MultiStatement:
 <div>
  <MultiStatement />
 </div>
+<hr />
+Let:
+<div>
+  <Let />
+</div>
+<hr />
+LetFibonnaci:
+<div>
+  <LetFibonnaci />
+</div>
+<hr />
+HelloWorld:
+{#if x % 10 !== 0}
+  <HelloWorld time={x} />
+{/if}
