@@ -30,6 +30,7 @@
     </language>
     <language id="b6578dbc-c839-4c3b-9eb3-c6edf889705e" name="ce3.types">
       <concept id="2467211549460697053" name="ce3.types.structure.StringType" flags="ng" index="Ppsg8" />
+      <concept id="2467211549460697055" name="ce3.types.structure.BooleanType" flags="ng" index="Ppsga" />
       <concept id="2467211549460697054" name="ce3.types.structure.NumberType" flags="ng" index="Ppsgb" />
       <concept id="2467211549460697081" name="ce3.types.structure.IOType" flags="ng" index="PpsgG">
         <child id="2467211549460697082" name="result" index="PpsgJ" />
@@ -46,6 +47,8 @@
       <concept id="5165103937916978855" name="ce3.structure.MultiStatement" flags="ng" index="wbmgd">
         <child id="5165103937916978856" name="statements" index="wbmg2" />
       </concept>
+      <concept id="2467211549467657857" name="ce3.structure.FalseValue" flags="ng" index="PZSPk" />
+      <concept id="2467211549467657844" name="ce3.structure.TrueValue" flags="ng" index="PZSQx" />
       <concept id="7962932020987417537" name="ce3.structure.ComputedPropertyDeclaration" flags="ng" index="2Z2XuU">
         <child id="7962932020987417540" name="value" index="2Z2XuZ" />
       </concept>
@@ -354,6 +357,48 @@
                 <node concept="Ppsgb" id="28XiXknoUHZ" role="2Ii6_v" />
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="28XiXknKFpE">
+    <property role="3GE5qa" value="typesystem" />
+    <property role="TrG5h" value="literalTypes" />
+    <node concept="1qefOq" id="28XiXknKFpG" role="1SKRRt">
+      <node concept="3LTgFo" id="28XiXknKFpF" role="1qenE9">
+        <property role="3LTgFp" value="13" />
+        <node concept="7CXmI" id="28XiXknKFpP" role="lGtFl">
+          <node concept="30Omv" id="28XiXknKFpR" role="7EUXB">
+            <node concept="Ppsgb" id="28XiXknKFpV" role="31d$z" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="28XiXknKFT1" role="1SKRRt">
+      <node concept="1gVlqW" id="28XiXknKFTa" role="1qenE9">
+        <property role="1gVlqZ" value="hello" />
+        <node concept="7CXmI" id="28XiXknKFTo" role="lGtFl">
+          <node concept="30Omv" id="28XiXknKFTq" role="7EUXB">
+            <node concept="Ppsg8" id="28XiXknKFTu" role="31d$z" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="28XiXknLwRm" role="1SKRRt">
+      <node concept="PZSQx" id="28XiXknLwR$" role="1qenE9">
+        <node concept="7CXmI" id="28XiXknLwRM" role="lGtFl">
+          <node concept="30Omv" id="28XiXknLwRQ" role="7EUXB">
+            <node concept="Ppsga" id="28XiXknLwRW" role="31d$z" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="28XiXknLwSJ" role="1SKRRt">
+      <node concept="PZSPk" id="28XiXknLwT7" role="1qenE9">
+        <node concept="7CXmI" id="28XiXknLwTC" role="lGtFl">
+          <node concept="30Omv" id="28XiXknLwTG" role="7EUXB">
+            <node concept="Ppsga" id="28XiXknLwTM" role="31d$z" />
           </node>
         </node>
       </node>

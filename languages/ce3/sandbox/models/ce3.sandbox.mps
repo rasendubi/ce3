@@ -33,6 +33,8 @@
         <child id="8998332886702179109" name="callee" index="2IuscK" />
         <child id="8998332886702179111" name="args" index="2IuscM" />
       </concept>
+      <concept id="2467211549467657857" name="ce3.structure.FalseValue" flags="ng" index="PZSPk" />
+      <concept id="2467211549467657844" name="ce3.structure.TrueValue" flags="ng" index="PZSQx" />
       <concept id="7962932020987417537" name="ce3.structure.ComputedPropertyDeclaration" flags="ng" index="2Z2XuU">
         <child id="7962932020987417603" name="type" index="2Z2X1S" />
         <child id="7962932020987417540" name="value" index="2Z2XuZ" />
@@ -789,6 +791,18 @@
     </node>
     <node concept="39$weE" id="4X3wJ0o4cKT" role="1vfq6G">
       <ref role="39$weF" node="4X3wJ0o4cKs" resolve="y" />
+    </node>
+  </node>
+  <node concept="1vfq6F" id="28XiXknN18b">
+    <property role="3GE5qa" value="examples" />
+    <property role="TrG5h" value="Literals" />
+    <node concept="PZSQx" id="28XiXknN18c" role="1vfq6G" />
+    <node concept="PZSPk" id="28XiXknN18h" role="1vfq6G" />
+    <node concept="1gVlqW" id="28XiXknN18p" role="1vfq6G">
+      <property role="1gVlqZ" value="hello" />
+    </node>
+    <node concept="3LTgFo" id="28XiXknN18y" role="1vfq6G">
+      <property role="3LTgFp" value="42" />
     </node>
   </node>
 </model>

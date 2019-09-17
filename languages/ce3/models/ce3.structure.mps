@@ -638,5 +638,26 @@
       <ref role="20lvS9" node="4uI8EDBK9dD" resolve="Binding" />
     </node>
   </node>
+  <node concept="1TIwiD" id="28XiXknKGpN">
+    <property role="EcuMT" value="2467211549467657843" />
+    <property role="3GE5qa" value="value" />
+    <property role="TrG5h" value="BooleanLiteral" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" node="z8dq5o9mcs" resolve="AbstractValue" />
+  </node>
+  <node concept="1TIwiD" id="28XiXknKGpO">
+    <property role="EcuMT" value="2467211549467657844" />
+    <property role="3GE5qa" value="value" />
+    <property role="TrG5h" value="TrueValue" />
+    <property role="34LRSv" value="true" />
+    <ref role="1TJDcQ" node="28XiXknKGpN" resolve="BooleanLiteral" />
+  </node>
+  <node concept="1TIwiD" id="28XiXknKGq1">
+    <property role="EcuMT" value="2467211549467657857" />
+    <property role="3GE5qa" value="value" />
+    <property role="TrG5h" value="FalseValue" />
+    <property role="34LRSv" value="false" />
+    <ref role="1TJDcQ" node="28XiXknKGpN" resolve="BooleanLiteral" />
+  </node>
 </model>
 

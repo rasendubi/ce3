@@ -1894,5 +1894,38 @@
       </node>
     </node>
   </node>
+  <node concept="13h7C7" id="28XiXknNnSD">
+    <property role="3GE5qa" value="value" />
+    <ref role="13h7C2" to="xp1n:28XiXknKGpN" resolve="BooleanLiteral" />
+    <node concept="13hLZK" id="28XiXknNnSE" role="13h7CW">
+      <node concept="3clFbS" id="28XiXknNnSF" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="28XiXknNnSG" role="13h7CS">
+      <property role="TrG5h" value="isPrimitive" />
+      <ref role="13i0hy" node="43JkLIfcXWl" resolve="isPrimitive" />
+      <node concept="3Tm1VV" id="28XiXknNnSH" role="1B3o_S" />
+      <node concept="3clFbS" id="28XiXknNnSP" role="3clF47">
+        <node concept="3clFbF" id="28XiXknNnWV" role="3cqZAp">
+          <node concept="3clFbT" id="28XiXknNnWU" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="28XiXknNnSQ" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="28XiXknNOmZ" role="13h7CS">
+      <property role="TrG5h" value="isInlinable" />
+      <ref role="13i0hy" node="3zjuB6ExSWa" resolve="isInlinable" />
+      <node concept="3Tm1VV" id="28XiXknNOn0" role="1B3o_S" />
+      <node concept="3clFbS" id="28XiXknNOn5" role="3clF47">
+        <node concept="3clFbF" id="28XiXknNOnw" role="3cqZAp">
+          <node concept="3clFbT" id="28XiXknNOnv" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="28XiXknNOn6" role="3clF45" />
+    </node>
+  </node>
 </model>
 

@@ -88,6 +88,7 @@
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="b6578dbc-c839-4c3b-9eb3-c6edf889705e" name="ce3.types">
+      <concept id="2467211549460697055" name="ce3.types.structure.BooleanType" flags="ng" index="Ppsga" />
       <concept id="2467211549460697081" name="ce3.types.structure.IOType" flags="ng" index="PpsgG">
         <child id="2467211549460697082" name="result" index="PpsgJ" />
       </concept>
@@ -231,6 +232,7 @@
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
       <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
       <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
+      <concept id="1165595910856" name="jetbrains.mps.baseLanguage.collections.structure.GetLastOperation" flags="nn" index="1yVyf7" />
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
       <concept id="1202128969694" name="jetbrains.mps.baseLanguage.collections.structure.SelectOperation" flags="nn" index="3$u5V9" />
       <concept id="9042586985346099698" name="jetbrains.mps.baseLanguage.collections.structure.MultiForEachStatement" flags="nn" index="1_o_46">
@@ -1859,6 +1861,64 @@
     <node concept="1YaCAy" id="4X3wJ0o7jIp" role="1YuTPh">
       <property role="TrG5h" value="stateDeclaration" />
       <ref role="1YaFvo" to="xp1n:61mvAMDKfbL" resolve="StateDeclaration" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="28XiXknKGqS">
+    <property role="TrG5h" value="typeof_BooleanLiteral" />
+    <property role="3GE5qa" value="value" />
+    <node concept="3clFbS" id="28XiXknKGqT" role="18ibNy">
+      <node concept="1Z5TYs" id="28XiXknLToP" role="3cqZAp">
+        <node concept="mw_s8" id="28XiXknLToS" role="1ZfhK$">
+          <node concept="1Z2H0r" id="28XiXknLTkp" role="mwGJk">
+            <node concept="1YBJjd" id="28XiXknLTmd" role="1Z2MuG">
+              <ref role="1YBMHb" node="28XiXknKGqV" resolve="booleanLiteral" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="28XiXknLTpl" role="1ZfhKB">
+          <node concept="2c44tf" id="28XiXknLTph" role="mwGJk">
+            <node concept="Ppsga" id="28XiXknLTpq" role="2c44tc" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="28XiXknKGqV" role="1YuTPh">
+      <property role="TrG5h" value="booleanLiteral" />
+      <ref role="1YaFvo" to="xp1n:28XiXknKGpN" resolve="BooleanLiteral" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="28XiXknMre9">
+    <property role="TrG5h" value="typeof_MultiStatement" />
+    <property role="3GE5qa" value="value.io" />
+    <node concept="3clFbS" id="28XiXknMrea" role="18ibNy">
+      <node concept="1Z5TYs" id="28XiXknMriG" role="3cqZAp">
+        <node concept="mw_s8" id="28XiXknMriX" role="1ZfhKB">
+          <node concept="1Z2H0r" id="28XiXknMriT" role="mwGJk">
+            <node concept="2OqwBi" id="28XiXknMttf" role="1Z2MuG">
+              <node concept="2OqwBi" id="28XiXknMrrg" role="2Oq$k0">
+                <node concept="1YBJjd" id="28XiXknMrj2" role="2Oq$k0">
+                  <ref role="1YBMHb" node="28XiXknMrec" resolve="multiStatement" />
+                </node>
+                <node concept="3Tsc0h" id="28XiXknMr_d" role="2OqNvi">
+                  <ref role="3TtcxE" to="xp1n:4uI8EDBwOqC" resolve="statements" />
+                </node>
+              </node>
+              <node concept="1yVyf7" id="28XiXknMuTC" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="28XiXknMriJ" role="1ZfhK$">
+          <node concept="1Z2H0r" id="28XiXknMred" role="mwGJk">
+            <node concept="1YBJjd" id="28XiXknMrg4" role="1Z2MuG">
+              <ref role="1YBMHb" node="28XiXknMrec" resolve="multiStatement" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="28XiXknMrec" role="1YuTPh">
+      <property role="TrG5h" value="multiStatement" />
+      <ref role="1YaFvo" to="xp1n:4uI8EDBwOqB" resolve="MultiStatement" />
     </node>
   </node>
 </model>
