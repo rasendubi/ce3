@@ -8,6 +8,13 @@
     <import index="nfbi" ref="r:95e01337-9149-46b9-9417-b7ea1e4ee12a(ce3.components.builtin)" implicit="true" />
   </imports>
   <registry>
+    <language id="b6578dbc-c839-4c3b-9eb3-c6edf889705e" name="ce3.types">
+      <concept id="2467211549460697053" name="ce3.types.structure.StringType" flags="ng" index="Ppsg8" />
+      <concept id="2467211549460697054" name="ce3.types.structure.NumberType" flags="ng" index="Ppsgb" />
+      <concept id="2467211549460697081" name="ce3.types.structure.IOType" flags="ng" index="PpsgG">
+        <child id="2467211549460697082" name="result" index="PpsgJ" />
+      </concept>
+    </language>
     <language id="70550421-e6c9-4d59-a12a-7918a95c5525" name="ce3">
       <concept id="6972358298721371130" name="ce3.structure.ParamReference" flags="ng" index="qMw$k">
         <reference id="6972358298721371131" name="param" index="qMw$l" />
@@ -78,17 +85,16 @@
         <child id="632814714730406688" name="value" index="1gVlq1" />
       </concept>
       <concept id="8348239190576416475" name="ce3.structure.Function" flags="ng" index="1H_U6b">
+        <child id="1812744551131664695" name="resultType" index="27$ByB" />
         <child id="8348239190577387027" name="expr" index="1HxJ53" />
         <child id="8348239190576416476" name="params" index="1H_U6c" />
       </concept>
       <concept id="8348239190576416478" name="ce3.structure.ParamDeclaration" flags="ng" index="1H_U6e">
         <child id="8348239190576416481" name="type" index="1H_U6L" />
       </concept>
-      <concept id="2154122726506269719" name="ce3.structure.StringType" flags="ng" index="3LT7sz" />
       <concept id="2154122726506361324" name="ce3.structure.NumberValue" flags="ng" index="3LTgFo">
         <property id="2154122726506361325" name="value" index="3LTgFp" />
       </concept>
-      <concept id="2154122726507801156" name="ce3.structure.NumberType" flags="ng" index="3LWL5K" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -103,7 +109,7 @@
     <property role="TrG5h" value="HelloWorld" />
     <node concept="1gSCKQ" id="6H8W5cCjfLW" role="1gSCK2">
       <property role="TrG5h" value="time" />
-      <node concept="3LWL5K" id="43JkLIeU$4H" role="3LTvnt" />
+      <node concept="Ppsgb" id="28XiXknphE$" role="3LTvnt" />
       <node concept="3LTgFo" id="7okf8FR9vwn" role="yFGMo">
         <property role="3LTgFp" value="0" />
       </node>
@@ -265,7 +271,7 @@
           <node concept="1H_U6b" id="632MITU3HqI" role="2IuscK">
             <node concept="1H_U6e" id="632MITU3HqJ" role="1H_U6c">
               <property role="TrG5h" value="x" />
-              <node concept="3LWL5K" id="6U217JhjnRw" role="1H_U6L" />
+              <node concept="Ppsgb" id="28XiXknphEQ" role="1H_U6L" />
             </node>
             <node concept="3ed_d4" id="632MITU3HqK" role="1HxJ53">
               <property role="3edl7N" value="7fqTP0ui_hM/opConcat" />
@@ -325,7 +331,7 @@
           <ref role="3e$uYC" node="6H8W5cCjfLW" resolve="time" />
         </node>
       </node>
-      <node concept="3LWL5K" id="6U217Jhzj4B" role="2Z2X1S" />
+      <node concept="Ppsgb" id="28XiXknphEB" role="2Z2X1S" />
     </node>
     <node concept="2Z2XuU" id="61mvAMDIkeB" role="2Z2yyZ">
       <property role="TrG5h" value="time6" />
@@ -386,6 +392,9 @@
             </node>
           </node>
         </node>
+        <node concept="PpsgG" id="28XiXknphEH" role="27$ByB">
+          <node concept="Ppsgb" id="28XiXknpwxN" role="PpsgJ" />
+        </node>
       </node>
     </node>
   </node>
@@ -424,7 +433,7 @@
     <property role="TrG5h" value="TooNested" />
     <node concept="1gSCKQ" id="6H8W5cCff46" role="1gSCK2">
       <property role="TrG5h" value="hello" />
-      <node concept="3LT7sz" id="2rpxWh_5EUp" role="3LTvnt" />
+      <node concept="Ppsg8" id="28XiXknphET" role="3LTvnt" />
     </node>
     <node concept="1vfq6I" id="3zjuB6EKnwi" role="1vfq6G">
       <node concept="1gVlqW" id="3zjuB6EKnwr" role="1vfq6V">
@@ -454,7 +463,7 @@
     <property role="3GE5qa" value="examples" />
     <node concept="1gSCKQ" id="61mvAMDOv1p" role="1gSCK2">
       <property role="TrG5h" value="time" />
-      <node concept="3LWL5K" id="61mvAMDOv1$" role="3LTvnt" />
+      <node concept="Ppsgb" id="28XiXknphEx" role="3LTvnt" />
     </node>
     <node concept="39_CMt" id="61mvAMDOv1D" role="2Z2yyZ">
       <property role="TrG5h" value="initialTime" />
