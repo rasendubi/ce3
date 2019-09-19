@@ -5,6 +5,7 @@
   import MultiStatement from './languages/ce3/sandbox/source_gen/ce3/sandbox/MultiStatement';
   import Let from './languages/ce3/sandbox/source_gen/ce3/sandbox/Let';
   import LetFibonnaci from './languages/ce3/sandbox/source_gen/ce3/sandbox/LetFibonnaci';
+  import Foreign from './languages/ce3/sandbox/source_gen/ce3/sandbox/Foreign';
 
   let x = 0;
 
@@ -36,6 +37,11 @@ Let:
 LetFibonnaci:
 <div>
   <LetFibonnaci />
+</div>
+<hr />
+Foreign:
+<div>
+  <Foreign />
 </div>
 <hr />
 HelloWorld:

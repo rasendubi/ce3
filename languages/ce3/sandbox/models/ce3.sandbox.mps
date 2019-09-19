@@ -5,6 +5,7 @@
     <use id="70550421-e6c9-4d59-a12a-7918a95c5525" name="ce3" version="0" />
   </languages>
   <imports>
+    <import index="rgc5" ref="642f71f8-327a-425b-84f9-44ad58786d27/f:project#8b4ab1de-2aad-4e60-8dee-350cb83d3086(jetbrains.mps.lang.project.modules/module.org.mar9000.mps.ecmascript.runtime@project_stub)" />
     <import index="nfbi" ref="r:95e01337-9149-46b9-9417-b7ea1e4ee12a(ce3.components.builtin)" implicit="true" />
   </imports>
   <registry>
@@ -13,6 +14,10 @@
       <concept id="2467211549460697054" name="ce3.types.structure.NumberType" flags="ng" index="Ppsgb" />
       <concept id="2467211549460697081" name="ce3.types.structure.IOType" flags="ng" index="PpsgG">
         <child id="2467211549460697082" name="result" index="PpsgJ" />
+      </concept>
+      <concept id="2467211549460697057" name="ce3.types.structure.FunctionType" flags="ng" index="PpsgO">
+        <child id="8998332886703204684" name="result" index="2Ii6_p" />
+        <child id="8998332886703204682" name="params" index="2Ii6_v" />
       </concept>
     </language>
     <language id="70550421-e6c9-4d59-a12a-7918a95c5525" name="ce3">
@@ -32,6 +37,10 @@
       <concept id="8998332886702179108" name="ce3.structure.CallExpression" flags="ng" index="2IuscL">
         <child id="8998332886702179109" name="callee" index="2IuscK" />
         <child id="8998332886702179111" name="args" index="2IuscM" />
+      </concept>
+      <concept id="8998332886702179105" name="ce3.structure.Foreign" flags="ng" index="2IuscO">
+        <child id="1812744551134060717" name="type" index="27XG$X" />
+        <child id="8998332886702179106" name="expr" index="2IuscR" />
       </concept>
       <concept id="2467211549467657857" name="ce3.structure.FalseValue" flags="ng" index="PZSPk" />
       <concept id="2467211549467657844" name="ce3.structure.TrueValue" flags="ng" index="PZSQx" />
@@ -97,6 +106,33 @@
       <concept id="2154122726506361324" name="ce3.structure.NumberValue" flags="ng" index="3LTgFo">
         <property id="2154122726506361325" name="value" index="3LTgFp" />
       </concept>
+    </language>
+    <language id="a4829704-6b1b-4b3f-8122-a4a2e6ac90ff" name="org.mar9000.mps.ecmascript">
+      <concept id="8569071899956281838" name="org.mar9000.mps.ecmascript.structure.JSStringLiteral" flags="ng" index="2dhBij">
+        <property id="8569071899956282000" name="doubleQuotedValue" index="2dhBvH" />
+      </concept>
+      <concept id="8569071899956284315" name="org.mar9000.mps.ecmascript.structure.JSNumericLiteral" flags="ng" index="2dhBVA">
+        <property id="8569071899956284476" name="value" index="2dhB_1" />
+      </concept>
+      <concept id="8569071899956272644" name="org.mar9000.mps.ecmascript.structure.JSBinaryExpression" flags="ng" index="2dhUHT">
+        <property id="8569071899956272903" name="operator" index="2dhUDU" />
+        <child id="8569071899956273023" name="left" index="2dhUC2" />
+        <child id="8569071899956273025" name="right" index="2dhUFW" />
+      </concept>
+      <concept id="7659502065125150576" name="org.mar9000.mps.ecmascript.structure.JSArrowFunction" flags="ng" index="2eqWJV">
+        <child id="7659502065125160121" name="parameters" index="2eqZ0M" />
+        <child id="7659502065125160131" name="body" index="2eqZ18" />
+      </concept>
+      <concept id="3761592386794677061" name="org.mar9000.mps.ecmascript.structure.JSSingleNameBinding" flags="ng" index="2wxzWt">
+        <child id="3761592386794677066" name="bindingIdentifier" index="2wxzWi" />
+      </concept>
+      <concept id="8998332886705411023" name="org.mar9000.mps.ecmascript.structure.JSArrowParameterList" flags="ng" index="2Iaxfq">
+        <child id="8998332886705411562" name="params" index="2IaxnZ" />
+      </concept>
+      <concept id="204049982422779253" name="org.mar9000.mps.ecmascript.structure.JSBindingIdentifierReference" flags="ng" index="2WqeGl">
+        <reference id="204049982422779256" name="bindingIdentifier" index="2WqeGo" />
+      </concept>
+      <concept id="6713311115387176128" name="org.mar9000.mps.ecmascript.structure.JSBindingIdentifier" flags="ng" index="1mvZK$" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -803,6 +839,70 @@
     </node>
     <node concept="3LTgFo" id="28XiXknN18y" role="1vfq6G">
       <property role="3LTgFp" value="42" />
+    </node>
+  </node>
+  <node concept="1vfq6F" id="7Prjhj4OGyp">
+    <property role="3GE5qa" value="examples" />
+    <property role="TrG5h" value="Foreign" />
+    <node concept="1vfq6I" id="7Prjhj4OGzm" role="1vfq6G">
+      <node concept="1gVlqW" id="7Prjhj4Pcaw" role="1vfq6V">
+        <property role="1gVlqZ" value="class=" />
+      </node>
+      <node concept="2IuscL" id="7Prjhj4Pca_" role="1vfq6V">
+        <node concept="3LTgFo" id="7Prjhj4PcaA" role="2IuscM">
+          <property role="3LTgFp" value="0" />
+        </node>
+        <node concept="39S3$b" id="7Prjhj4PcaB" role="2IuscK">
+          <ref role="39S3$4" node="7Prjhj4OGyq" resolve="foreignMod3" />
+        </node>
+      </node>
+      <node concept="1vfq6M" id="7Prjhj4OGzv" role="1vfq6L">
+        <property role="TrG5h" value="class" />
+        <node concept="2IuscL" id="7Prjhj4OGzB" role="1gVlq1">
+          <node concept="3LTgFo" id="7Prjhj4OGzH" role="2IuscM">
+            <property role="3LTgFp" value="0" />
+          </node>
+          <node concept="39S3$b" id="7Prjhj4OGzz" role="2IuscK">
+            <ref role="39S3$4" node="7Prjhj4OGyq" resolve="foreignMod3" />
+          </node>
+        </node>
+      </node>
+      <node concept="1gPmzB" id="7Prjhj4OGzo" role="1gPmzY">
+        <ref role="1gPmzA" to="nfbi:z8dq5o7lP2" resolve="div" />
+      </node>
+    </node>
+    <node concept="2Z2XuU" id="7Prjhj4OGyq" role="2Z2yyZ">
+      <property role="TrG5h" value="foreignMod3" />
+      <node concept="2IuscO" id="7Prjhj4OGyu" role="2Z2XuZ">
+        <node concept="2eqWJV" id="7Prjhj4OGyJ" role="2IuscR">
+          <node concept="2Iaxfq" id="7Prjhj4OGyQ" role="2eqZ0M">
+            <node concept="2wxzWt" id="7Prjhj4OGyT" role="2IaxnZ">
+              <node concept="1mvZK$" id="7Prjhj4OGyU" role="2wxzWi">
+                <property role="TrG5h" value="x" />
+              </node>
+            </node>
+          </node>
+          <node concept="2dhUHT" id="7Prjhj4OGz6" role="2eqZ18">
+            <property role="2dhUDU" value="7rFtnRVFhfR/boPlus" />
+            <node concept="2dhBij" id="7Prjhj4OGz2" role="2dhUC2">
+              <property role="2dhBvH" value="class_" />
+            </node>
+            <node concept="2dhUHT" id="7Prjhj4OGze" role="2dhUFW">
+              <property role="2dhUDU" value="7rFtnRVFhgL/boRem" />
+              <node concept="2WqeGl" id="7Prjhj4OGza" role="2dhUC2">
+                <ref role="2WqeGo" node="7Prjhj4OGyU" resolve="x" />
+              </node>
+              <node concept="2dhBVA" id="7Prjhj4OGzi" role="2dhUFW">
+                <property role="2dhB_1" value="3" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="PpsgO" id="7Prjhj4OGy$" role="27XG$X">
+          <node concept="Ppsg8" id="7Prjhj4OGyG" role="2Ii6_p" />
+          <node concept="Ppsgb" id="7Prjhj4OGyE" role="2Ii6_v" />
+        </node>
+      </node>
     </node>
   </node>
 </model>

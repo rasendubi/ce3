@@ -1503,14 +1503,14 @@
     </node>
   </node>
   <node concept="1YbPZF" id="6U217JhiRPo">
-    <property role="TrG5h" value="typeof_ForeignFunction" />
+    <property role="TrG5h" value="typeof_Foreign" />
     <property role="3GE5qa" value="value" />
     <node concept="3clFbS" id="6U217JhiRPp" role="18ibNy">
       <node concept="1Z5TYs" id="6U217JhiS7O" role="3cqZAp">
         <node concept="mw_s8" id="6U217JhiS86" role="1ZfhKB">
           <node concept="2OqwBi" id="6U217JhiSfK" role="mwGJk">
             <node concept="1YBJjd" id="6U217JhiS84" role="2Oq$k0">
-              <ref role="1YBMHb" node="6U217JhiRPr" resolve="fun" />
+              <ref role="1YBMHb" node="6U217JhiRPr" resolve="foreign" />
             </node>
             <node concept="3TrEf2" id="6U217JhiSok" role="2OqNvi">
               <ref role="3Tt5mk" to="xp1n:1$Cap2uRI2H" resolve="type" />
@@ -1520,15 +1520,15 @@
         <node concept="mw_s8" id="6U217JhiS7R" role="1ZfhK$">
           <node concept="1Z2H0r" id="6U217JhiRPv" role="mwGJk">
             <node concept="1YBJjd" id="6U217JhiRSU" role="1Z2MuG">
-              <ref role="1YBMHb" node="6U217JhiRPr" resolve="fun" />
+              <ref role="1YBMHb" node="6U217JhiRPr" resolve="foreign" />
             </node>
           </node>
         </node>
       </node>
     </node>
     <node concept="1YaCAy" id="6U217JhiRPr" role="1YuTPh">
-      <property role="TrG5h" value="fun" />
-      <ref role="1YaFvo" to="xp1n:7Nww1niAkcx" resolve="ForeignFunction" />
+      <property role="TrG5h" value="foreign" />
+      <ref role="1YaFvo" to="xp1n:7Nww1niAkcx" resolve="Foreign" />
     </node>
   </node>
   <node concept="1YbPZF" id="61mvAMDJTlO">

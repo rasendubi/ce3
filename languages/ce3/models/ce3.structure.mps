@@ -356,22 +356,22 @@
   <node concept="1TIwiD" id="7Nww1niAkcx">
     <property role="EcuMT" value="8998332886702179105" />
     <property role="3GE5qa" value="value" />
-    <property role="TrG5h" value="ForeignFunction" />
-    <property role="34LRSv" value="foreign fn" />
+    <property role="TrG5h" value="Foreign" />
+    <property role="34LRSv" value="foreign" />
     <ref role="1TJDcQ" node="z8dq5o9mcs" resolve="AbstractValue" />
     <node concept="1TJgyj" id="7Nww1niAkcy" role="1TKVEi">
       <property role="IQ2ns" value="8998332886702179106" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="fn" />
+      <property role="20kJfa" value="expr" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" to="rh3e:6Dc18J$9WXK" resolve="JSArrowFunction" />
+      <ref role="20lvS9" to="rh3e:46Ref1Uh8_W" resolve="JSAbstractExpression" />
     </node>
     <node concept="1TJgyj" id="1$Cap2uRI2H" role="1TKVEi">
       <property role="IQ2ns" value="1812744551134060717" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="type" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" to="epcs:28XiXknm8Zx" resolve="FunctionType" />
+      <ref role="20lvS9" to="epcs:28XiXknm8NL" resolve="AbstractType" />
     </node>
   </node>
   <node concept="1TIwiD" id="7Nww1niAkc$">

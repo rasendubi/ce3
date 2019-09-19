@@ -838,7 +838,7 @@
       </node>
     </node>
     <node concept="3eGOop" id="7Nww1niKFnU" role="3ft7WO">
-      <ref role="3EoQqy" to="xp1n:7Nww1niAkcx" resolve="ForeignFunction" />
+      <ref role="3EoQqy" to="xp1n:7Nww1niAkcx" resolve="Foreign" />
       <node concept="16NfWO" id="7Nww1niKFIx" role="upBLP">
         <node concept="2h3Zct" id="7Nww1niKFIV" role="16NeZM">
           <property role="2h4Kg1" value="foreign" />
@@ -850,7 +850,7 @@
             <node concept="2OqwBi" id="7Nww1niKFXc" role="3clFbG">
               <node concept="1yR$tW" id="7Nww1niKFLZ" role="2Oq$k0" />
               <node concept="1_qnLN" id="7Nww1niKG6a" role="2OqNvi">
-                <ref role="1_rbq0" to="xp1n:7Nww1niAkcx" resolve="ForeignFunction" />
+                <ref role="1_rbq0" to="xp1n:7Nww1niAkcx" resolve="Foreign" />
               </node>
             </node>
           </node>
@@ -1546,10 +1546,10 @@
   </node>
   <node concept="24kQdi" id="7Nww1niAYD8">
     <property role="3GE5qa" value="value" />
-    <ref role="1XX52x" to="xp1n:7Nww1niAkcx" resolve="ForeignFunction" />
+    <ref role="1XX52x" to="xp1n:7Nww1niAkcx" resolve="Foreign" />
     <node concept="3EZMnI" id="7Nww1niAYDa" role="2wV5jI">
       <node concept="3F0ifn" id="7Nww1niAYDs" role="3EZMnx">
-        <property role="3F0ifm" value="foreign fn" />
+        <property role="3F0ifm" value="foreign" />
         <ref role="1k5W1q" node="3zjuB6EGTvn" resolve="Ce3Keyword" />
       </node>
       <node concept="3F0ifn" id="6U217Jhjopt" role="3EZMnx">
@@ -1573,7 +1573,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="7Nww1niAYDN" role="3EZMnx">
-        <ref role="1NtTu8" to="xp1n:7Nww1niAkcy" resolve="fn" />
+        <ref role="1NtTu8" to="xp1n:7Nww1niAkcy" resolve="expr" />
         <node concept="lj46D" id="6U217JhsrWL" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>

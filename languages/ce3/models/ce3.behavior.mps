@@ -1547,7 +1547,7 @@
   </node>
   <node concept="13h7C7" id="3zjuB6Ey3VD">
     <property role="3GE5qa" value="value" />
-    <ref role="13h7C2" to="xp1n:7Nww1niAkcx" resolve="ForeignFunction" />
+    <ref role="13h7C2" to="xp1n:7Nww1niAkcx" resolve="Foreign" />
     <node concept="13hLZK" id="3zjuB6Ey3VE" role="13h7CW">
       <node concept="3clFbS" id="3zjuB6Ey3VF" role="2VODD2">
         <node concept="3clFbF" id="1$Cap2uPTuV" role="3cqZAp">
@@ -1555,14 +1555,14 @@
             <node concept="2ShNRf" id="1$Cap2uPU0$" role="37vLTx">
               <node concept="3zrR0B" id="1$Cap2uPTXY" role="2ShVmc">
                 <node concept="3Tqbb2" id="1$Cap2uPTXZ" role="3zrR0E">
-                  <ref role="ehGHo" to="rh3e:6Dc18J$9WXK" resolve="JSArrowFunction" />
+                  <ref role="ehGHo" to="rh3e:46Ref1Uh8_W" resolve="JSAbstractExpression" />
                 </node>
               </node>
             </node>
             <node concept="2OqwBi" id="1$Cap2uPTAN" role="37vLTJ">
               <node concept="13iPFW" id="1$Cap2uPTuU" role="2Oq$k0" />
               <node concept="3TrEf2" id="1$Cap2uPTJ6" role="2OqNvi">
-                <ref role="3Tt5mk" to="xp1n:7Nww1niAkcy" resolve="fn" />
+                <ref role="3Tt5mk" to="xp1n:7Nww1niAkcy" resolve="expr" />
               </node>
             </node>
           </node>
@@ -1578,7 +1578,7 @@
             <node concept="2ShNRf" id="6U217Jhj47P" role="37vLTx">
               <node concept="3zrR0B" id="6U217Jhj45Z" role="2ShVmc">
                 <node concept="3Tqbb2" id="6U217Jhj460" role="3zrR0E">
-                  <ref role="ehGHo" to="epcs:28XiXknm8Zx" resolve="FunctionType" />
+                  <ref role="ehGHo" to="epcs:28XiXknm8NL" resolve="AbstractType" />
                 </node>
               </node>
             </node>
