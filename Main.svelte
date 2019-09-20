@@ -6,6 +6,7 @@
   import Let from './languages/ce3/sandbox/source_gen/ce3/sandbox/Let';
   import LetFibonnaci from './languages/ce3/sandbox/source_gen/ce3/sandbox/LetFibonnaci';
   import Foreign from './languages/ce3/sandbox/source_gen/ce3/sandbox/Foreign';
+  import ArrayLiterals from './languages/ce3/sandbox/source_gen/ce3/sandbox/ArrayLiterals';
 
   let x = 0;
 
@@ -42,6 +43,11 @@ LetFibonnaci:
 Foreign:
 <div>
   <Foreign />
+</div>
+<hr />
+ArrayLiterals:
+<div>
+  <ArrayLiterals />
 </div>
 <hr />
 HelloWorld:

@@ -95,5 +95,18 @@
       <ref role="20lvS9" node="28XiXknm8NL" resolve="AbstractType" />
     </node>
   </node>
+  <node concept="1TIwiD" id="7Prjhj4SglD">
+    <property role="EcuMT" value="9032898229219427689" />
+    <property role="TrG5h" value="ArrayType" />
+    <property role="34LRSv" value="Array" />
+    <ref role="1TJDcQ" node="28XiXknm8NL" resolve="AbstractType" />
+    <node concept="1TJgyj" id="7Prjhj4SglE" role="1TKVEi">
+      <property role="IQ2ns" value="9032898229219427690" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="elementType" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="28XiXknm8NL" resolve="AbstractType" />
+    </node>
+  </node>
 </model>
 

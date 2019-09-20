@@ -44,6 +44,9 @@
       </concept>
       <concept id="2467211549467657857" name="ce3.structure.FalseValue" flags="ng" index="PZSPk" />
       <concept id="2467211549467657844" name="ce3.structure.TrueValue" flags="ng" index="PZSQx" />
+      <concept id="9032898229218637072" name="ce3.structure.ArrayLiteral" flags="ng" index="2TzVw4">
+        <child id="9032898229218637073" name="children" index="2TzVw5" />
+      </concept>
       <concept id="7962932020987417537" name="ce3.structure.ComputedPropertyDeclaration" flags="ng" index="2Z2XuU">
         <child id="7962932020987417603" name="type" index="2Z2X1S" />
         <child id="7962932020987417540" name="value" index="2Z2XuZ" />
@@ -902,6 +905,47 @@
           <node concept="Ppsg8" id="7Prjhj4OGyG" role="2Ii6_p" />
           <node concept="Ppsgb" id="7Prjhj4OGyE" role="2Ii6_v" />
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1vfq6F" id="7Prjhj4PWw8">
+    <property role="3GE5qa" value="examples" />
+    <property role="TrG5h" value="ArrayLiterals" />
+    <node concept="2Z2XuU" id="7Prjhj4PWwb" role="2Z2yyZ">
+      <property role="TrG5h" value="arr1" />
+      <node concept="2TzVw4" id="7Prjhj4PWwh" role="2Z2XuZ">
+        <node concept="3LTgFo" id="7Prjhj4QmGJ" role="2TzVw5">
+          <property role="3LTgFp" value="1" />
+        </node>
+        <node concept="3LTgFo" id="7Prjhj4QmGO" role="2TzVw5">
+          <property role="3LTgFp" value="2" />
+        </node>
+        <node concept="3LTgFo" id="7Prjhj4QmGV" role="2TzVw5">
+          <property role="3LTgFp" value="3" />
+        </node>
+      </node>
+    </node>
+    <node concept="2Z2XuU" id="7Prjhj4QFIX" role="2Z2yyZ">
+      <property role="TrG5h" value="arr2" />
+      <node concept="2TzVw4" id="7Prjhj4QFJ8" role="2Z2XuZ">
+        <node concept="1gVlqW" id="7Prjhj4QFJd" role="2TzVw5">
+          <property role="1gVlqZ" value="Hello" />
+        </node>
+        <node concept="1gSYO3" id="7Prjhj4QFJi" role="2TzVw5">
+          <ref role="3e$uYC" node="7Prjhj4QFIl" resolve="prop1" />
+        </node>
+      </node>
+    </node>
+    <node concept="39S3$b" id="7Prjhj4QmHm" role="1vfq6G">
+      <ref role="39S3$4" node="7Prjhj4PWwb" resolve="arr1" />
+    </node>
+    <node concept="39S3$b" id="7Prjhj4QFJp" role="1vfq6G">
+      <ref role="39S3$4" node="7Prjhj4QFIX" resolve="arr2" />
+    </node>
+    <node concept="1gSCKQ" id="7Prjhj4QFIl" role="1gSCK2">
+      <property role="TrG5h" value="prop1" />
+      <node concept="1gVlqW" id="7Prjhj4QFIt" role="yFGMo">
+        <property role="1gVlqZ" value="Mark" />
       </node>
     </node>
   </node>

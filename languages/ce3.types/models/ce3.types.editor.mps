@@ -388,5 +388,35 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="7Prjhj4SglO">
+    <ref role="1XX52x" to="epcs:7Prjhj4SglD" resolve="ArrayType" />
+    <node concept="3EZMnI" id="7Prjhj4SglQ" role="2wV5jI">
+      <node concept="3F0ifn" id="7Prjhj4SglX" role="3EZMnx">
+        <property role="3F0ifm" value="Array" />
+        <ref role="1k5W1q" node="3zjuB6EHwOR" resolve="Ce3Type" />
+      </node>
+      <node concept="3F0ifn" id="7Prjhj4Sgm3" role="3EZMnx">
+        <property role="3F0ifm" value="&lt;" />
+        <ref role="1k5W1q" node="3zjuB6EGhrr" resolve="Ce3Punctuation" />
+        <node concept="11L4FC" id="7Prjhj4Sgm7" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="7Prjhj4Sgmc" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="7Prjhj4Sgmm" role="3EZMnx">
+        <ref role="1NtTu8" to="epcs:7Prjhj4SglE" resolve="elementType" />
+      </node>
+      <node concept="3F0ifn" id="7Prjhj4Sgm$" role="3EZMnx">
+        <property role="3F0ifm" value="&gt;" />
+        <ref role="1k5W1q" node="3zjuB6EGhrr" resolve="Ce3Punctuation" />
+        <node concept="11L4FC" id="7Prjhj4SgmG" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="7Prjhj4SglT" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 
