@@ -13,6 +13,7 @@
   <languageVersions>
     <language slang="l:70550421-e6c9-4d59-a12a-7918a95c5525:ce3" version="0" />
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="2" />
+    <language slang="l:a4829704-6b1b-4b3f-8122-a4a2e6ac90ff:org.mar9000.mps.ecmascript" version="14" />
   </languageVersions>
   <dependencyVersions>
     <module reference="74b47adc-5527-44be-82c5-c61e8e60b7e3(ce3.sandbox)" version="0" />

@@ -2878,5 +2878,21 @@
       <node concept="l2Vlx" id="7Prjhj4Pfkw" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="3Khhk9m$Qck">
+    <property role="3GE5qa" value="value" />
+    <ref role="1XX52x" to="xp1n:3Khhk9m$Qc9" resolve="ForeignEscape" />
+    <node concept="3EZMnI" id="3Khhk9m$Qcm" role="2wV5jI">
+      <node concept="3F0ifn" id="3Khhk9m$Qct" role="3EZMnx">
+        <property role="3F0ifm" value="{{" />
+      </node>
+      <node concept="3F1sOY" id="3Khhk9m$Qcz" role="3EZMnx">
+        <ref role="1NtTu8" to="xp1n:3Khhk9m$Qca" resolve="expr" />
+      </node>
+      <node concept="3F0ifn" id="3Khhk9m$QcF" role="3EZMnx">
+        <property role="3F0ifm" value="}}" />
+      </node>
+      <node concept="l2Vlx" id="3Khhk9m$Qcp" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

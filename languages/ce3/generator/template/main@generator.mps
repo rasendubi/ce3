@@ -1594,6 +1594,27 @@
         </node>
       </node>
     </node>
+    <node concept="3aamgX" id="3Khhk9m_tE3" role="3acgRq">
+      <ref role="30HIoZ" to="xp1n:3Khhk9m$Qc9" resolve="ForeignEscape" />
+      <node concept="gft3U" id="3Khhk9m_tLR" role="1lVwrX">
+        <node concept="2dxDzr" id="3Khhk9m_tLX" role="gfFT$">
+          <node concept="29HgVG" id="3Khhk9m_tM0" role="lGtFl">
+            <node concept="3NFfHV" id="3Khhk9m_tM1" role="3NFExx">
+              <node concept="3clFbS" id="3Khhk9m_tM2" role="2VODD2">
+                <node concept="3clFbF" id="3Khhk9m_tM8" role="3cqZAp">
+                  <node concept="2OqwBi" id="3Khhk9m_tM3" role="3clFbG">
+                    <node concept="3TrEf2" id="3Khhk9m_tM6" role="2OqNvi">
+                      <ref role="3Tt5mk" to="xp1n:3Khhk9m$Qca" resolve="expr" />
+                    </node>
+                    <node concept="30H73N" id="3Khhk9m_tM7" role="2Oq$k0" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="2rT7sh" id="2rpxWh$jcTK" role="2rTMjI">
       <property role="TrG5h" value="nodes" />
       <ref role="2rZz_L" to="rh3e:7rFtnRVF84N" resolve="JSSimpleVariableDeclaration" />

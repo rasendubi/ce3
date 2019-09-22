@@ -101,6 +101,9 @@
       <concept id="632814714727273491" name="ce3.structure.Attribute" flags="ng" index="1vfq6M">
         <child id="632814714730406688" name="value" index="1gVlq1" />
       </concept>
+      <concept id="4328316868102415113" name="ce3.structure.ForeignEscape" flags="ng" index="1Ewypb">
+        <child id="4328316868102415114" name="expr" index="1Ewyp8" />
+      </concept>
       <concept id="8348239190576416475" name="ce3.structure.Function" flags="ng" index="1H_U6b">
         <child id="1812744551131664695" name="resultType" index="27$ByB" />
         <child id="8348239190577387027" name="expr" index="1HxJ53" />
@@ -114,6 +117,9 @@
       </concept>
     </language>
     <language id="a4829704-6b1b-4b3f-8122-a4a2e6ac90ff" name="org.mar9000.mps.ecmascript">
+      <concept id="8458442626275502666" name="org.mar9000.mps.ecmascript.structure.JSVariableDeclaratorReference" flags="ng" index="29jwqa">
+        <reference id="8458442626275502667" name="variableDeclarator" index="29jwqb" />
+      </concept>
       <concept id="8569071899956281838" name="org.mar9000.mps.ecmascript.structure.JSStringLiteral" flags="ng" index="2dhBij">
         <property id="8569071899956282000" name="doubleQuotedValue" index="2dhBvH" />
       </concept>
@@ -124,24 +130,49 @@
         <child id="8569071899956277616" name="arguments" index="2dhSgd" />
         <child id="8569071899956277614" name="callee" index="2dhSgj" />
       </concept>
+      <concept id="8569071899956270924" name="org.mar9000.mps.ecmascript.structure.JSFunctionExpression" flags="ng" index="2dhU8L">
+        <child id="8569071899956271164" name="body" index="2dhUP1" />
+        <child id="4104270065614765192" name="formalParams" index="zMvtD" />
+      </concept>
       <concept id="8569071899956272644" name="org.mar9000.mps.ecmascript.structure.JSBinaryExpression" flags="ng" index="2dhUHT">
         <property id="8569071899956272903" name="operator" index="2dhUDU" />
         <child id="8569071899956273023" name="left" index="2dhUC2" />
         <child id="8569071899956273025" name="right" index="2dhUFW" />
       </concept>
+      <concept id="8569071899956265940" name="org.mar9000.mps.ecmascript.structure.JSMemberExpression" flags="ng" index="2dhVqD">
+        <child id="8569071899956279040" name="identifierProperty" index="2dhS9X" />
+        <child id="8569071899956278887" name="object" index="2dhScq" />
+      </concept>
+      <concept id="8569071899956248883" name="org.mar9000.mps.ecmascript.structure.JSSimpleVariableDeclaration" flags="ng" index="2dhZhe">
+        <child id="8569071899956249032" name="id" index="2dhZiP" />
+        <child id="8569071899956249109" name="init" index="2dhZtC" />
+        <child id="5897985433066182785" name="identifier" index="3PzO81" />
+      </concept>
       <concept id="7659502065125150576" name="org.mar9000.mps.ecmascript.structure.JSArrowFunction" flags="ng" index="2eqWJV">
         <child id="7659502065125160121" name="parameters" index="2eqZ0M" />
         <child id="7659502065125160131" name="body" index="2eqZ18" />
       </concept>
+      <concept id="3761592386790809998" name="org.mar9000.mps.ecmascript.structure.JSIdentifierName" flags="ng" index="2wijRm" />
       <concept id="3761592386794677061" name="org.mar9000.mps.ecmascript.structure.JSSingleNameBinding" flags="ng" index="2wxzWt">
         <child id="3761592386794677066" name="bindingIdentifier" index="2wxzWi" />
       </concept>
+      <concept id="3761592386795452943" name="org.mar9000.mps.ecmascript.structure.JSFormalParameters" flags="ng" index="2wWApn" />
       <concept id="8998332886705411023" name="org.mar9000.mps.ecmascript.structure.JSArrowParameterList" flags="ng" index="2Iaxfq">
         <child id="8998332886705411562" name="params" index="2IaxnZ" />
       </concept>
       <concept id="204049982422779253" name="org.mar9000.mps.ecmascript.structure.JSBindingIdentifierReference" flags="ng" index="2WqeGl">
         <reference id="204049982422779256" name="bindingIdentifier" index="2WqeGo" />
       </concept>
+      <concept id="201656743169483908" name="org.mar9000.mps.ecmascript.structure.JSVariableStatement" flags="ng" index="1dSo$T">
+        <child id="201656743169484504" name="declarations" index="1dSoH_" />
+      </concept>
+      <concept id="201656743169483980" name="org.mar9000.mps.ecmascript.structure.JSExpressionStatement" flags="ng" index="1dSo_L">
+        <child id="201656743171561338" name="expression" index="1dwvF7" />
+      </concept>
+      <concept id="201656743169483888" name="org.mar9000.mps.ecmascript.structure.JSBlockStatement" flags="ng" index="1dSoBd">
+        <child id="201656743169484430" name="body" index="1dSoGN" />
+      </concept>
+      <concept id="201656743169479441" name="org.mar9000.mps.ecmascript.structure.JSIdentifier" flags="ng" index="1dSrUG" />
       <concept id="6713311115387176128" name="org.mar9000.mps.ecmascript.structure.JSBindingIdentifier" flags="ng" index="1mvZK$" />
       <concept id="3681369884987046932" name="org.mar9000.mps.ecmascript.structure.JSEnvironmentReference" flags="ng" index="3ErYpN">
         <reference id="3681369884987046933" name="environment" index="3ErYpM" />
@@ -993,6 +1024,174 @@
           </node>
           <node concept="3ErYpN" id="3Khhk9mzO5f" role="3EKcdS">
             <ref role="3ErYpM" to="apxn:7Prjhj4VsyT" resolve="Window" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1vfq6F" id="3Khhk9m_pFg">
+    <property role="3GE5qa" value="examples" />
+    <property role="TrG5h" value="ForeignEscape" />
+    <node concept="1vfq6I" id="3Khhk9m_pLq" role="1vfq6G">
+      <node concept="1gVlqW" id="3Khhk9m_pLD" role="1vfq6V">
+        <property role="1gVlqZ" value="state: " />
+      </node>
+      <node concept="39$weE" id="3Khhk9mACKB" role="1vfq6V">
+        <ref role="39$weF" node="3Khhk9m_pFl" resolve="state" />
+      </node>
+      <node concept="1vfq6M" id="3Khhk9m_pLw" role="1vfq6L">
+        <property role="TrG5h" value="on:click" />
+        <node concept="39S3$b" id="3Khhk9m_pL$" role="1gVlq1">
+          <ref role="39S3$4" node="3Khhk9m_pGi" resolve="foreignHandler" />
+        </node>
+      </node>
+      <node concept="1gPmzB" id="3Khhk9m_pLs" role="1gPmzY">
+        <ref role="1gPmzA" to="nfbi:61mvAMDRpqm" resolve="button" />
+      </node>
+    </node>
+    <node concept="39_CMt" id="3Khhk9m_pFl" role="2Z2yyZ">
+      <property role="TrG5h" value="state" />
+      <node concept="3LTgFo" id="3Khhk9m_pFr" role="39_CMq">
+        <property role="3LTgFp" value="0" />
+      </node>
+    </node>
+    <node concept="2Z2XuU" id="3Khhk9m_pFx" role="2Z2yyZ">
+      <property role="TrG5h" value="doTick" />
+      <node concept="1H_U6b" id="3Khhk9m_pFD" role="2Z2XuZ">
+        <node concept="39xgyC" id="3Khhk9m_pFI" role="1HxJ53">
+          <node concept="39$weE" id="3Khhk9m_pFR" role="39xgyD">
+            <ref role="39$weF" node="3Khhk9m_pFl" resolve="state" />
+          </node>
+          <node concept="3ed_d4" id="3Khhk9m_pFY" role="39wtN7">
+            <property role="3edl7N" value="43JkLIeQdS3/opPlus" />
+            <node concept="3LTgFo" id="3Khhk9m_pG5" role="3ed_dY">
+              <property role="3LTgFp" value="1" />
+            </node>
+            <node concept="39$weE" id="3Khhk9m_pFU" role="3ed_dV">
+              <ref role="39$weF" node="3Khhk9m_pFl" resolve="state" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Z2XuU" id="3Khhk9mAzGG" role="2Z2yyZ">
+      <property role="TrG5h" value="onMount" />
+      <node concept="1H_U6b" id="3Khhk9mAzH_" role="2Z2XuZ">
+        <node concept="2IuscO" id="3Khhk9mAzHE" role="1HxJ53">
+          <node concept="2dhSm$" id="3Khhk9mAzHK" role="2IuscR">
+            <node concept="2WqeGl" id="3Khhk9mAzI1" role="2dhSgj">
+              <ref role="2WqeGo" to="apxn:3cmQAvpzi35" resolve="setInterval" />
+            </node>
+            <node concept="1Ewypb" id="3Khhk9mAzI4" role="2dhSgd">
+              <node concept="39S3$b" id="3Khhk9mAzI8" role="1Ewyp8">
+                <ref role="39S3$4" node="3Khhk9m_pFx" resolve="doTick" />
+              </node>
+            </node>
+            <node concept="2dhBVA" id="3Khhk9mAzIf" role="2dhSgd">
+              <property role="2dhB_1" value="1000" />
+            </node>
+          </node>
+          <node concept="PpsgG" id="3Khhk9mAzHS" role="27XG$X">
+            <node concept="PpsgP" id="3Khhk9mAzHY" role="PpsgJ" />
+          </node>
+          <node concept="3ErYpN" id="3Khhk9mAzHQ" role="3EKcdS">
+            <ref role="3ErYpM" to="apxn:7Prjhj4VsyT" resolve="Window" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Z2XuU" id="3Khhk9m_pGi" role="2Z2yyZ">
+      <property role="TrG5h" value="foreignHandler" />
+      <node concept="2IuscO" id="3Khhk9m_pGS" role="2Z2XuZ">
+        <node concept="PpsgO" id="3Khhk9m_qcH" role="27XG$X">
+          <node concept="PpsgG" id="3Khhk9m_qcN" role="2Ii6_p">
+            <node concept="PpsgP" id="3Khhk9m_qcT" role="PpsgJ" />
+          </node>
+        </node>
+        <node concept="3ErYpN" id="3Khhk9m_pI0" role="3EKcdS">
+          <ref role="3ErYpM" to="apxn:7Prjhj4VsyT" resolve="Window" />
+        </node>
+        <node concept="2dhU8L" id="3Khhk9mA_fJ" role="2IuscR">
+          <node concept="2wWApn" id="3Khhk9mA_fL" role="zMvtD" />
+          <node concept="1dSoBd" id="3Khhk9mA_fN" role="2dhUP1">
+            <node concept="1dSo$T" id="3Khhk9m_pHw" role="1dSoGN">
+              <node concept="2dhZhe" id="3Khhk9m_pH_" role="1dSoH_">
+                <node concept="1dSrUG" id="3Khhk9m_pHB" role="2dhZiP" />
+                <node concept="1mvZK$" id="3Khhk9m_pHD" role="3PzO81">
+                  <property role="TrG5h" value="currentState" />
+                </node>
+                <node concept="1Ewypb" id="3Khhk9m_pHg" role="2dhZtC">
+                  <node concept="39$weE" id="3Khhk9m_pHp" role="1Ewyp8">
+                    <ref role="39$weF" node="3Khhk9m_pFl" resolve="state" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="1dSo_L" id="3Khhk9m_pI4" role="1dSoGN">
+              <node concept="2dhSm$" id="3Khhk9m_pIg" role="1dwvF7">
+                <node concept="2dhVqD" id="3Khhk9m_pIt" role="2dhSgj">
+                  <node concept="29jwqa" id="3Khhk9m_pIz" role="2dhScq">
+                    <ref role="29jwqb" to="apxn:3cmQAvpCPW8" />
+                  </node>
+                  <node concept="2wijRm" id="3Khhk9m_pIC" role="2dhS9X">
+                    <property role="TrG5h" value="log" />
+                  </node>
+                </node>
+                <node concept="2dhBij" id="3Khhk9m_pIF" role="2dhSgd">
+                  <property role="2dhBvH" value="current state:" />
+                </node>
+                <node concept="29jwqa" id="3Khhk9m_pIK" role="2dhSgd">
+                  <ref role="29jwqb" node="3Khhk9m_pH_" />
+                </node>
+              </node>
+            </node>
+            <node concept="1dSo_L" id="3Khhk9m_pJ7" role="1dSoGN">
+              <node concept="1Ewypb" id="3Khhk9m_pJ3" role="1dwvF7">
+                <node concept="2IuscL" id="3Khhk9m_pJZ" role="1Ewyp8">
+                  <node concept="39S3$b" id="3Khhk9m_pJp" role="2IuscK">
+                    <ref role="39S3$4" node="3Khhk9m_pFx" resolve="doTick" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="1dSo_L" id="3Khhk9mAuDX" role="1dSoGN">
+              <node concept="1Ewypb" id="3Khhk9mAuDT" role="1dwvF7">
+                <node concept="39xgyC" id="3Khhk9mAuEr" role="1Ewyp8">
+                  <node concept="39$weE" id="3Khhk9mAuE$" role="39xgyD">
+                    <ref role="39$weF" node="3Khhk9m_pFl" resolve="state" />
+                  </node>
+                  <node concept="3ed_d4" id="3Khhk9mAuEF" role="39wtN7">
+                    <property role="3edl7N" value="43JkLIeQdS3/opPlus" />
+                    <node concept="3LTgFo" id="3Khhk9mAuEM" role="3ed_dY">
+                      <property role="3LTgFp" value="1" />
+                    </node>
+                    <node concept="39$weE" id="3Khhk9mAuEB" role="3ed_dV">
+                      <ref role="39$weF" node="3Khhk9m_pFl" resolve="state" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="1dSo_L" id="3Khhk9m_pKm" role="1dSoGN">
+              <node concept="2dhSm$" id="3Khhk9m_pKn" role="1dwvF7">
+                <node concept="2dhVqD" id="3Khhk9m_pKo" role="2dhSgj">
+                  <node concept="29jwqa" id="3Khhk9m_pKp" role="2dhScq">
+                    <ref role="29jwqb" to="apxn:3cmQAvpCPW8" />
+                  </node>
+                  <node concept="2wijRm" id="3Khhk9m_pKq" role="2dhS9X">
+                    <property role="TrG5h" value="log" />
+                  </node>
+                </node>
+                <node concept="2dhBij" id="3Khhk9m_pKr" role="2dhSgd">
+                  <property role="2dhBvH" value="new state:" />
+                </node>
+                <node concept="1Ewypb" id="3Khhk9m_pLe" role="2dhSgd">
+                  <node concept="39$weE" id="3Khhk9m_pLl" role="1Ewyp8">
+                    <ref role="39$weF" node="3Khhk9m_pFl" resolve="state" />
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
