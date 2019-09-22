@@ -1,6 +1,8 @@
 /.mps/workspace.xml
 source_gen.caches
 source_gen
+test_gen.caches
+test_gen
 classes_gen
 
 /node_modules/

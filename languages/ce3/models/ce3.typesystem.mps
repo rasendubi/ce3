@@ -3,7 +3,6 @@
   <persistence version="9" />
   <languages>
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="4" />
-    <use id="70550421-e6c9-4d59-a12a-7918a95c5525" name="ce3" version="0" />
     <use id="b6578dbc-c839-4c3b-9eb3-c6edf889705e" name="ce3.types" version="0" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
