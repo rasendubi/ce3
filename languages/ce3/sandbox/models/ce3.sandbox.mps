@@ -1197,5 +1197,30 @@
       </node>
     </node>
   </node>
+  <node concept="1vfq6F" id="3Khhk9mAGWx">
+    <property role="3GE5qa" value="examples" />
+    <property role="TrG5h" value="OnMount" />
+    <node concept="1gVlqW" id="3Khhk9mAGYE" role="1vfq6G">
+      <property role="1gVlqZ" value="mounted: " />
+    </node>
+    <node concept="39$weE" id="3Khhk9mAGYJ" role="1vfq6G">
+      <ref role="39$weF" node="3Khhk9mAGXV" resolve="mounted" />
+    </node>
+    <node concept="39_CMt" id="3Khhk9mAGXV" role="2Z2yyZ">
+      <property role="TrG5h" value="mounted" />
+      <node concept="PZSPk" id="3Khhk9mAGYd" role="39_CMq" />
+    </node>
+    <node concept="2Z2XuU" id="3Khhk9mAGWy" role="2Z2yyZ">
+      <property role="TrG5h" value="onMount" />
+      <node concept="1H_U6b" id="3Khhk9mAGYk" role="2Z2XuZ">
+        <node concept="39xgyC" id="3Khhk9mAGYp" role="1HxJ53">
+          <node concept="39$weE" id="3Khhk9mAGYy" role="39xgyD">
+            <ref role="39$weF" node="3Khhk9mAGXV" resolve="mounted" />
+          </node>
+          <node concept="PZSQx" id="3Khhk9mAGY_" role="39wtN7" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

@@ -9,6 +9,7 @@
   import ArrayLiterals from './languages/ce3/sandbox/source_gen/ce3/sandbox/ArrayLiterals';
   import ForeignEnvironment from './languages/ce3/sandbox/source_gen/ce3/sandbox/ForeignEnvironment';
   import ForeignEscape from './languages/ce3/sandbox/source_gen/ce3/sandbox/ForeignEscape';
+  import OnMount from './languages/ce3/sandbox/source_gen/ce3/sandbox/OnMount';
 
   let x = 0;
 
@@ -60,6 +61,11 @@ ForeignEnvironment:
 ForeignEscape:
 <div>
   <ForeignEscape />
+</div>
+<hr />
+OnMount:
+<div>
+  <OnMount />
 </div>
 <hr />
 HelloWorld:
