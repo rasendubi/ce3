@@ -6,6 +6,7 @@
   </languages>
   <imports>
     <import index="rgc5" ref="642f71f8-327a-425b-84f9-44ad58786d27/f:project#8b4ab1de-2aad-4e60-8dee-350cb83d3086(jetbrains.mps.lang.project.modules/module.org.mar9000.mps.ecmascript.runtime@project_stub)" />
+    <import index="apxn" ref="r:5956af82-53d4-4b0b-aada-46792869763b(org.mar9000.mps.ecmascript.runtime.global)" />
     <import index="nfbi" ref="r:95e01337-9149-46b9-9417-b7ea1e4ee12a(ce3.components.builtin)" implicit="true" />
   </imports>
   <registry>
@@ -19,6 +20,7 @@
         <child id="8998332886703204684" name="result" index="2Ii6_p" />
         <child id="8998332886703204682" name="params" index="2Ii6_v" />
       </concept>
+      <concept id="2467211549460697056" name="ce3.types.structure.VoidType" flags="ng" index="PpsgP" />
     </language>
     <language id="70550421-e6c9-4d59-a12a-7918a95c5525" name="ce3">
       <concept id="6972358298721371130" name="ce3.structure.ParamReference" flags="ng" index="qMw$k">
@@ -41,6 +43,7 @@
       <concept id="8998332886702179105" name="ce3.structure.Foreign" flags="ng" index="2IuscO">
         <child id="1812744551134060717" name="type" index="27XG$X" />
         <child id="8998332886702179106" name="expr" index="2IuscR" />
+        <child id="3681369884993132831" name="environment" index="3EKcdS" />
       </concept>
       <concept id="2467211549467657857" name="ce3.structure.FalseValue" flags="ng" index="PZSPk" />
       <concept id="2467211549467657844" name="ce3.structure.TrueValue" flags="ng" index="PZSQx" />
@@ -117,6 +120,10 @@
       <concept id="8569071899956284315" name="org.mar9000.mps.ecmascript.structure.JSNumericLiteral" flags="ng" index="2dhBVA">
         <property id="8569071899956284476" name="value" index="2dhB_1" />
       </concept>
+      <concept id="8569071899956277465" name="org.mar9000.mps.ecmascript.structure.JSCallExpression" flags="ng" index="2dhSm$">
+        <child id="8569071899956277616" name="arguments" index="2dhSgd" />
+        <child id="8569071899956277614" name="callee" index="2dhSgj" />
+      </concept>
       <concept id="8569071899956272644" name="org.mar9000.mps.ecmascript.structure.JSBinaryExpression" flags="ng" index="2dhUHT">
         <property id="8569071899956272903" name="operator" index="2dhUDU" />
         <child id="8569071899956273023" name="left" index="2dhUC2" />
@@ -136,6 +143,9 @@
         <reference id="204049982422779256" name="bindingIdentifier" index="2WqeGo" />
       </concept>
       <concept id="6713311115387176128" name="org.mar9000.mps.ecmascript.structure.JSBindingIdentifier" flags="ng" index="1mvZK$" />
+      <concept id="3681369884987046932" name="org.mar9000.mps.ecmascript.structure.JSEnvironmentReference" flags="ng" index="3ErYpN">
+        <reference id="3681369884987046933" name="environment" index="3ErYpM" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -946,6 +956,45 @@
       <property role="TrG5h" value="prop1" />
       <node concept="1gVlqW" id="7Prjhj4QFIt" role="yFGMo">
         <property role="1gVlqZ" value="Mark" />
+      </node>
+    </node>
+  </node>
+  <node concept="1vfq6F" id="3Khhk9mzO4L">
+    <property role="3GE5qa" value="examples" />
+    <property role="TrG5h" value="ForeignEnvironment" />
+    <node concept="1vfq6I" id="3Khhk9m$k19" role="1vfq6G">
+      <node concept="1gVlqW" id="3Khhk9m$k1o" role="1vfq6V">
+        <property role="1gVlqZ" value="Alert button" />
+      </node>
+      <node concept="1vfq6M" id="3Khhk9m$k1f" role="1vfq6L">
+        <property role="TrG5h" value="on:click" />
+        <node concept="39S3$b" id="3Khhk9m$k1j" role="1gVlq1">
+          <ref role="39S3$4" node="3Khhk9mzO4M" resolve="handleClick" />
+        </node>
+      </node>
+      <node concept="1gPmzB" id="3Khhk9m$k1b" role="1gPmzY">
+        <ref role="1gPmzA" to="nfbi:61mvAMDRpqm" resolve="button" />
+      </node>
+    </node>
+    <node concept="2Z2XuU" id="3Khhk9mzO4M" role="2Z2yyZ">
+      <property role="TrG5h" value="handleClick" />
+      <node concept="1H_U6b" id="3Khhk9mzO4Q" role="2Z2XuZ">
+        <node concept="2IuscO" id="3Khhk9mzO4V" role="1HxJ53">
+          <node concept="2dhSm$" id="3Khhk9m$ijW" role="2IuscR">
+            <node concept="2WqeGl" id="3Khhk9m$ik2" role="2dhSgj">
+              <ref role="2WqeGo" to="apxn:3cmQAvpFSAx" resolve="alert" />
+            </node>
+            <node concept="2dhBij" id="3Khhk9m$ik5" role="2dhSgd">
+              <property role="2dhBvH" value="I am clicked" />
+            </node>
+          </node>
+          <node concept="PpsgG" id="3Khhk9mzO51" role="27XG$X">
+            <node concept="PpsgP" id="3Khhk9mzO57" role="PpsgJ" />
+          </node>
+          <node concept="3ErYpN" id="3Khhk9mzO5f" role="3EKcdS">
+            <ref role="3ErYpM" to="apxn:7Prjhj4VsyT" resolve="Window" />
+          </node>
+        </node>
       </node>
     </node>
   </node>

@@ -373,6 +373,15 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="epcs:28XiXknm8NL" resolve="AbstractType" />
     </node>
+    <node concept="1TJgyj" id="3cmQAvpPx$v" role="1TKVEi">
+      <property role="IQ2ns" value="3681369884993132831" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="environment" />
+      <ref role="20lvS9" to="rh3e:3cmQAvpujKk" resolve="JSEnvironmentReference" />
+    </node>
+    <node concept="PrWs8" id="3cmQAvpPxtn" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7Nww1niAkc$">
     <property role="EcuMT" value="8998332886702179108" />

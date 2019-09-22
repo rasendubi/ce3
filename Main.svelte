@@ -7,6 +7,7 @@
   import LetFibonnaci from './languages/ce3/sandbox/source_gen/ce3/sandbox/LetFibonnaci';
   import Foreign from './languages/ce3/sandbox/source_gen/ce3/sandbox/Foreign';
   import ArrayLiterals from './languages/ce3/sandbox/source_gen/ce3/sandbox/ArrayLiterals';
+  import ForeignEnvironment from './languages/ce3/sandbox/source_gen/ce3/sandbox/ForeignEnvironment';
 
   let x = 0;
 
@@ -48,6 +49,11 @@ Foreign:
 ArrayLiterals:
 <div>
   <ArrayLiterals />
+</div>
+<hr />
+ForeignEnvironment:
+<div>
+  <ForeignEnvironment />
 </div>
 <hr />
 HelloWorld:
