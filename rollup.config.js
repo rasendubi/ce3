@@ -1,14 +1,12 @@
 import resolve from 'rollup-plugin-node-resolve';
-import svelte from 'rollup-plugin-svelte';
 
 export default {
-  input: 'main.js',
+  input: './languages/ce3/sandbox/source_gen/ce3/sandbox/main.js',
   output: {
     file: 'bundle.js',
     format: 'iife',
   },
   plugins: [
-    svelte(),
     resolve(),
   ],
 };

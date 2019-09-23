@@ -2894,5 +2894,35 @@
       <node concept="l2Vlx" id="3Khhk9m$Qcp" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="3Khhk9mBssv">
+    <ref role="1XX52x" to="xp1n:3Khhk9mBqS9" resolve="EntryPoint" />
+    <node concept="3EZMnI" id="3Khhk9mBssx" role="2wV5jI">
+      <node concept="3F0ifn" id="3Khhk9mBssC" role="3EZMnx">
+        <property role="3F0ifm" value="entry point" />
+      </node>
+      <node concept="3F0A7n" id="3Khhk9mBssI" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <node concept="ljvvj" id="3Khhk9mBssM" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="3Khhk9mBstz" role="3EZMnx">
+        <property role="3F0ifm" value="" />
+        <node concept="ljvvj" id="3Khhk9mBstG" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="3Khhk9mBssT" role="3EZMnx">
+        <property role="3F0ifm" value="main component" />
+      </node>
+      <node concept="3F0ifn" id="3Khhk9mBst5" role="3EZMnx">
+        <property role="3F0ifm" value="=" />
+      </node>
+      <node concept="3F1sOY" id="3Khhk9mBstj" role="3EZMnx">
+        <ref role="1NtTu8" to="xp1n:3Khhk9mBqSa" resolve="mainComponent" />
+      </node>
+      <node concept="l2Vlx" id="3Khhk9mBss$" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

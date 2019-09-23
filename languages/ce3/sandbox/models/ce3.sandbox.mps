@@ -104,6 +104,9 @@
       <concept id="4328316868102415113" name="ce3.structure.ForeignEscape" flags="ng" index="1Ewypb">
         <child id="4328316868102415114" name="expr" index="1Ewyp8" />
       </concept>
+      <concept id="4328316868103089673" name="ce3.structure.EntryPoint" flags="ng" index="1EzeHb">
+        <child id="4328316868103089674" name="mainComponent" index="1EzeH8" />
+      </concept>
       <concept id="8348239190576416475" name="ce3.structure.Function" flags="ng" index="1H_U6b">
         <child id="1812744551131664695" name="resultType" index="27$ByB" />
         <child id="8348239190577387027" name="expr" index="1HxJ53" />
@@ -1511,6 +1514,12 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="1EzeHb" id="3Khhk9mBssi">
+    <property role="TrG5h" value="main" />
+    <node concept="1gPmzB" id="3Khhk9mBssk" role="1EzeH8">
+      <ref role="1gPmzA" node="3Khhk9mB5Qn" resolve="Main" />
     </node>
   </node>
 </model>

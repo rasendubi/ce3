@@ -695,5 +695,21 @@
       <ref role="20lvS9" node="z8dq5o9mcs" resolve="AbstractValue" />
     </node>
   </node>
+  <node concept="1TIwiD" id="3Khhk9mBqS9">
+    <property role="EcuMT" value="4328316868103089673" />
+    <property role="TrG5h" value="EntryPoint" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="3Khhk9mBqSa" role="1TKVEi">
+      <property role="IQ2ns" value="4328316868103089674" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="mainComponent" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="z8dq5o7lP6" resolve="ComponentReference" />
+    </node>
+    <node concept="PrWs8" id="3Khhk9mBqSc" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
 </model>
 
