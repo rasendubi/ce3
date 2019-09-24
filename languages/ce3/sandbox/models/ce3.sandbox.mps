@@ -194,6 +194,7 @@
   </registry>
   <node concept="1vfq6F" id="6H8W5cC25U6">
     <property role="TrG5h" value="HelloWorld" />
+    <property role="3GE5qa" value="main" />
     <node concept="1gSCKQ" id="6H8W5cCjfLW" role="1gSCK2">
       <property role="TrG5h" value="time" />
       <node concept="Ppsgb" id="28XiXknphE$" role="3LTvnt" />
@@ -487,6 +488,7 @@
   </node>
   <node concept="1vfq6F" id="6H8W5cC9cGV">
     <property role="TrG5h" value="Nested" />
+    <property role="3GE5qa" value="main" />
     <node concept="1gSCKQ" id="6H8W5cCe8FE" role="1gSCK2">
       <property role="TrG5h" value="hello" />
       <node concept="1gVlqW" id="3zPiY4qq20C" role="yFGMo">
@@ -518,6 +520,7 @@
   </node>
   <node concept="1vfq6F" id="6H8W5cCff3W">
     <property role="TrG5h" value="TooNested" />
+    <property role="3GE5qa" value="main" />
     <node concept="1gSCKQ" id="6H8W5cCff46" role="1gSCK2">
       <property role="TrG5h" value="hello" />
       <node concept="Ppsg8" id="28XiXknphET" role="3LTvnt" />
@@ -536,6 +539,7 @@
   </node>
   <node concept="1vfq6F" id="2rpxWh_5OwN">
     <property role="TrG5h" value="Simple" />
+    <property role="3GE5qa" value="main" />
     <node concept="1vfq6I" id="2rpxWh_5OwP" role="1vfq6G">
       <node concept="1gVlqW" id="2rpxWh_5OwZ" role="1vfq6V">
         <property role="1gVlqZ" value="simple value" />
@@ -1229,6 +1233,7 @@
   </node>
   <node concept="1vfq6F" id="3Khhk9mB5Qn">
     <property role="TrG5h" value="Main" />
+    <property role="3GE5qa" value="main" />
     <node concept="1gVlqW" id="3Khhk9mBnEG" role="1vfq6G">
       <property role="1gVlqZ" value="StateSimple:" />
     </node>
@@ -1410,6 +1415,24 @@
         <ref role="1gPmzA" to="nfbi:z8dq5o7lP2" resolve="div" />
       </node>
     </node>
+    <node concept="1vfq6I" id="3Khhk9mDp1q" role="1vfq6G">
+      <node concept="1gPmzB" id="3Khhk9mDp2C" role="1gPmzY">
+        <ref role="1gPmzA" to="nfbi:3Khhk9mBnFR" resolve="hr" />
+      </node>
+    </node>
+    <node concept="1gVlqW" id="3Khhk9mDp3U" role="1vfq6G">
+      <property role="1gVlqZ" value="OnDestroy:" />
+    </node>
+    <node concept="1vfq6I" id="3Khhk9mDp6r" role="1vfq6G">
+      <node concept="1vfq6I" id="3Khhk9mDp7L" role="1vfq6V">
+        <node concept="1gPmzB" id="3Khhk9mDp7N" role="1gPmzY">
+          <ref role="1gPmzA" node="3Khhk9mDoYm" resolve="OnDestroy" />
+        </node>
+      </node>
+      <node concept="1gPmzB" id="3Khhk9mDp7G" role="1gPmzY">
+        <ref role="1gPmzA" to="nfbi:z8dq5o7lP2" resolve="div" />
+      </node>
+    </node>
     <node concept="1vfq6I" id="3Khhk9mBnFE" role="1vfq6G">
       <node concept="1gPmzB" id="3Khhk9mBnFS" role="1gPmzY">
         <ref role="1gPmzA" to="nfbi:3Khhk9mBnFR" resolve="hr" />
@@ -1520,6 +1543,63 @@
     <property role="TrG5h" value="main" />
     <node concept="1gPmzB" id="3Khhk9mBssk" role="1EzeH8">
       <ref role="1gPmzA" node="3Khhk9mB5Qn" resolve="Main" />
+    </node>
+  </node>
+  <node concept="1vfq6F" id="3Khhk9mDoYm">
+    <property role="3GE5qa" value="examples" />
+    <property role="TrG5h" value="OnDestroy" />
+    <node concept="2Z2XuU" id="3Khhk9mDoY$" role="2Z2yyZ">
+      <property role="TrG5h" value="log" />
+      <node concept="2IuscO" id="3Khhk9mDoYG" role="2Z2XuZ">
+        <node concept="2dhU8L" id="3Khhk9mDoYM" role="2IuscR">
+          <node concept="2wWApn" id="3Khhk9mDoYO" role="zMvtD">
+            <node concept="2wxzWt" id="3Khhk9mDoZ2" role="2wWAp1">
+              <node concept="1mvZK$" id="3Khhk9mDoZ3" role="2wxzWi">
+                <property role="TrG5h" value="line" />
+              </node>
+            </node>
+          </node>
+          <node concept="1dSoBd" id="3Khhk9mDoYQ" role="2dhUP1">
+            <node concept="1dSo_L" id="3Khhk9mDoZu" role="1dSoGN">
+              <node concept="2dhSm$" id="3Khhk9mDoZG" role="1dwvF7">
+                <node concept="2dhVqD" id="3Khhk9mDoZs" role="2dhSgj">
+                  <node concept="29jwqa" id="3Khhk9mDoZz" role="2dhScq">
+                    <ref role="29jwqb" to="apxn:3cmQAvpCPW8" />
+                  </node>
+                  <node concept="2wijRm" id="3Khhk9mDoZC" role="2dhS9X">
+                    <property role="TrG5h" value="log" />
+                  </node>
+                </node>
+                <node concept="2WqeGl" id="3Khhk9mDoZO" role="2dhSgd">
+                  <ref role="2WqeGo" node="3Khhk9mDoZ3" resolve="line" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="PpsgO" id="3Khhk9mDoZ6" role="27XG$X">
+          <node concept="Ppsg8" id="3Khhk9mDoZe" role="2Ii6_v" />
+          <node concept="PpsgG" id="3Khhk9mDoZh" role="2Ii6_p">
+            <node concept="PpsgP" id="3Khhk9mDoZn" role="PpsgJ" />
+          </node>
+        </node>
+        <node concept="3ErYpN" id="3Khhk9mDoZq" role="3EKcdS">
+          <ref role="3ErYpM" to="apxn:7Prjhj4VsyT" resolve="Window" />
+        </node>
+      </node>
+    </node>
+    <node concept="2Z2XuU" id="3Khhk9mDoYn" role="2Z2yyZ">
+      <property role="TrG5h" value="onDestroy" />
+      <node concept="1H_U6b" id="3Khhk9mDoZV" role="2Z2XuZ">
+        <node concept="2IuscL" id="3Khhk9mDp04" role="1HxJ53">
+          <node concept="1gVlqW" id="3Khhk9mDp0a" role="2IuscM">
+            <property role="1gVlqZ" value="destroying" />
+          </node>
+          <node concept="39S3$b" id="3Khhk9mDp00" role="2IuscK">
+            <ref role="39S3$4" node="3Khhk9mDoY$" resolve="log" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
