@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
+    <use id="a4829704-6b1b-4b3f-8122-a4a2e6ac90ff" name="org.mar9000.mps.ecmascript" version="14" />
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
   <imports>
@@ -81,6 +82,33 @@
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
+      </concept>
+    </language>
+    <language id="a4829704-6b1b-4b3f-8122-a4a2e6ac90ff" name="org.mar9000.mps.ecmascript">
+      <concept id="8569071899956281838" name="org.mar9000.mps.ecmascript.structure.JSStringLiteral" flags="ng" index="2dhBij">
+        <property id="7727025628334104963" name="singleQuotedValue" index="3S2$_t" />
+      </concept>
+      <concept id="8569071899956248883" name="org.mar9000.mps.ecmascript.structure.JSSimpleVariableDeclaration" flags="ng" index="2dhZhe">
+        <child id="8569071899956249032" name="id" index="2dhZiP" />
+        <child id="5897985433066182785" name="identifier" index="3PzO81" />
+      </concept>
+      <concept id="8569071899948453782" name="org.mar9000.mps.ecmascript.structure.SingleLineComment" flags="ng" index="2dRJFF">
+        <property id="8569071899948841192" name="value" index="2dO0Ql" />
+      </concept>
+      <concept id="9032898229219756487" name="org.mar9000.mps.ecmascript.structure.JSEnvironment" flags="ng" index="2TJkjj">
+        <child id="9032898229219759557" name="body" index="2TJlzh" />
+      </concept>
+      <concept id="201656743169483908" name="org.mar9000.mps.ecmascript.structure.JSVariableStatement" flags="ng" index="1dSo$T">
+        <child id="201656743169484504" name="declarations" index="1dSoH_" />
+      </concept>
+      <concept id="201656743169479441" name="org.mar9000.mps.ecmascript.structure.JSIdentifier" flags="ng" index="1dSrUG" />
+      <concept id="6713311115387175170" name="org.mar9000.mps.ecmascript.structure.JSImport" flags="ng" index="1mvZBA" />
+      <concept id="6713311115387176128" name="org.mar9000.mps.ecmascript.structure.JSBindingIdentifier" flags="ng" index="1mvZK$" />
+      <concept id="6713311115379658961" name="org.mar9000.mps.ecmascript.structure.JSAbstractImportDeclaration" flags="ng" index="1nMawP">
+        <child id="6713311115387421386" name="moduleSpecifier" index="1msNCI" />
+      </concept>
+      <concept id="7976543974480660201" name="org.mar9000.mps.ecmascript.structure.JSIImportedDefaultBinding" flags="ng" index="3owqqi">
+        <child id="7976543974480660202" name="defaultBinding" index="3owqqh" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -481,6 +509,36 @@
       <node concept="3Tm1VV" id="43JkLIfnk_U" role="1B3o_S" />
     </node>
     <node concept="3Tm1VV" id="43JkLIfnk$f" role="1B3o_S" />
+  </node>
+  <node concept="2TJkjj" id="3Khhk9mFPsN">
+    <property role="TrG5h" value="GenerationEnv" />
+    <node concept="2dRJFF" id="3Khhk9mFPtz" role="2TJlzh">
+      <property role="2dO0Ql" value="This module is a hack to allow easier name resolution for common variables that usually are in scope." />
+    </node>
+    <node concept="1mvZBA" id="7as9CNNZLBj" role="2TJlzh">
+      <node concept="2dhBij" id="7as9CNNZLBl" role="1msNCI">
+        <property role="3S2$_t" value="svelte/internal" />
+      </node>
+      <node concept="1mvZK$" id="7as9CNNZLBA" role="3owqqh">
+        <property role="TrG5h" value="_svelte" />
+      </node>
+    </node>
+    <node concept="1dSo$T" id="3Khhk9mFPsO" role="2TJlzh">
+      <node concept="2dhZhe" id="3Khhk9mFPsS" role="1dSoH_">
+        <node concept="1dSrUG" id="3Khhk9mFPsU" role="2dhZiP" />
+        <node concept="1mvZK$" id="3Khhk9mFPsW" role="3PzO81">
+          <property role="TrG5h" value="ctx" />
+        </node>
+      </node>
+    </node>
+    <node concept="1dSo$T" id="3Khhk9mGixx" role="2TJlzh">
+      <node concept="2dhZhe" id="3Khhk9mGixJ" role="1dSoH_">
+        <node concept="1dSrUG" id="3Khhk9mGixL" role="2dhZiP" />
+        <node concept="1mvZK$" id="3Khhk9mGixN" role="3PzO81">
+          <property role="TrG5h" value="$$invalidate" />
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 

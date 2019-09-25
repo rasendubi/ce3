@@ -1538,7 +1538,7 @@
           </node>
         </node>
         <node concept="3F2HdR" id="7Nww1niAkde" role="3EZMnx">
-          <property role="2czwfO" value=", " />
+          <property role="2czwfO" value="," />
           <ref role="1NtTu8" to="xp1n:7Nww1niAkcB" resolve="args" />
           <node concept="l2Vlx" id="7Nww1niAkdg" role="2czzBx" />
           <node concept="3F0ifn" id="3zjuB6EJH$g" role="2czzBI">
