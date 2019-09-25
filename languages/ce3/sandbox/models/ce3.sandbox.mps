@@ -107,6 +107,11 @@
       <concept id="4328316868103089673" name="ce3.structure.EntryPoint" flags="ng" index="1EzeHb">
         <child id="4328316868103089674" name="mainComponent" index="1EzeH8" />
       </concept>
+      <concept id="4328316868103718959" name="ce3.structure.IfExpr" flags="ng" index="1EHwPH">
+        <child id="4328316868103718962" name="then" index="1EHwPK" />
+        <child id="4328316868103718960" name="condition" index="1EHwPM" />
+        <child id="4328316868103718965" name="else" index="1EHwPR" />
+      </concept>
       <concept id="8348239190576416475" name="ce3.structure.Function" flags="ng" index="1H_U6b">
         <child id="1812744551131664695" name="resultType" index="27$ByB" />
         <child id="8348239190577387027" name="expr" index="1HxJ53" />
@@ -1433,6 +1438,36 @@
         <ref role="1gPmzA" to="nfbi:z8dq5o7lP2" resolve="div" />
       </node>
     </node>
+    <node concept="1vfq6I" id="3Khhk9mFHku" role="1vfq6G">
+      <node concept="1gPmzB" id="3Khhk9mFHlN" role="1gPmzY">
+        <ref role="1gPmzA" to="nfbi:3Khhk9mBnFR" resolve="hr" />
+      </node>
+    </node>
+    <node concept="1gVlqW" id="3Khhk9mFHnc" role="1vfq6G">
+      <property role="1gVlqZ" value="IfExpr:" />
+    </node>
+    <node concept="1vfq6I" id="3Khhk9mFHpV" role="1vfq6G">
+      <node concept="1vfq6I" id="3Khhk9mFHro" role="1vfq6V">
+        <node concept="1vfq6M" id="3Khhk9mFHru" role="1vfq6L">
+          <property role="TrG5h" value="cond" />
+          <node concept="3ed_d4" id="3Khhk9mFHrA" role="1gVlq1">
+            <property role="3edl7N" value="43JkLIeQdSD/opRem" />
+            <node concept="3LTgFo" id="3Khhk9mFHrH" role="3ed_dY">
+              <property role="3LTgFp" value="2" />
+            </node>
+            <node concept="39$weE" id="3Khhk9mFHry" role="3ed_dV">
+              <ref role="39$weF" node="3Khhk9mB5Qo" resolve="time" />
+            </node>
+          </node>
+        </node>
+        <node concept="1gPmzB" id="3Khhk9mFHrq" role="1gPmzY">
+          <ref role="1gPmzA" node="3Khhk9mFkW3" resolve="IfExpr" />
+        </node>
+      </node>
+      <node concept="1gPmzB" id="3Khhk9mFHrj" role="1gPmzY">
+        <ref role="1gPmzA" to="nfbi:z8dq5o7lP2" resolve="div" />
+      </node>
+    </node>
     <node concept="1vfq6I" id="3Khhk9mBnFE" role="1vfq6G">
       <node concept="1gPmzB" id="3Khhk9mBnFS" role="1gPmzY">
         <ref role="1gPmzA" to="nfbi:3Khhk9mBnFR" resolve="hr" />
@@ -1600,6 +1635,31 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="1vfq6F" id="3Khhk9mFkW3">
+    <property role="3GE5qa" value="examples" />
+    <property role="TrG5h" value="IfExpr" />
+    <node concept="1gSCKQ" id="3Khhk9mFkW4" role="1gSCK2">
+      <property role="TrG5h" value="cond" />
+      <node concept="PZSPk" id="3Khhk9mFkW9" role="yFGMo" />
+    </node>
+    <node concept="2Z2XuU" id="3Khhk9mFkWc" role="2Z2yyZ">
+      <property role="TrG5h" value="s" />
+      <node concept="1EHwPH" id="3Khhk9mFkWg" role="2Z2XuZ">
+        <node concept="1gSYO3" id="3Khhk9mFkWs" role="1EHwPM">
+          <ref role="3e$uYC" node="3Khhk9mFkW4" resolve="cond" />
+        </node>
+        <node concept="1gVlqW" id="3Khhk9mFkWv" role="1EHwPK">
+          <property role="1gVlqZ" value="is true" />
+        </node>
+        <node concept="1gVlqW" id="3Khhk9mFkWx" role="1EHwPR">
+          <property role="1gVlqZ" value="is false" />
+        </node>
+      </node>
+    </node>
+    <node concept="39S3$b" id="3Khhk9mFkWz" role="1vfq6G">
+      <ref role="39S3$4" node="3Khhk9mFkWc" resolve="s" />
     </node>
   </node>
 </model>
