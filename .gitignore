@@ -1,4 +1,6 @@
 /.mps/workspace.xml
+/build/
+/TEST-*.xml
 source_gen.caches
 source_gen
 test_gen.caches

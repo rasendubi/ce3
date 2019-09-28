@@ -7,6 +7,7 @@
       <modulePath path="$PROJECT_DIR$/languages/ce3.types/ce3.types.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/ce3/ce3.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/ce3/sandbox/ce3.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/ce3.build/ce3.build.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/ce3.tests/ce3.tests.msd" folder="" />
     </projectModules>
   </component>
