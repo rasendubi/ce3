@@ -5,7 +5,6 @@
     <use id="70550421-e6c9-4d59-a12a-7918a95c5525" name="ce3" version="0" />
   </languages>
   <imports>
-    <import index="rgc5" ref="642f71f8-327a-425b-84f9-44ad58786d27/f:project#8b4ab1de-2aad-4e60-8dee-350cb83d3086(jetbrains.mps.lang.project.modules/module.org.mar9000.mps.ecmascript.runtime@project_stub)" />
     <import index="apxn" ref="r:5956af82-53d4-4b0b-aada-46792869763b(org.mar9000.mps.ecmascript.runtime.global)" />
     <import index="nfbi" ref="r:95e01337-9149-46b9-9417-b7ea1e4ee12a(ce3.components.builtin)" implicit="true" />
   </imports>
