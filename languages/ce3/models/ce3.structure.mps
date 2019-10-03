@@ -6,9 +6,9 @@
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
+    <import index="rh3e" ref="r:33c6cc84-4a64-455a-8222-df658e689ef1(org.mar9000.mps.ecmascript.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="epcs" ref="r:a894b8ac-2ec6-42a4-9223-aed4b5531700(ce3.types.structure)" implicit="true" />
-    <import index="rh3e" ref="r:33c6cc84-4a64-455a-8222-df658e689ef1(org.mar9000.mps.ecmascript.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -736,6 +736,18 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="else" />
       <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="z8dq5o9mcs" resolve="AbstractValue" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="68qtNm_UP63">
+    <property role="EcuMT" value="7069093637412049283" />
+    <property role="TrG5h" value="Fragment" />
+    <ref role="1TJDcQ" node="z8dq5o9mcs" resolve="AbstractValue" />
+    <node concept="1TJgyj" id="68qtNm_UP64" role="1TKVEi">
+      <property role="IQ2ns" value="7069093637412049284" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="pieces" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="z8dq5o9mcs" resolve="AbstractValue" />
     </node>
   </node>
