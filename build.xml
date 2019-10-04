@@ -307,6 +307,134 @@
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-ce3.types-generator-template" prefix="module/generator/template" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-ce3.types-models" prefix="module/models" />
     </jar>
+    <mkdir dir="${build.tmp}/default/ce3.css.jar" />
+    <mkdir dir="${build.tmp}/default/ce3.css.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/ce3.css.jar/META-INF/module.xml">
+      <module namespace="ce3.css" type="language" uuid="9696cb19-1101-4360-84f4-0f37aece0316">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" kind="rt" />
+          <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" kind="rt" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" kind="rt" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" kind="rt" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" kind="rt" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" kind="rt" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" kind="rt" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" kind="rt" />
+          <module ref="8e98f4e2-decf-4e97-bf80-9109e8b759ee(jetbrains.mps.lang.constraints.rules.runtime)" kind="rt" />
+          <module ref="0a98f3e2-decf-4e97-bf80-9109eccc59bb(jetbrains.mps.lang.feedback.problem.rules)" kind="rt" />
+          <module ref="9abaaae2-decf-4e97-bf80-9109e8b759cc(jetbrains.mps.lang.messages.api)" kind="rt" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
+          <module ref="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" kind="cl" />
+        </dependencies>
+        <uses>
+          <language id="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" />
+          <language id="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" />
+          <language id="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" />
+          <language id="l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc" />
+          <language id="l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging" />
+          <language id="l:a247e09e-2435-45ba-b8d2-07e93feba96a:jetbrains.mps.baseLanguage.tuples" />
+          <language id="l:aee9cad2-acd4-4608-aef2-0004f6a1cdbd:jetbrains.mps.lang.actions" />
+          <language id="l:af65afd8-f0dd-4942-87d9-63a55f2a9db1:jetbrains.mps.lang.behavior" />
+          <language id="l:3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1:jetbrains.mps.lang.constraints" />
+          <language id="l:e51810c5-7308-4642-bcb6-469e61b5dd18:jetbrains.mps.lang.constraints.msg.specification" />
+          <language id="l:5dae8159-ab99-46bb-a40d-0cee30ee7018:jetbrains.mps.lang.constraints.rules.kinds" />
+          <language id="l:134c38d4-e3af-4d9e-b069-1c7df0a4005d:jetbrains.mps.lang.constraints.rules.skeleton" />
+          <language id="l:3ad5badc-1d9c-461c-b7b1-fa2fcd0a0ae7:jetbrains.mps.lang.context" />
+          <language id="l:ea3159bf-f48e-4720-bde2-86dba75f0d34:jetbrains.mps.lang.context.defs" />
+          <language id="l:f4ad079d-bc71-4ffb-9600-9328705cf998:jetbrains.mps.lang.descriptor" />
+          <language id="l:18bc6592-03a6-4e29-a83a-7ff23bde13ba:jetbrains.mps.lang.editor" />
+          <language id="l:ad93155d-79b2-4759-b10c-55123e763903:jetbrains.mps.lang.messages" />
+          <language id="l:d4615e3b-d671-4ba9-af01-2b78369b0ba7:jetbrains.mps.lang.pattern" />
+          <language id="l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation" />
+          <language id="l:982eb8df-2c96-4bd7-9963-11712ea622e5:jetbrains.mps.lang.resources" />
+          <language id="l:b3551702-269c-4f05-ba61-58060cef4292:jetbrains.mps.lang.rulesAndMessages" />
+          <language id="l:13744753-c81f-424a-9c1b-cf8943bf4e86:jetbrains.mps.lang.sharedConcepts" />
+          <language id="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" />
+          <language id="l:c72da2b9-7cce-4447-8389-f407dc1158b7:jetbrains.mps.lang.structure" />
+          <language id="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" />
+          <language id="l:b83431fe-5c8f-40bc-8a36-65e25f4dd253:jetbrains.mps.lang.textGen" />
+          <language id="l:7a5dda62-9140-4668-ab76-d5ed1746f2b2:jetbrains.mps.lang.typesystem" />
+        </uses>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="ce3.css-src.jar" descriptor="ce3.css.mpl" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.layout}/ce3/languages/ce3/ce3.css.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/ce3.css" />
+      <fileset dir="${project_home}/languages/ce3.css/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/ce3.css.jar" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/ce3.css-generator.jar" />
+    <mkdir dir="${build.tmp}/default/ce3.css-generator.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/ce3.css-generator.jar/META-INF/module.xml">
+      <module namespace="ce3.css#01" type="generator" uuid="f3735d07-c24b-4ae4-bfd2-25303e8ba780">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" kind="rt" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" kind="rt" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" kind="rt" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" kind="rt" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" kind="rt" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" kind="rt" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" kind="rt" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
+          <module ref="9696cb19-1101-4360-84f4-0f37aece0316(ce3.css)" kind="cl" />
+        </dependencies>
+        <uses>
+          <language id="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" />
+          <language id="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" />
+          <language id="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" />
+          <language id="l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc" />
+          <language id="l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging" />
+          <language id="l:a247e09e-2435-45ba-b8d2-07e93feba96a:jetbrains.mps.baseLanguage.tuples" />
+          <language id="l:b401a680-8325-4110-8fd3-84331ff25bef:jetbrains.mps.lang.generator" />
+          <language id="l:d7706f63-9be2-479c-a3da-ae92af1e64d5:jetbrains.mps.lang.generator.generationContext" />
+          <language id="l:289fcc83-6543-41e8-a5ca-768235715ce4:jetbrains.mps.lang.generator.generationParameters" />
+          <language id="l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation" />
+          <language id="l:13744753-c81f-424a-9c1b-cf8943bf4e86:jetbrains.mps.lang.sharedConcepts" />
+          <language id="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" />
+          <language id="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" />
+        </uses>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="ce3.css-src.jar" descriptor="ce3.css.mpl" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.layout}/ce3/languages/ce3/ce3.css-generator.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/ce3.css#01" />
+      <fileset dir="${build.tmp}/default/ce3.css-generator.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-ce3.css-generator-template">
+      <fileset dir="${project_home}/languages/ce3.css/generator/template" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-ce3.css-models">
+      <fileset dir="${project_home}/languages/ce3.css/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.layout}/ce3/languages/ce3/ce3.css-src.jar" duplicate="preserve">
+      <fileset dir="${project_home}/languages/ce3.css/generator/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <fileset dir="${project_home}/languages/ce3.css/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <zipfileset file="${basedir}/languages/ce3.css/ce3.css.mpl" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-ce3.css-generator-template" prefix="module/generator/template" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-ce3.css-models" prefix="module/models" />
+    </jar>
     <mkdir dir="${build.tmp}/default/org.mar9000.mps.ecmascript.jar" />
     <mkdir dir="${build.tmp}/default/org.mar9000.mps.ecmascript.jar/META-INF" />
     <echoxml file="${build.tmp}/default/org.mar9000.mps.ecmascript.jar/META-INF/module.xml">
@@ -587,6 +715,135 @@
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-ce3.types-generator-template1" prefix="module/generator/template" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-ce3.types-models1" prefix="module/models" />
     </jar>
+    <mkdir dir="${build.layout}/ce3/languages" />
+    <mkdir dir="${build.tmp}/default/ce3.css.jar1" />
+    <mkdir dir="${build.tmp}/default/ce3.css.jar1/META-INF" />
+    <echoxml file="${build.tmp}/default/ce3.css.jar1/META-INF/module.xml">
+      <module namespace="ce3.css" type="language" uuid="9696cb19-1101-4360-84f4-0f37aece0316">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" kind="rt" />
+          <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" kind="rt" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" kind="rt" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" kind="rt" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" kind="rt" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" kind="rt" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" kind="rt" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" kind="rt" />
+          <module ref="8e98f4e2-decf-4e97-bf80-9109e8b759ee(jetbrains.mps.lang.constraints.rules.runtime)" kind="rt" />
+          <module ref="0a98f3e2-decf-4e97-bf80-9109eccc59bb(jetbrains.mps.lang.feedback.problem.rules)" kind="rt" />
+          <module ref="9abaaae2-decf-4e97-bf80-9109e8b759cc(jetbrains.mps.lang.messages.api)" kind="rt" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
+          <module ref="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" kind="cl" />
+        </dependencies>
+        <uses>
+          <language id="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" />
+          <language id="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" />
+          <language id="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" />
+          <language id="l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc" />
+          <language id="l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging" />
+          <language id="l:a247e09e-2435-45ba-b8d2-07e93feba96a:jetbrains.mps.baseLanguage.tuples" />
+          <language id="l:aee9cad2-acd4-4608-aef2-0004f6a1cdbd:jetbrains.mps.lang.actions" />
+          <language id="l:af65afd8-f0dd-4942-87d9-63a55f2a9db1:jetbrains.mps.lang.behavior" />
+          <language id="l:3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1:jetbrains.mps.lang.constraints" />
+          <language id="l:e51810c5-7308-4642-bcb6-469e61b5dd18:jetbrains.mps.lang.constraints.msg.specification" />
+          <language id="l:5dae8159-ab99-46bb-a40d-0cee30ee7018:jetbrains.mps.lang.constraints.rules.kinds" />
+          <language id="l:134c38d4-e3af-4d9e-b069-1c7df0a4005d:jetbrains.mps.lang.constraints.rules.skeleton" />
+          <language id="l:3ad5badc-1d9c-461c-b7b1-fa2fcd0a0ae7:jetbrains.mps.lang.context" />
+          <language id="l:ea3159bf-f48e-4720-bde2-86dba75f0d34:jetbrains.mps.lang.context.defs" />
+          <language id="l:f4ad079d-bc71-4ffb-9600-9328705cf998:jetbrains.mps.lang.descriptor" />
+          <language id="l:18bc6592-03a6-4e29-a83a-7ff23bde13ba:jetbrains.mps.lang.editor" />
+          <language id="l:ad93155d-79b2-4759-b10c-55123e763903:jetbrains.mps.lang.messages" />
+          <language id="l:d4615e3b-d671-4ba9-af01-2b78369b0ba7:jetbrains.mps.lang.pattern" />
+          <language id="l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation" />
+          <language id="l:982eb8df-2c96-4bd7-9963-11712ea622e5:jetbrains.mps.lang.resources" />
+          <language id="l:b3551702-269c-4f05-ba61-58060cef4292:jetbrains.mps.lang.rulesAndMessages" />
+          <language id="l:13744753-c81f-424a-9c1b-cf8943bf4e86:jetbrains.mps.lang.sharedConcepts" />
+          <language id="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" />
+          <language id="l:c72da2b9-7cce-4447-8389-f407dc1158b7:jetbrains.mps.lang.structure" />
+          <language id="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" />
+          <language id="l:b83431fe-5c8f-40bc-8a36-65e25f4dd253:jetbrains.mps.lang.textGen" />
+          <language id="l:7a5dda62-9140-4668-ab76-d5ed1746f2b2:jetbrains.mps.lang.typesystem" />
+        </uses>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="ce3.css-src.jar" descriptor="ce3.css.mpl" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.layout}/ce3/languages/ce3.css.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/ce3.css" />
+      <fileset dir="${project_home}/languages/ce3.css/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/ce3.css.jar1" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/ce3.css-generator.jar1" />
+    <mkdir dir="${build.tmp}/default/ce3.css-generator.jar1/META-INF" />
+    <echoxml file="${build.tmp}/default/ce3.css-generator.jar1/META-INF/module.xml">
+      <module namespace="ce3.css#01" type="generator" uuid="f3735d07-c24b-4ae4-bfd2-25303e8ba780">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" kind="rt" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" kind="rt" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" kind="rt" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" kind="rt" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" kind="rt" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" kind="rt" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" kind="rt" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
+          <module ref="9696cb19-1101-4360-84f4-0f37aece0316(ce3.css)" kind="cl" />
+        </dependencies>
+        <uses>
+          <language id="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" />
+          <language id="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" />
+          <language id="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" />
+          <language id="l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc" />
+          <language id="l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging" />
+          <language id="l:a247e09e-2435-45ba-b8d2-07e93feba96a:jetbrains.mps.baseLanguage.tuples" />
+          <language id="l:b401a680-8325-4110-8fd3-84331ff25bef:jetbrains.mps.lang.generator" />
+          <language id="l:d7706f63-9be2-479c-a3da-ae92af1e64d5:jetbrains.mps.lang.generator.generationContext" />
+          <language id="l:289fcc83-6543-41e8-a5ca-768235715ce4:jetbrains.mps.lang.generator.generationParameters" />
+          <language id="l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation" />
+          <language id="l:13744753-c81f-424a-9c1b-cf8943bf4e86:jetbrains.mps.lang.sharedConcepts" />
+          <language id="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" />
+          <language id="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" />
+        </uses>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="ce3.css-src.jar" descriptor="ce3.css.mpl" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.layout}/ce3/languages/ce3.css-generator.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/ce3.css#01" />
+      <fileset dir="${build.tmp}/default/ce3.css-generator.jar1" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-ce3.css-generator-template1">
+      <fileset dir="${project_home}/languages/ce3.css/generator/template" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-ce3.css-models1">
+      <fileset dir="${project_home}/languages/ce3.css/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.layout}/ce3/languages/ce3.css-src.jar" duplicate="preserve">
+      <fileset dir="${project_home}/languages/ce3.css/generator/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <fileset dir="${project_home}/languages/ce3.css/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <zipfileset file="${basedir}/languages/ce3.css/ce3.css.mpl" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-ce3.css-generator-template1" prefix="module/generator/template" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-ce3.css-models1" prefix="module/models" />
+    </jar>
     <mkdir dir="${build.tmp}/default/ce3.jar1" />
     <mkdir dir="${build.tmp}/default/ce3.jar1/META-INF" />
     <echoxml file="${build.tmp}/default/ce3.jar1/META-INF/module.xml">
@@ -849,145 +1106,10 @@
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-ce3.types-generator-template2" prefix="module/generator/template" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-ce3.types-models2" prefix="module/models" />
     </jar>
-    <mkdir dir="${build.tmp}/default/ce3.jar2" />
-    <mkdir dir="${build.tmp}/default/ce3.jar2/META-INF" />
-    <echoxml file="${build.tmp}/default/ce3.jar2/META-INF/module.xml">
-      <module namespace="ce3" type="language" uuid="70550421-e6c9-4d59-a12a-7918a95c5525">
-        <dependencies>
-          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
-          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" kind="rt" />
-          <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" kind="rt" />
-          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" kind="rt" />
-          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" kind="rt" />
-          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" kind="rt" />
-          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" kind="rt" />
-          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" kind="rt" />
-          <module ref="23949432-aaff-4c03-b7da-26e4e956ccea(jetbrains.mps.baseLanguage.regexp.runtime)" kind="rt" />
-          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" kind="rt" />
-          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" kind="rt" />
-          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" kind="rt" />
-          <module ref="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" kind="rt" />
-          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
-          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="cl" />
-          <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" kind="cl" />
-          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" kind="cl" />
-          <module ref="b6578dbc-c839-4c3b-9eb3-c6edf889705e(ce3.types)" kind="cl" />
-          <module ref="5b1f863d-65a0-41a6-a801-33896be24202(jetbrains.mps.ide.editor)" kind="cl" />
-          <module ref="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" kind="cl" />
-          <module ref="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" kind="cl" />
-          <module ref="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" kind="cl" />
-          <module ref="a4829704-6b1b-4b3f-8122-a4a2e6ac90ff(org.mar9000.mps.ecmascript)" kind="cl" />
-          <module ref="8b4ab1de-2aad-4e60-8dee-350cb83d3086(org.mar9000.mps.ecmascript.runtime)" kind="cl" />
-        </dependencies>
-        <uses>
-          <language id="l:b6578dbc-c839-4c3b-9eb3-c6edf889705e:ce3.types" />
-          <language id="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" />
-          <language id="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" />
-          <language id="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" />
-          <language id="l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc" />
-          <language id="l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging" />
-          <language id="l:daafa647-f1f7-4b0b-b096-69cd7c8408c0:jetbrains.mps.baseLanguage.regexp" />
-          <language id="l:a247e09e-2435-45ba-b8d2-07e93feba96a:jetbrains.mps.baseLanguage.tuples" />
-          <language id="l:aee9cad2-acd4-4608-aef2-0004f6a1cdbd:jetbrains.mps.lang.actions" />
-          <language id="l:af65afd8-f0dd-4942-87d9-63a55f2a9db1:jetbrains.mps.lang.behavior" />
-          <language id="l:3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1:jetbrains.mps.lang.constraints" />
-          <language id="l:f4ad079d-bc71-4ffb-9600-9328705cf998:jetbrains.mps.lang.descriptor" />
-          <language id="l:18bc6592-03a6-4e29-a83a-7ff23bde13ba:jetbrains.mps.lang.editor" />
-          <language id="l:d4615e3b-d671-4ba9-af01-2b78369b0ba7:jetbrains.mps.lang.pattern" />
-          <language id="l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation" />
-          <language id="l:982eb8df-2c96-4bd7-9963-11712ea622e5:jetbrains.mps.lang.resources" />
-          <language id="l:d8f591ec-4d86-4af2-9f92-a9e93c803ffa:jetbrains.mps.lang.scopes" />
-          <language id="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" />
-          <language id="l:c72da2b9-7cce-4447-8389-f407dc1158b7:jetbrains.mps.lang.structure" />
-          <language id="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" />
-          <language id="l:b83431fe-5c8f-40bc-8a36-65e25f4dd253:jetbrains.mps.lang.textGen" />
-          <language id="l:7a5dda62-9140-4668-ab76-d5ed1746f2b2:jetbrains.mps.lang.typesystem" />
-        </uses>
-        <classpath>
-          <entry path="." />
-        </classpath>
-        <sources jar="ce3-src.jar" descriptor="ce3.mpl" />
-      </module>
-    </echoxml>
-    <jar destfile="${build.layout}/ce3.jar" duplicate="preserve">
-      <fileset dir="${build.tmp}/java/out/ce3" />
-      <fileset dir="${project_home}/languages/ce3/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
-      <fileset dir="${build.tmp}/default/ce3.jar2" />
-    </jar>
-    <mkdir dir="${build.tmp}/default/ce3-generator.jar2" />
-    <mkdir dir="${build.tmp}/default/ce3-generator.jar2/META-INF" />
-    <echoxml file="${build.tmp}/default/ce3-generator.jar2/META-INF/module.xml">
-      <module namespace="ce3#01" type="generator" uuid="6fe6875c-4e0a-4afa-9859-b16b693e8a90">
-        <dependencies>
-          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
-          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" kind="rt" />
-          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" kind="rt" />
-          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" kind="rt" />
-          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" kind="rt" />
-          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" kind="rt" />
-          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" kind="rt" />
-          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" kind="rt" />
-          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" kind="rt" />
-          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" kind="rt" />
-          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
-          <module ref="70550421-e6c9-4d59-a12a-7918a95c5525(ce3)" kind="cl" />
-          <module ref="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" kind="cl" />
-          <module ref="a4829704-6b1b-4b3f-8122-a4a2e6ac90ff(org.mar9000.mps.ecmascript)" kind="cl" />
-          <module ref="8b4ab1de-2aad-4e60-8dee-350cb83d3086(org.mar9000.mps.ecmascript.runtime)" kind="cl" />
-        </dependencies>
-        <uses>
-          <language id="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" />
-          <language id="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" />
-          <language id="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" />
-          <language id="l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc" />
-          <language id="l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging" />
-          <language id="l:a247e09e-2435-45ba-b8d2-07e93feba96a:jetbrains.mps.baseLanguage.tuples" />
-          <language id="l:b401a680-8325-4110-8fd3-84331ff25bef:jetbrains.mps.lang.generator" />
-          <language id="l:d7706f63-9be2-479c-a3da-ae92af1e64d5:jetbrains.mps.lang.generator.generationContext" />
-          <language id="l:289fcc83-6543-41e8-a5ca-768235715ce4:jetbrains.mps.lang.generator.generationParameters" />
-          <language id="l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation" />
-          <language id="l:13744753-c81f-424a-9c1b-cf8943bf4e86:jetbrains.mps.lang.sharedConcepts" />
-          <language id="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" />
-          <language id="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" />
-          <language id="l:a4829704-6b1b-4b3f-8122-a4a2e6ac90ff:org.mar9000.mps.ecmascript" />
-        </uses>
-        <classpath>
-          <entry path="." />
-        </classpath>
-        <sources jar="ce3-src.jar" descriptor="ce3.mpl" />
-      </module>
-    </echoxml>
-    <jar destfile="${build.layout}/ce3-generator.jar" duplicate="preserve">
-      <fileset dir="${build.tmp}/java/out/ce3#01" />
-      <fileset dir="${build.tmp}/default/ce3-generator.jar2" />
-    </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-ce3-generator-template2">
-      <fileset dir="${project_home}/languages/ce3/generator/template" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
-    </copyModels>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-ce3-models2">
-      <fileset dir="${project_home}/languages/ce3/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
-    </copyModels>
-    <jar destfile="${build.layout}/ce3-src.jar" duplicate="preserve">
-      <fileset dir="${project_home}/languages/ce3/generator/source_gen">
-        <exclude name="**/trace.info" />
-        <exclude name="**/exports" />
-        <exclude name="**/checkpoints" />
-        <exclude name="**/*.mps" />
-      </fileset>
-      <fileset dir="${project_home}/languages/ce3/source_gen">
-        <exclude name="**/trace.info" />
-        <exclude name="**/exports" />
-        <exclude name="**/checkpoints" />
-        <exclude name="**/*.mps" />
-      </fileset>
-      <zipfileset file="${basedir}/languages/ce3/ce3.mpl" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-ce3-generator-template2" prefix="module/generator/template" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-ce3-models2" prefix="module/models" />
-    </jar>
-    <mkdir dir="${build.tmp}/default/ce3.types.jar3" />
-    <mkdir dir="${build.tmp}/default/ce3.types.jar3/META-INF" />
-    <echoxml file="${build.tmp}/default/ce3.types.jar3/META-INF/module.xml">
-      <module namespace="ce3.types" type="language" uuid="b6578dbc-c839-4c3b-9eb3-c6edf889705e">
+    <mkdir dir="${build.tmp}/default/ce3.css.jar2" />
+    <mkdir dir="${build.tmp}/default/ce3.css.jar2/META-INF" />
+    <echoxml file="${build.tmp}/default/ce3.css.jar2/META-INF/module.xml">
+      <module namespace="ce3.css" type="language" uuid="9696cb19-1101-4360-84f4-0f37aece0316">
         <dependencies>
           <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
           <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" kind="rt" />
@@ -1032,23 +1154,24 @@
           <language id="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" />
           <language id="l:c72da2b9-7cce-4447-8389-f407dc1158b7:jetbrains.mps.lang.structure" />
           <language id="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" />
+          <language id="l:b83431fe-5c8f-40bc-8a36-65e25f4dd253:jetbrains.mps.lang.textGen" />
           <language id="l:7a5dda62-9140-4668-ab76-d5ed1746f2b2:jetbrains.mps.lang.typesystem" />
         </uses>
         <classpath>
           <entry path="." />
         </classpath>
-        <sources jar="ce3.types-src.jar" descriptor="ce3.types.mpl" />
+        <sources jar="ce3.css-src.jar" descriptor="ce3.css.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.layout}/ce3.types.jar" duplicate="preserve">
-      <fileset dir="${build.tmp}/java/out/ce3.types" />
-      <fileset dir="${project_home}/languages/ce3.types/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
-      <fileset dir="${build.tmp}/default/ce3.types.jar3" />
+    <jar destfile="${build.layout}/ce3/ce3.css.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/ce3.css" />
+      <fileset dir="${project_home}/languages/ce3.css/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/ce3.css.jar2" />
     </jar>
-    <mkdir dir="${build.tmp}/default/ce3.types-generator.jar3" />
-    <mkdir dir="${build.tmp}/default/ce3.types-generator.jar3/META-INF" />
-    <echoxml file="${build.tmp}/default/ce3.types-generator.jar3/META-INF/module.xml">
-      <module namespace="ce3.types#01" type="generator" uuid="ebc24178-eaf7-42bd-8e44-544475845c42">
+    <mkdir dir="${build.tmp}/default/ce3.css-generator.jar2" />
+    <mkdir dir="${build.tmp}/default/ce3.css-generator.jar2/META-INF" />
+    <echoxml file="${build.tmp}/default/ce3.css-generator.jar2/META-INF/module.xml">
+      <module namespace="ce3.css#01" type="generator" uuid="f3735d07-c24b-4ae4-bfd2-25303e8ba780">
         <dependencies>
           <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
           <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" kind="rt" />
@@ -1061,7 +1184,7 @@
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" kind="rt" />
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" kind="rt" />
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
-          <module ref="b6578dbc-c839-4c3b-9eb3-c6edf889705e(ce3.types)" kind="cl" />
+          <module ref="9696cb19-1101-4360-84f4-0f37aece0316(ce3.css)" kind="cl" />
         </dependencies>
         <uses>
           <language id="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" />
@@ -1081,35 +1204,35 @@
         <classpath>
           <entry path="." />
         </classpath>
-        <sources jar="ce3.types-src.jar" descriptor="ce3.types.mpl" />
+        <sources jar="ce3.css-src.jar" descriptor="ce3.css.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.layout}/ce3.types-generator.jar" duplicate="preserve">
-      <fileset dir="${build.tmp}/java/out/ce3.types#01" />
-      <fileset dir="${build.tmp}/default/ce3.types-generator.jar3" />
+    <jar destfile="${build.layout}/ce3/ce3.css-generator.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/ce3.css#01" />
+      <fileset dir="${build.tmp}/default/ce3.css-generator.jar2" />
     </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-ce3.types-generator-template3">
-      <fileset dir="${project_home}/languages/ce3.types/generator/template" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-ce3.css-generator-template2">
+      <fileset dir="${project_home}/languages/ce3.css/generator/template" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-ce3.types-models3">
-      <fileset dir="${project_home}/languages/ce3.types/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-ce3.css-models2">
+      <fileset dir="${project_home}/languages/ce3.css/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.layout}/ce3.types-src.jar" duplicate="preserve">
-      <fileset dir="${project_home}/languages/ce3.types/generator/source_gen">
+    <jar destfile="${build.layout}/ce3/ce3.css-src.jar" duplicate="preserve">
+      <fileset dir="${project_home}/languages/ce3.css/generator/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
         <exclude name="**/checkpoints" />
         <exclude name="**/*.mps" />
       </fileset>
-      <fileset dir="${project_home}/languages/ce3.types/source_gen">
+      <fileset dir="${project_home}/languages/ce3.css/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
         <exclude name="**/checkpoints" />
         <exclude name="**/*.mps" />
       </fileset>
-      <zipfileset file="${basedir}/languages/ce3.types/ce3.types.mpl" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-ce3.types-generator-template3" prefix="module/generator/template" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-ce3.types-models3" prefix="module/models" />
+      <zipfileset file="${basedir}/languages/ce3.css/ce3.css.mpl" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-ce3.css-generator-template2" prefix="module/generator/template" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-ce3.css-models2" prefix="module/models" />
     </jar>
     <mkdir dir="${build.tmp}/default/ce3.tests.jar" />
     <mkdir dir="${build.tmp}/default/ce3.tests.jar/META-INF" />
@@ -1194,6 +1317,38 @@
       </fileset>
       <zipfileset file="${basedir}/languages/ce3/sandbox/ce3.sandbox.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-ce3-sandbox-models" prefix="module/models" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/ce3.css.sandbox.jar" />
+    <mkdir dir="${build.tmp}/default/ce3.css.sandbox.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/ce3.css.sandbox.jar/META-INF/module.xml">
+      <module namespace="ce3.css.sandbox" type="solution" uuid="af3e0b58-bc43-4455-8d2e-25ed61c1dca0">
+        <dependencies />
+        <uses>
+          <language id="l:9696cb19-1101-4360-84f4-0f37aece0316:ce3.css" />
+        </uses>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="ce3.css.sandbox-src.jar" descriptor="ce3.css.sandbox.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.layout}/ce3.css.sandbox.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/ce3.css.sandbox" />
+      <fileset dir="${project_home}/languages/ce3.css/sandbox/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/ce3.css.sandbox.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-ce3.css-sandbox-models">
+      <fileset dir="${project_home}/languages/ce3.css/sandbox/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.layout}/ce3.css.sandbox-src.jar" duplicate="preserve">
+      <fileset dir="${project_home}/languages/ce3.css/sandbox/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <zipfileset file="${basedir}/languages/ce3.css/sandbox/ce3.css.sandbox.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-ce3.css-sandbox-models" prefix="module/models" />
     </jar>
     <mkdir dir="${build.tmp}/default/org.mar9000.mps.ecmascript.jar1" />
     <mkdir dir="${build.tmp}/default/org.mar9000.mps.ecmascript.jar1/META-INF" />
@@ -1364,9 +1519,9 @@
     </echoxml>
     <mkdir dir="${build.tmp}/default/ce3.zip/ce3/languages" />
     <mkdir dir="${build.tmp}/default/ce3.zip/ce3/languages/ce3" />
-    <mkdir dir="${build.tmp}/default/ce3.jar3" />
-    <mkdir dir="${build.tmp}/default/ce3.jar3/META-INF" />
-    <echoxml file="${build.tmp}/default/ce3.jar3/META-INF/module.xml">
+    <mkdir dir="${build.tmp}/default/ce3.jar2" />
+    <mkdir dir="${build.tmp}/default/ce3.jar2/META-INF" />
+    <echoxml file="${build.tmp}/default/ce3.jar2/META-INF/module.xml">
       <module namespace="ce3" type="language" uuid="70550421-e6c9-4d59-a12a-7918a95c5525">
         <dependencies>
           <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
@@ -1427,11 +1582,11 @@
     <jar destfile="${build.tmp}/default/ce3.zip/ce3/languages/ce3/ce3.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/ce3" />
       <fileset dir="${project_home}/languages/ce3/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
-      <fileset dir="${build.tmp}/default/ce3.jar3" />
+      <fileset dir="${build.tmp}/default/ce3.jar2" />
     </jar>
-    <mkdir dir="${build.tmp}/default/ce3-generator.jar3" />
-    <mkdir dir="${build.tmp}/default/ce3-generator.jar3/META-INF" />
-    <echoxml file="${build.tmp}/default/ce3-generator.jar3/META-INF/module.xml">
+    <mkdir dir="${build.tmp}/default/ce3-generator.jar2" />
+    <mkdir dir="${build.tmp}/default/ce3-generator.jar2/META-INF" />
+    <echoxml file="${build.tmp}/default/ce3-generator.jar2/META-INF/module.xml">
       <module namespace="ce3#01" type="generator" uuid="6fe6875c-4e0a-4afa-9859-b16b693e8a90">
         <dependencies>
           <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
@@ -1474,12 +1629,12 @@
     </echoxml>
     <jar destfile="${build.tmp}/default/ce3.zip/ce3/languages/ce3/ce3-generator.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/ce3#01" />
-      <fileset dir="${build.tmp}/default/ce3-generator.jar3" />
+      <fileset dir="${build.tmp}/default/ce3-generator.jar2" />
     </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-ce3-generator-template3">
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-ce3-generator-template2">
       <fileset dir="${project_home}/languages/ce3/generator/template" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-ce3-models3">
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-ce3-models2">
       <fileset dir="${project_home}/languages/ce3/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.tmp}/default/ce3.zip/ce3/languages/ce3/ce3-src.jar" duplicate="preserve">
@@ -1496,12 +1651,12 @@
         <exclude name="**/*.mps" />
       </fileset>
       <zipfileset file="${basedir}/languages/ce3/ce3.mpl" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-ce3-generator-template3" prefix="module/generator/template" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-ce3-models3" prefix="module/models" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-ce3-generator-template2" prefix="module/generator/template" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-ce3-models2" prefix="module/models" />
     </jar>
-    <mkdir dir="${build.tmp}/default/ce3.types.jar4" />
-    <mkdir dir="${build.tmp}/default/ce3.types.jar4/META-INF" />
-    <echoxml file="${build.tmp}/default/ce3.types.jar4/META-INF/module.xml">
+    <mkdir dir="${build.tmp}/default/ce3.types.jar3" />
+    <mkdir dir="${build.tmp}/default/ce3.types.jar3/META-INF" />
+    <echoxml file="${build.tmp}/default/ce3.types.jar3/META-INF/module.xml">
       <module namespace="ce3.types" type="language" uuid="b6578dbc-c839-4c3b-9eb3-c6edf889705e">
         <dependencies>
           <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
@@ -1558,11 +1713,11 @@
     <jar destfile="${build.tmp}/default/ce3.zip/ce3/languages/ce3/ce3.types.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/ce3.types" />
       <fileset dir="${project_home}/languages/ce3.types/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
-      <fileset dir="${build.tmp}/default/ce3.types.jar4" />
+      <fileset dir="${build.tmp}/default/ce3.types.jar3" />
     </jar>
-    <mkdir dir="${build.tmp}/default/ce3.types-generator.jar4" />
-    <mkdir dir="${build.tmp}/default/ce3.types-generator.jar4/META-INF" />
-    <echoxml file="${build.tmp}/default/ce3.types-generator.jar4/META-INF/module.xml">
+    <mkdir dir="${build.tmp}/default/ce3.types-generator.jar3" />
+    <mkdir dir="${build.tmp}/default/ce3.types-generator.jar3/META-INF" />
+    <echoxml file="${build.tmp}/default/ce3.types-generator.jar3/META-INF/module.xml">
       <module namespace="ce3.types#01" type="generator" uuid="ebc24178-eaf7-42bd-8e44-544475845c42">
         <dependencies>
           <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
@@ -1601,12 +1756,12 @@
     </echoxml>
     <jar destfile="${build.tmp}/default/ce3.zip/ce3/languages/ce3/ce3.types-generator.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/ce3.types#01" />
-      <fileset dir="${build.tmp}/default/ce3.types-generator.jar4" />
+      <fileset dir="${build.tmp}/default/ce3.types-generator.jar3" />
     </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-ce3.types-generator-template4">
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-ce3.types-generator-template3">
       <fileset dir="${project_home}/languages/ce3.types/generator/template" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-ce3.types-models4">
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-ce3.types-models3">
       <fileset dir="${project_home}/languages/ce3.types/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.tmp}/default/ce3.zip/ce3/languages/ce3/ce3.types-src.jar" duplicate="preserve">
@@ -1623,8 +1778,136 @@
         <exclude name="**/*.mps" />
       </fileset>
       <zipfileset file="${basedir}/languages/ce3.types/ce3.types.mpl" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-ce3.types-generator-template4" prefix="module/generator/template" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-ce3.types-models4" prefix="module/models" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-ce3.types-generator-template3" prefix="module/generator/template" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-ce3.types-models3" prefix="module/models" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/ce3.css.jar3" />
+    <mkdir dir="${build.tmp}/default/ce3.css.jar3/META-INF" />
+    <echoxml file="${build.tmp}/default/ce3.css.jar3/META-INF/module.xml">
+      <module namespace="ce3.css" type="language" uuid="9696cb19-1101-4360-84f4-0f37aece0316">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" kind="rt" />
+          <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" kind="rt" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" kind="rt" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" kind="rt" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" kind="rt" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" kind="rt" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" kind="rt" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" kind="rt" />
+          <module ref="8e98f4e2-decf-4e97-bf80-9109e8b759ee(jetbrains.mps.lang.constraints.rules.runtime)" kind="rt" />
+          <module ref="0a98f3e2-decf-4e97-bf80-9109eccc59bb(jetbrains.mps.lang.feedback.problem.rules)" kind="rt" />
+          <module ref="9abaaae2-decf-4e97-bf80-9109e8b759cc(jetbrains.mps.lang.messages.api)" kind="rt" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
+          <module ref="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" kind="cl" />
+        </dependencies>
+        <uses>
+          <language id="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" />
+          <language id="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" />
+          <language id="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" />
+          <language id="l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc" />
+          <language id="l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging" />
+          <language id="l:a247e09e-2435-45ba-b8d2-07e93feba96a:jetbrains.mps.baseLanguage.tuples" />
+          <language id="l:aee9cad2-acd4-4608-aef2-0004f6a1cdbd:jetbrains.mps.lang.actions" />
+          <language id="l:af65afd8-f0dd-4942-87d9-63a55f2a9db1:jetbrains.mps.lang.behavior" />
+          <language id="l:3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1:jetbrains.mps.lang.constraints" />
+          <language id="l:e51810c5-7308-4642-bcb6-469e61b5dd18:jetbrains.mps.lang.constraints.msg.specification" />
+          <language id="l:5dae8159-ab99-46bb-a40d-0cee30ee7018:jetbrains.mps.lang.constraints.rules.kinds" />
+          <language id="l:134c38d4-e3af-4d9e-b069-1c7df0a4005d:jetbrains.mps.lang.constraints.rules.skeleton" />
+          <language id="l:3ad5badc-1d9c-461c-b7b1-fa2fcd0a0ae7:jetbrains.mps.lang.context" />
+          <language id="l:ea3159bf-f48e-4720-bde2-86dba75f0d34:jetbrains.mps.lang.context.defs" />
+          <language id="l:f4ad079d-bc71-4ffb-9600-9328705cf998:jetbrains.mps.lang.descriptor" />
+          <language id="l:18bc6592-03a6-4e29-a83a-7ff23bde13ba:jetbrains.mps.lang.editor" />
+          <language id="l:ad93155d-79b2-4759-b10c-55123e763903:jetbrains.mps.lang.messages" />
+          <language id="l:d4615e3b-d671-4ba9-af01-2b78369b0ba7:jetbrains.mps.lang.pattern" />
+          <language id="l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation" />
+          <language id="l:982eb8df-2c96-4bd7-9963-11712ea622e5:jetbrains.mps.lang.resources" />
+          <language id="l:b3551702-269c-4f05-ba61-58060cef4292:jetbrains.mps.lang.rulesAndMessages" />
+          <language id="l:13744753-c81f-424a-9c1b-cf8943bf4e86:jetbrains.mps.lang.sharedConcepts" />
+          <language id="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" />
+          <language id="l:c72da2b9-7cce-4447-8389-f407dc1158b7:jetbrains.mps.lang.structure" />
+          <language id="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" />
+          <language id="l:b83431fe-5c8f-40bc-8a36-65e25f4dd253:jetbrains.mps.lang.textGen" />
+          <language id="l:7a5dda62-9140-4668-ab76-d5ed1746f2b2:jetbrains.mps.lang.typesystem" />
+        </uses>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="ce3.css-src.jar" descriptor="ce3.css.mpl" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/ce3.zip/ce3/languages/ce3/ce3.css.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/ce3.css" />
+      <fileset dir="${project_home}/languages/ce3.css/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/ce3.css.jar3" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/ce3.css-generator.jar3" />
+    <mkdir dir="${build.tmp}/default/ce3.css-generator.jar3/META-INF" />
+    <echoxml file="${build.tmp}/default/ce3.css-generator.jar3/META-INF/module.xml">
+      <module namespace="ce3.css#01" type="generator" uuid="f3735d07-c24b-4ae4-bfd2-25303e8ba780">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" kind="rt" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" kind="rt" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" kind="rt" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" kind="rt" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" kind="rt" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" kind="rt" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" kind="rt" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
+          <module ref="9696cb19-1101-4360-84f4-0f37aece0316(ce3.css)" kind="cl" />
+        </dependencies>
+        <uses>
+          <language id="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" />
+          <language id="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" />
+          <language id="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" />
+          <language id="l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc" />
+          <language id="l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging" />
+          <language id="l:a247e09e-2435-45ba-b8d2-07e93feba96a:jetbrains.mps.baseLanguage.tuples" />
+          <language id="l:b401a680-8325-4110-8fd3-84331ff25bef:jetbrains.mps.lang.generator" />
+          <language id="l:d7706f63-9be2-479c-a3da-ae92af1e64d5:jetbrains.mps.lang.generator.generationContext" />
+          <language id="l:289fcc83-6543-41e8-a5ca-768235715ce4:jetbrains.mps.lang.generator.generationParameters" />
+          <language id="l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation" />
+          <language id="l:13744753-c81f-424a-9c1b-cf8943bf4e86:jetbrains.mps.lang.sharedConcepts" />
+          <language id="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" />
+          <language id="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" />
+        </uses>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="ce3.css-src.jar" descriptor="ce3.css.mpl" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/ce3.zip/ce3/languages/ce3/ce3.css-generator.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/ce3.css#01" />
+      <fileset dir="${build.tmp}/default/ce3.css-generator.jar3" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-ce3.css-generator-template3">
+      <fileset dir="${project_home}/languages/ce3.css/generator/template" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-ce3.css-models3">
+      <fileset dir="${project_home}/languages/ce3.css/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/ce3.zip/ce3/languages/ce3/ce3.css-src.jar" duplicate="preserve">
+      <fileset dir="${project_home}/languages/ce3.css/generator/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <fileset dir="${project_home}/languages/ce3.css/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <zipfileset file="${basedir}/languages/ce3.css/ce3.css.mpl" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-ce3.css-generator-template3" prefix="module/generator/template" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-ce3.css-models3" prefix="module/models" />
     </jar>
     <mkdir dir="${build.tmp}/default/org.mar9000.mps.ecmascript.jar2" />
     <mkdir dir="${build.tmp}/default/org.mar9000.mps.ecmascript.jar2/META-INF" />
@@ -1779,9 +2062,9 @@
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/ecmascript4mps-code-languages-org.mar9000.mps.ecmascript-runtime-models2" prefix="module/models" />
     </jar>
     <mkdir dir="${build.tmp}/default/ce3.zip/ce3/languages" />
-    <mkdir dir="${build.tmp}/default/ce3.types.jar5" />
-    <mkdir dir="${build.tmp}/default/ce3.types.jar5/META-INF" />
-    <echoxml file="${build.tmp}/default/ce3.types.jar5/META-INF/module.xml">
+    <mkdir dir="${build.tmp}/default/ce3.types.jar4" />
+    <mkdir dir="${build.tmp}/default/ce3.types.jar4/META-INF" />
+    <echoxml file="${build.tmp}/default/ce3.types.jar4/META-INF/module.xml">
       <module namespace="ce3.types" type="language" uuid="b6578dbc-c839-4c3b-9eb3-c6edf889705e">
         <dependencies>
           <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
@@ -1838,11 +2121,11 @@
     <jar destfile="${build.tmp}/default/ce3.zip/ce3/languages/ce3.types.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/ce3.types" />
       <fileset dir="${project_home}/languages/ce3.types/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
-      <fileset dir="${build.tmp}/default/ce3.types.jar5" />
+      <fileset dir="${build.tmp}/default/ce3.types.jar4" />
     </jar>
-    <mkdir dir="${build.tmp}/default/ce3.types-generator.jar5" />
-    <mkdir dir="${build.tmp}/default/ce3.types-generator.jar5/META-INF" />
-    <echoxml file="${build.tmp}/default/ce3.types-generator.jar5/META-INF/module.xml">
+    <mkdir dir="${build.tmp}/default/ce3.types-generator.jar4" />
+    <mkdir dir="${build.tmp}/default/ce3.types-generator.jar4/META-INF" />
+    <echoxml file="${build.tmp}/default/ce3.types-generator.jar4/META-INF/module.xml">
       <module namespace="ce3.types#01" type="generator" uuid="ebc24178-eaf7-42bd-8e44-544475845c42">
         <dependencies>
           <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
@@ -1881,12 +2164,12 @@
     </echoxml>
     <jar destfile="${build.tmp}/default/ce3.zip/ce3/languages/ce3.types-generator.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/ce3.types#01" />
-      <fileset dir="${build.tmp}/default/ce3.types-generator.jar5" />
+      <fileset dir="${build.tmp}/default/ce3.types-generator.jar4" />
     </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-ce3.types-generator-template5">
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-ce3.types-generator-template4">
       <fileset dir="${project_home}/languages/ce3.types/generator/template" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-ce3.types-models5">
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-ce3.types-models4">
       <fileset dir="${project_home}/languages/ce3.types/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.tmp}/default/ce3.zip/ce3/languages/ce3.types-src.jar" duplicate="preserve">
@@ -1903,12 +2186,141 @@
         <exclude name="**/*.mps" />
       </fileset>
       <zipfileset file="${basedir}/languages/ce3.types/ce3.types.mpl" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-ce3.types-generator-template5" prefix="module/generator/template" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-ce3.types-models5" prefix="module/models" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-ce3.types-generator-template4" prefix="module/generator/template" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-ce3.types-models4" prefix="module/models" />
     </jar>
-    <mkdir dir="${build.tmp}/default/ce3.jar4" />
-    <mkdir dir="${build.tmp}/default/ce3.jar4/META-INF" />
-    <echoxml file="${build.tmp}/default/ce3.jar4/META-INF/module.xml">
+    <mkdir dir="${build.tmp}/default/ce3.zip/ce3/languages" />
+    <mkdir dir="${build.tmp}/default/ce3.css.jar4" />
+    <mkdir dir="${build.tmp}/default/ce3.css.jar4/META-INF" />
+    <echoxml file="${build.tmp}/default/ce3.css.jar4/META-INF/module.xml">
+      <module namespace="ce3.css" type="language" uuid="9696cb19-1101-4360-84f4-0f37aece0316">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" kind="rt" />
+          <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" kind="rt" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" kind="rt" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" kind="rt" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" kind="rt" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" kind="rt" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" kind="rt" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" kind="rt" />
+          <module ref="8e98f4e2-decf-4e97-bf80-9109e8b759ee(jetbrains.mps.lang.constraints.rules.runtime)" kind="rt" />
+          <module ref="0a98f3e2-decf-4e97-bf80-9109eccc59bb(jetbrains.mps.lang.feedback.problem.rules)" kind="rt" />
+          <module ref="9abaaae2-decf-4e97-bf80-9109e8b759cc(jetbrains.mps.lang.messages.api)" kind="rt" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
+          <module ref="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" kind="cl" />
+        </dependencies>
+        <uses>
+          <language id="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" />
+          <language id="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" />
+          <language id="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" />
+          <language id="l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc" />
+          <language id="l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging" />
+          <language id="l:a247e09e-2435-45ba-b8d2-07e93feba96a:jetbrains.mps.baseLanguage.tuples" />
+          <language id="l:aee9cad2-acd4-4608-aef2-0004f6a1cdbd:jetbrains.mps.lang.actions" />
+          <language id="l:af65afd8-f0dd-4942-87d9-63a55f2a9db1:jetbrains.mps.lang.behavior" />
+          <language id="l:3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1:jetbrains.mps.lang.constraints" />
+          <language id="l:e51810c5-7308-4642-bcb6-469e61b5dd18:jetbrains.mps.lang.constraints.msg.specification" />
+          <language id="l:5dae8159-ab99-46bb-a40d-0cee30ee7018:jetbrains.mps.lang.constraints.rules.kinds" />
+          <language id="l:134c38d4-e3af-4d9e-b069-1c7df0a4005d:jetbrains.mps.lang.constraints.rules.skeleton" />
+          <language id="l:3ad5badc-1d9c-461c-b7b1-fa2fcd0a0ae7:jetbrains.mps.lang.context" />
+          <language id="l:ea3159bf-f48e-4720-bde2-86dba75f0d34:jetbrains.mps.lang.context.defs" />
+          <language id="l:f4ad079d-bc71-4ffb-9600-9328705cf998:jetbrains.mps.lang.descriptor" />
+          <language id="l:18bc6592-03a6-4e29-a83a-7ff23bde13ba:jetbrains.mps.lang.editor" />
+          <language id="l:ad93155d-79b2-4759-b10c-55123e763903:jetbrains.mps.lang.messages" />
+          <language id="l:d4615e3b-d671-4ba9-af01-2b78369b0ba7:jetbrains.mps.lang.pattern" />
+          <language id="l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation" />
+          <language id="l:982eb8df-2c96-4bd7-9963-11712ea622e5:jetbrains.mps.lang.resources" />
+          <language id="l:b3551702-269c-4f05-ba61-58060cef4292:jetbrains.mps.lang.rulesAndMessages" />
+          <language id="l:13744753-c81f-424a-9c1b-cf8943bf4e86:jetbrains.mps.lang.sharedConcepts" />
+          <language id="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" />
+          <language id="l:c72da2b9-7cce-4447-8389-f407dc1158b7:jetbrains.mps.lang.structure" />
+          <language id="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" />
+          <language id="l:b83431fe-5c8f-40bc-8a36-65e25f4dd253:jetbrains.mps.lang.textGen" />
+          <language id="l:7a5dda62-9140-4668-ab76-d5ed1746f2b2:jetbrains.mps.lang.typesystem" />
+        </uses>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="ce3.css-src.jar" descriptor="ce3.css.mpl" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/ce3.zip/ce3/languages/ce3.css.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/ce3.css" />
+      <fileset dir="${project_home}/languages/ce3.css/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/ce3.css.jar4" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/ce3.css-generator.jar4" />
+    <mkdir dir="${build.tmp}/default/ce3.css-generator.jar4/META-INF" />
+    <echoxml file="${build.tmp}/default/ce3.css-generator.jar4/META-INF/module.xml">
+      <module namespace="ce3.css#01" type="generator" uuid="f3735d07-c24b-4ae4-bfd2-25303e8ba780">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" kind="rt" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" kind="rt" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" kind="rt" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" kind="rt" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" kind="rt" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" kind="rt" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" kind="rt" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
+          <module ref="9696cb19-1101-4360-84f4-0f37aece0316(ce3.css)" kind="cl" />
+        </dependencies>
+        <uses>
+          <language id="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" />
+          <language id="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" />
+          <language id="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" />
+          <language id="l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc" />
+          <language id="l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging" />
+          <language id="l:a247e09e-2435-45ba-b8d2-07e93feba96a:jetbrains.mps.baseLanguage.tuples" />
+          <language id="l:b401a680-8325-4110-8fd3-84331ff25bef:jetbrains.mps.lang.generator" />
+          <language id="l:d7706f63-9be2-479c-a3da-ae92af1e64d5:jetbrains.mps.lang.generator.generationContext" />
+          <language id="l:289fcc83-6543-41e8-a5ca-768235715ce4:jetbrains.mps.lang.generator.generationParameters" />
+          <language id="l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation" />
+          <language id="l:13744753-c81f-424a-9c1b-cf8943bf4e86:jetbrains.mps.lang.sharedConcepts" />
+          <language id="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" />
+          <language id="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" />
+        </uses>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="ce3.css-src.jar" descriptor="ce3.css.mpl" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/ce3.zip/ce3/languages/ce3.css-generator.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/ce3.css#01" />
+      <fileset dir="${build.tmp}/default/ce3.css-generator.jar4" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-ce3.css-generator-template4">
+      <fileset dir="${project_home}/languages/ce3.css/generator/template" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-ce3.css-models4">
+      <fileset dir="${project_home}/languages/ce3.css/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/ce3.zip/ce3/languages/ce3.css-src.jar" duplicate="preserve">
+      <fileset dir="${project_home}/languages/ce3.css/generator/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <fileset dir="${project_home}/languages/ce3.css/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <zipfileset file="${basedir}/languages/ce3.css/ce3.css.mpl" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-ce3.css-generator-template4" prefix="module/generator/template" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-ce3.css-models4" prefix="module/models" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/ce3.jar3" />
+    <mkdir dir="${build.tmp}/default/ce3.jar3/META-INF" />
+    <echoxml file="${build.tmp}/default/ce3.jar3/META-INF/module.xml">
       <module namespace="ce3" type="language" uuid="70550421-e6c9-4d59-a12a-7918a95c5525">
         <dependencies>
           <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
@@ -1969,11 +2381,11 @@
     <jar destfile="${build.tmp}/default/ce3.zip/ce3/ce3.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/ce3" />
       <fileset dir="${project_home}/languages/ce3/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
-      <fileset dir="${build.tmp}/default/ce3.jar4" />
+      <fileset dir="${build.tmp}/default/ce3.jar3" />
     </jar>
-    <mkdir dir="${build.tmp}/default/ce3-generator.jar4" />
-    <mkdir dir="${build.tmp}/default/ce3-generator.jar4/META-INF" />
-    <echoxml file="${build.tmp}/default/ce3-generator.jar4/META-INF/module.xml">
+    <mkdir dir="${build.tmp}/default/ce3-generator.jar3" />
+    <mkdir dir="${build.tmp}/default/ce3-generator.jar3/META-INF" />
+    <echoxml file="${build.tmp}/default/ce3-generator.jar3/META-INF/module.xml">
       <module namespace="ce3#01" type="generator" uuid="6fe6875c-4e0a-4afa-9859-b16b693e8a90">
         <dependencies>
           <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
@@ -2016,12 +2428,12 @@
     </echoxml>
     <jar destfile="${build.tmp}/default/ce3.zip/ce3/ce3-generator.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/ce3#01" />
-      <fileset dir="${build.tmp}/default/ce3-generator.jar4" />
+      <fileset dir="${build.tmp}/default/ce3-generator.jar3" />
     </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-ce3-generator-template4">
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-ce3-generator-template3">
       <fileset dir="${project_home}/languages/ce3/generator/template" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-ce3-models4">
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-ce3-models3">
       <fileset dir="${project_home}/languages/ce3/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.tmp}/default/ce3.zip/ce3/ce3-src.jar" duplicate="preserve">
@@ -2038,12 +2450,12 @@
         <exclude name="**/*.mps" />
       </fileset>
       <zipfileset file="${basedir}/languages/ce3/ce3.mpl" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-ce3-generator-template4" prefix="module/generator/template" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-ce3-models4" prefix="module/models" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-ce3-generator-template3" prefix="module/generator/template" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-ce3-models3" prefix="module/models" />
     </jar>
-    <mkdir dir="${build.tmp}/default/ce3.types.jar6" />
-    <mkdir dir="${build.tmp}/default/ce3.types.jar6/META-INF" />
-    <echoxml file="${build.tmp}/default/ce3.types.jar6/META-INF/module.xml">
+    <mkdir dir="${build.tmp}/default/ce3.types.jar5" />
+    <mkdir dir="${build.tmp}/default/ce3.types.jar5/META-INF" />
+    <echoxml file="${build.tmp}/default/ce3.types.jar5/META-INF/module.xml">
       <module namespace="ce3.types" type="language" uuid="b6578dbc-c839-4c3b-9eb3-c6edf889705e">
         <dependencies>
           <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
@@ -2100,11 +2512,11 @@
     <jar destfile="${build.tmp}/default/ce3.zip/ce3/ce3.types.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/ce3.types" />
       <fileset dir="${project_home}/languages/ce3.types/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
-      <fileset dir="${build.tmp}/default/ce3.types.jar6" />
+      <fileset dir="${build.tmp}/default/ce3.types.jar5" />
     </jar>
-    <mkdir dir="${build.tmp}/default/ce3.types-generator.jar6" />
-    <mkdir dir="${build.tmp}/default/ce3.types-generator.jar6/META-INF" />
-    <echoxml file="${build.tmp}/default/ce3.types-generator.jar6/META-INF/module.xml">
+    <mkdir dir="${build.tmp}/default/ce3.types-generator.jar5" />
+    <mkdir dir="${build.tmp}/default/ce3.types-generator.jar5/META-INF" />
+    <echoxml file="${build.tmp}/default/ce3.types-generator.jar5/META-INF/module.xml">
       <module namespace="ce3.types#01" type="generator" uuid="ebc24178-eaf7-42bd-8e44-544475845c42">
         <dependencies>
           <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
@@ -2143,12 +2555,12 @@
     </echoxml>
     <jar destfile="${build.tmp}/default/ce3.zip/ce3/ce3.types-generator.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/ce3.types#01" />
-      <fileset dir="${build.tmp}/default/ce3.types-generator.jar6" />
+      <fileset dir="${build.tmp}/default/ce3.types-generator.jar5" />
     </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-ce3.types-generator-template6">
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-ce3.types-generator-template5">
       <fileset dir="${project_home}/languages/ce3.types/generator/template" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-ce3.types-models6">
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-ce3.types-models5">
       <fileset dir="${project_home}/languages/ce3.types/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.tmp}/default/ce3.zip/ce3/ce3.types-src.jar" duplicate="preserve">
@@ -2165,8 +2577,136 @@
         <exclude name="**/*.mps" />
       </fileset>
       <zipfileset file="${basedir}/languages/ce3.types/ce3.types.mpl" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-ce3.types-generator-template6" prefix="module/generator/template" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-ce3.types-models6" prefix="module/models" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-ce3.types-generator-template5" prefix="module/generator/template" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-ce3.types-models5" prefix="module/models" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/ce3.css.jar5" />
+    <mkdir dir="${build.tmp}/default/ce3.css.jar5/META-INF" />
+    <echoxml file="${build.tmp}/default/ce3.css.jar5/META-INF/module.xml">
+      <module namespace="ce3.css" type="language" uuid="9696cb19-1101-4360-84f4-0f37aece0316">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" kind="rt" />
+          <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" kind="rt" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" kind="rt" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" kind="rt" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" kind="rt" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" kind="rt" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" kind="rt" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" kind="rt" />
+          <module ref="8e98f4e2-decf-4e97-bf80-9109e8b759ee(jetbrains.mps.lang.constraints.rules.runtime)" kind="rt" />
+          <module ref="0a98f3e2-decf-4e97-bf80-9109eccc59bb(jetbrains.mps.lang.feedback.problem.rules)" kind="rt" />
+          <module ref="9abaaae2-decf-4e97-bf80-9109e8b759cc(jetbrains.mps.lang.messages.api)" kind="rt" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
+          <module ref="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" kind="cl" />
+        </dependencies>
+        <uses>
+          <language id="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" />
+          <language id="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" />
+          <language id="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" />
+          <language id="l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc" />
+          <language id="l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging" />
+          <language id="l:a247e09e-2435-45ba-b8d2-07e93feba96a:jetbrains.mps.baseLanguage.tuples" />
+          <language id="l:aee9cad2-acd4-4608-aef2-0004f6a1cdbd:jetbrains.mps.lang.actions" />
+          <language id="l:af65afd8-f0dd-4942-87d9-63a55f2a9db1:jetbrains.mps.lang.behavior" />
+          <language id="l:3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1:jetbrains.mps.lang.constraints" />
+          <language id="l:e51810c5-7308-4642-bcb6-469e61b5dd18:jetbrains.mps.lang.constraints.msg.specification" />
+          <language id="l:5dae8159-ab99-46bb-a40d-0cee30ee7018:jetbrains.mps.lang.constraints.rules.kinds" />
+          <language id="l:134c38d4-e3af-4d9e-b069-1c7df0a4005d:jetbrains.mps.lang.constraints.rules.skeleton" />
+          <language id="l:3ad5badc-1d9c-461c-b7b1-fa2fcd0a0ae7:jetbrains.mps.lang.context" />
+          <language id="l:ea3159bf-f48e-4720-bde2-86dba75f0d34:jetbrains.mps.lang.context.defs" />
+          <language id="l:f4ad079d-bc71-4ffb-9600-9328705cf998:jetbrains.mps.lang.descriptor" />
+          <language id="l:18bc6592-03a6-4e29-a83a-7ff23bde13ba:jetbrains.mps.lang.editor" />
+          <language id="l:ad93155d-79b2-4759-b10c-55123e763903:jetbrains.mps.lang.messages" />
+          <language id="l:d4615e3b-d671-4ba9-af01-2b78369b0ba7:jetbrains.mps.lang.pattern" />
+          <language id="l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation" />
+          <language id="l:982eb8df-2c96-4bd7-9963-11712ea622e5:jetbrains.mps.lang.resources" />
+          <language id="l:b3551702-269c-4f05-ba61-58060cef4292:jetbrains.mps.lang.rulesAndMessages" />
+          <language id="l:13744753-c81f-424a-9c1b-cf8943bf4e86:jetbrains.mps.lang.sharedConcepts" />
+          <language id="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" />
+          <language id="l:c72da2b9-7cce-4447-8389-f407dc1158b7:jetbrains.mps.lang.structure" />
+          <language id="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" />
+          <language id="l:b83431fe-5c8f-40bc-8a36-65e25f4dd253:jetbrains.mps.lang.textGen" />
+          <language id="l:7a5dda62-9140-4668-ab76-d5ed1746f2b2:jetbrains.mps.lang.typesystem" />
+        </uses>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="ce3.css-src.jar" descriptor="ce3.css.mpl" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/ce3.zip/ce3/ce3.css.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/ce3.css" />
+      <fileset dir="${project_home}/languages/ce3.css/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/ce3.css.jar5" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/ce3.css-generator.jar5" />
+    <mkdir dir="${build.tmp}/default/ce3.css-generator.jar5/META-INF" />
+    <echoxml file="${build.tmp}/default/ce3.css-generator.jar5/META-INF/module.xml">
+      <module namespace="ce3.css#01" type="generator" uuid="f3735d07-c24b-4ae4-bfd2-25303e8ba780">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" kind="rt" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" kind="rt" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" kind="rt" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" kind="rt" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" kind="rt" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" kind="rt" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" kind="rt" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
+          <module ref="9696cb19-1101-4360-84f4-0f37aece0316(ce3.css)" kind="cl" />
+        </dependencies>
+        <uses>
+          <language id="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" />
+          <language id="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" />
+          <language id="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" />
+          <language id="l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc" />
+          <language id="l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging" />
+          <language id="l:a247e09e-2435-45ba-b8d2-07e93feba96a:jetbrains.mps.baseLanguage.tuples" />
+          <language id="l:b401a680-8325-4110-8fd3-84331ff25bef:jetbrains.mps.lang.generator" />
+          <language id="l:d7706f63-9be2-479c-a3da-ae92af1e64d5:jetbrains.mps.lang.generator.generationContext" />
+          <language id="l:289fcc83-6543-41e8-a5ca-768235715ce4:jetbrains.mps.lang.generator.generationParameters" />
+          <language id="l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation" />
+          <language id="l:13744753-c81f-424a-9c1b-cf8943bf4e86:jetbrains.mps.lang.sharedConcepts" />
+          <language id="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" />
+          <language id="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" />
+        </uses>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="ce3.css-src.jar" descriptor="ce3.css.mpl" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/ce3.zip/ce3/ce3.css-generator.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/ce3.css#01" />
+      <fileset dir="${build.tmp}/default/ce3.css-generator.jar5" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-ce3.css-generator-template5">
+      <fileset dir="${project_home}/languages/ce3.css/generator/template" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-ce3.css-models5">
+      <fileset dir="${project_home}/languages/ce3.css/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/ce3.zip/ce3/ce3.css-src.jar" duplicate="preserve">
+      <fileset dir="${project_home}/languages/ce3.css/generator/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <fileset dir="${project_home}/languages/ce3.css/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <zipfileset file="${basedir}/languages/ce3.css/ce3.css.mpl" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-ce3.css-generator-template5" prefix="module/generator/template" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-ce3.css-models5" prefix="module/models" />
     </jar>
     <zip destfile="${build.layout}/ce3.zip">
       <fileset dir="${build.tmp}/default/ce3.zip" />
@@ -2187,7 +2727,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.ce3, java.compile.ce3#01, java.compile.ce3.types, java.compile.ce3.types#01, java.compile.org.mar9000.mps.ecmascript, java.compile.org.mar9000.mps.ecmascript#201656743169476281, java.compile.org.mar9000.mps.ecmascript.runtime, java.compile.ce3.sandbox, java.compile.ce3.tests" />
+  <target name="compileJava" depends="java.compile.ce3, java.compile.ce3#01, java.compile.ce3.types, java.compile.ce3.types#01, java.compile.ce3.css, java.compile.ce3.css#01, java.compile.org.mar9000.mps.ecmascript, java.compile.org.mar9000.mps.ecmascript#201656743169476281, java.compile.org.mar9000.mps.ecmascript.runtime, java.compile.ce3.sandbox, java.compile.ce3.css.sandbox, java.compile.ce3.tests" />
   
   <target name="processResources" />
   
@@ -2319,11 +2859,13 @@
       <library file="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.matcher.jar" />
       <library file="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.runtime.jar" />
       <chunk>
+        <module file="${basedir}/languages/ce3.css/ce3.css.mpl" />
         <module file="${basedir}/languages/ce3.types/ce3.types.mpl" />
         <module file="${basedir}/ecmascript4mps/code/languages/org.mar9000.mps.ecmascript/org.mar9000.mps.ecmascript.mpl" />
       </chunk>
       <chunk>
         <module file="${basedir}/languages/ce3/ce3.mpl" />
+        <module file="${basedir}/languages/ce3.css/sandbox/ce3.css.sandbox.msd" />
         <module file="${basedir}/ecmascript4mps/code/languages/org.mar9000.mps.ecmascript/runtime/org.mar9000.mps.ecmascript.runtime.msd" />
       </chunk>
       <chunk>
@@ -2545,6 +3087,102 @@
     </javac>
   </target>
   
+  <target name="java.compile.ce3.css" depends="fetchDependencies">
+    <mkdir dir="${project_home}/languages/ce3.css/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/ce3.css" />
+    <javac destdir="${build.tmp}/java/out/ce3.css" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${project_home}/languages/ce3.css/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-logging.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-references.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messaging.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-boot-util.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-context.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-constraints-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-problem.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-feedback-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-generator.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-persistence.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messages-for-rules.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messages-api.jar" />
+        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
+        <fileset file="${artifacts.mps}/lib/annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/log4j.jar" />
+        <fileset file="${artifacts.mps}/lib/jdom.jar" />
+        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mps}/lib/ecj-4.10.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
+      </classpath>
+    </javac>
+  </target>
+  
+  <target name="java.compile.ce3.css#01" depends="java.compile.ce3.css, fetchDependencies">
+    <mkdir dir="${project_home}/languages/ce3.css/generator/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/ce3.css#01" />
+    <javac destdir="${build.tmp}/java/out/ce3.css#01" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${project_home}/languages/ce3.css/generator/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-logging.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-references.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messaging.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-boot-util.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-context.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-constraints-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-problem.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-feedback-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-generator.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-persistence.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
+        <pathelement path="${build.tmp}/java/out/ce3.css" />
+        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
+        <fileset file="${artifacts.mps}/lib/annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/log4j.jar" />
+        <fileset file="${artifacts.mps}/lib/jdom.jar" />
+        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mps}/lib/ecj-4.10.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+      </classpath>
+    </javac>
+  </target>
+  
   <target name="java.compile.org.mar9000.mps.ecmascript" depends="fetchDependencies">
     <mkdir dir="${project_home}/ecmascript4mps/code/languages/org.mar9000.mps.ecmascript/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.mar9000.mps.ecmascript" />
@@ -2665,6 +3303,18 @@
         <path location="${project_home}/languages/ce3/sandbox/source_gen" />
       </src>
       <classpath path="${build.tmp}/java/out/org.mar9000.mps.ecmascript.runtime" />
+    </javac>
+  </target>
+  
+  <target name="java.compile.ce3.css.sandbox">
+    <mkdir dir="${project_home}/languages/ce3.css/sandbox/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/ce3.css.sandbox" />
+    <javac destdir="${build.tmp}/java/out/ce3.css.sandbox" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${project_home}/languages/ce3.css/sandbox/source_gen" />
+      </src>
+      <classpath />
     </javac>
   </target>
   
@@ -2909,12 +3559,15 @@
   </target>
   
   <target name="cleanSources">
+    <delete dir="${project_home}/languages/ce3.css/source_gen" />
+    <delete dir="${project_home}/languages/ce3.css/generator/source_gen" />
     <delete dir="${project_home}/languages/ce3.types/source_gen" />
     <delete dir="${project_home}/languages/ce3.types/generator/source_gen" />
     <delete dir="${project_home}/ecmascript4mps/code/languages/org.mar9000.mps.ecmascript/source_gen" />
     <delete dir="${project_home}/ecmascript4mps/code/languages/org.mar9000.mps.ecmascript/generator/source_gen" />
     <delete dir="${project_home}/languages/ce3/source_gen" />
     <delete dir="${project_home}/languages/ce3/generator/source_gen" />
+    <delete dir="${project_home}/languages/ce3.css/sandbox/source_gen" />
     <delete dir="${project_home}/ecmascript4mps/code/languages/org.mar9000.mps.ecmascript/runtime/source_gen" />
     <delete dir="${project_home}/languages/ce3/sandbox/source_gen" />
     <delete dir="${project_home}/solutions/ce3.tests/source_gen" />

@@ -164,18 +164,18 @@
         <node concept="L2wRC" id="2H1GXuuigMa" role="39821P">
           <ref role="L2wRA" node="7as9CNOdvlH" resolve="ce3.types" />
         </node>
-      </node>
-      <node concept="L2wRC" id="2H1GXuuh6Fw" role="39821P">
-        <ref role="L2wRA" node="7as9CNOduVZ" resolve="ce3" />
-      </node>
-      <node concept="L2wRC" id="2H1GXuuh6FM" role="39821P">
-        <ref role="L2wRA" node="7as9CNOdvlH" resolve="ce3.types" />
+        <node concept="L2wRC" id="3_wha2Zqirp" role="39821P">
+          <ref role="L2wRA" node="3_wha2ZqipN" resolve="ce3.css" />
+        </node>
       </node>
       <node concept="L2wRC" id="2H1GXuufHCg" role="39821P">
         <ref role="L2wRA" node="7as9CNOdKos" resolve="ce3.tests" />
       </node>
       <node concept="L2wRC" id="2H1GXuuh6G6" role="39821P">
         <ref role="L2wRA" node="7as9CNOdDrM" resolve="ce3.sandbox" />
+      </node>
+      <node concept="L2wRC" id="3_wha2ZqIVO" role="39821P">
+        <ref role="L2wRA" node="3_wha2ZqIUO" resolve="ce3.css.sandbox" />
       </node>
       <node concept="L2wRC" id="2H1GXuuh$qn" role="39821P">
         <ref role="L2wRA" node="2H1GXuugil0" resolve="org.mar9000.mps.ecmascript" />
@@ -198,6 +198,9 @@
           <node concept="L2wRC" id="2H1GXuuhknN" role="39821P">
             <ref role="L2wRA" node="7as9CNOdvlH" resolve="ce3.types" />
           </node>
+          <node concept="L2wRC" id="3_wha2Zqiry" role="39821P">
+            <ref role="L2wRA" node="3_wha2ZqipN" resolve="ce3.css" />
+          </node>
         </node>
       </node>
     </node>
@@ -218,6 +221,9 @@
       </node>
       <node concept="m$_yB" id="7as9CNOdvmn" role="m$_yh">
         <ref role="m$_yA" node="7as9CNOdvlH" resolve="ce3.types" />
+      </node>
+      <node concept="m$_yB" id="3_wha2Zqirg" role="m$_yh">
+        <ref role="m$_yA" node="3_wha2ZqipN" resolve="ce3.css" />
       </node>
       <node concept="m$_yC" id="7as9CNOduWf" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
@@ -323,6 +329,26 @@
         <node concept="1yeLz9" id="7as9CNOdvn6" role="1TViLv">
           <property role="TrG5h" value="ce3.types#01" />
           <property role="3LESm3" value="ebc24178-eaf7-42bd-8e44-544475845c42" />
+        </node>
+      </node>
+      <node concept="1E1JtD" id="3_wha2ZqipN" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="ce3.css" />
+        <property role="3LESm3" value="9696cb19-1101-4360-84f4-0f37aece0316" />
+        <node concept="55IIr" id="3_wha2ZqipQ" role="3LF7KH">
+          <node concept="2Ry0Ak" id="3_wha2Zqir2" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="3_wha2Zqir7" role="2Ry0An">
+              <property role="2Ry0Am" value="ce3.css" />
+              <node concept="2Ry0Ak" id="3_wha2Zqirc" role="2Ry0An">
+                <property role="2Ry0Am" value="ce3.css.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1yeLz9" id="3_wha2Zqire" role="1TViLv">
+          <property role="TrG5h" value="ce3.css#01" />
+          <property role="3LESm3" value="f3735d07-c24b-4ae4-bfd2-25303e8ba780" />
         </node>
       </node>
       <node concept="1E1JtD" id="2H1GXuugil0" role="2G$12L">
@@ -455,6 +481,25 @@
         <node concept="1SiIV0" id="2H1GXuugivM" role="3bR37C">
           <node concept="3bR9La" id="2H1GXuugivN" role="1SiIV1">
             <ref role="3bR37D" node="2H1GXuugiu8" resolve="org.mar9000.mps.ecmascript.runtime" />
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtA" id="3_wha2ZqIUO" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="ce3.css.sandbox" />
+        <property role="3LESm3" value="af3e0b58-bc43-4455-8d2e-25ed61c1dca0" />
+        <node concept="55IIr" id="3_wha2ZqIUR" role="3LF7KH">
+          <node concept="2Ry0Ak" id="3_wha2ZqIVg" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="3_wha2ZqIVl" role="2Ry0An">
+              <property role="2Ry0Am" value="ce3.css" />
+              <node concept="2Ry0Ak" id="3_wha2ZqIVq" role="2Ry0An">
+                <property role="2Ry0Am" value="sandbox" />
+                <node concept="2Ry0Ak" id="3_wha2ZqIVv" role="2Ry0An">
+                  <property role="2Ry0Am" value="ce3.css.sandbox.msd" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
