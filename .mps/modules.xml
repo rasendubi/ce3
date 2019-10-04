@@ -4,6 +4,8 @@
     <projectModules>
       <modulePath path="$PROJECT_DIR$/ecmascript4mps/code/languages/org.mar9000.mps.ecmascript/org.mar9000.mps.ecmascript.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/ecmascript4mps/code/languages/org.mar9000.mps.ecmascript/runtime/org.mar9000.mps.ecmascript.runtime.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/ce3.css/ce3.css.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/ce3.css/sandbox/ce3.css.sandbox.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/ce3.types/ce3.types.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/ce3/ce3.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/ce3/sandbox/ce3.sandbox.msd" folder="" />

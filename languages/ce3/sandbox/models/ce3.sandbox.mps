@@ -1729,7 +1729,7 @@
       <node concept="1H_U6b" id="68qtNmAmtCl" role="2Z2XuZ">
         <node concept="2IuscL" id="68qtNmAmtCu" role="1HxJ53">
           <node concept="1gVlqW" id="68qtNmAmtC$" role="2IuscM">
-            <property role="1gVlqZ" value="onDestroy: mounting" />
+            <property role="1gVlqZ" value="OnDestroy: mounting" />
           </node>
           <node concept="39S3$b" id="68qtNmAmtCq" role="2IuscK">
             <ref role="39S3$4" node="3Khhk9mDoY$" resolve="log" />
@@ -1742,7 +1742,7 @@
       <node concept="1H_U6b" id="3Khhk9mDoZV" role="2Z2XuZ">
         <node concept="2IuscL" id="3Khhk9mDp04" role="1HxJ53">
           <node concept="1gVlqW" id="3Khhk9mDp0a" role="2IuscM">
-            <property role="1gVlqZ" value="onDestroy: destroying" />
+            <property role="1gVlqZ" value="OnDestroy: destroying" />
           </node>
           <node concept="39S3$b" id="3Khhk9mDp00" role="2IuscK">
             <ref role="39S3$4" node="3Khhk9mDoY$" resolve="log" />
