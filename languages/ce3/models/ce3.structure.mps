@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="rh3e" ref="r:33c6cc84-4a64-455a-8222-df658e689ef1(org.mar9000.mps.ecmascript.structure)" />
+    <import index="nvbo" ref="r:bf261738-3079-4832-bfb5-442f837e9971(ce3.css.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="epcs" ref="r:a894b8ac-2ec6-42a4-9223-aed4b5531700(ce3.types.structure)" implicit="true" />
   </imports>
@@ -92,6 +93,12 @@
       <property role="20kJfa" value="node" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="z8dq5o9mcs" resolve="AbstractValue" />
+    </node>
+    <node concept="1TJgyj" id="3_wha2Zw8O0" role="1TKVEi">
+      <property role="IQ2ns" value="4134379915124444416" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="style" />
+      <ref role="20lvS9" node="3_wha2Zzyxe" resolve="CssToJs" />
     </node>
     <node concept="PrWs8" id="43JkLIe$EN$" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
@@ -749,6 +756,18 @@
       <property role="20kJfa" value="pieces" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="z8dq5o9mcs" resolve="AbstractValue" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3_wha2Zzyxe">
+    <property role="EcuMT" value="4134379915125336142" />
+    <property role="TrG5h" value="CssToJs" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="3_wha2Zzyxf" role="1TKVEi">
+      <property role="IQ2ns" value="4134379915125336143" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="style" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="nvbo:3_wha2ZpP2k" resolve="CssStylesheetBody" />
     </node>
   </node>
 </model>

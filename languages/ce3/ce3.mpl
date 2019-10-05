@@ -20,8 +20,10 @@
         <dependency reexport="false">a4829704-6b1b-4b3f-8122-a4a2e6ac90ff(org.mar9000.mps.ecmascript)</dependency>
         <dependency reexport="false">2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)</dependency>
         <dependency reexport="false">8b4ab1de-2aad-4e60-8dee-350cb83d3086(org.mar9000.mps.ecmascript.runtime)</dependency>
+        <dependency reexport="false">9696cb19-1101-4360-84f4-0f37aece0316(ce3.css)</dependency>
       </dependencies>
       <languageVersions>
+        <language slang="l:9696cb19-1101-4360-84f4-0f37aece0316:ce3.css" version="0" />
         <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="9" />
         <language slang="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" version="0" />
         <language slang="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" version="1" />
@@ -47,6 +49,7 @@
         <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
         <module reference="70550421-e6c9-4d59-a12a-7918a95c5525(ce3)" version="0" />
         <module reference="6fe6875c-4e0a-4afa-9859-b16b693e8a90(ce3#01)" version="0" />
+        <module reference="9696cb19-1101-4360-84f4-0f37aece0316(ce3.css)" version="0" />
         <module reference="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" version="0" />
         <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
         <module reference="9e98f4e2-decf-4e97-bf80-9109e8b759aa(jetbrains.mps.lang.feedback.context)" version="0" />
@@ -65,6 +68,7 @@
     <dependency reexport="false">d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)</dependency>
     <dependency reexport="false">b6578dbc-c839-4c3b-9eb3-c6edf889705e(ce3.types)</dependency>
     <dependency reexport="false">5b1f863d-65a0-41a6-a801-33896be24202(jetbrains.mps.ide.editor)</dependency>
+    <dependency reexport="false">9696cb19-1101-4360-84f4-0f37aece0316(ce3.css)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:70550421-e6c9-4d59-a12a-7918a95c5525:ce3" version="0" />
@@ -114,6 +118,7 @@
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
     <module reference="70550421-e6c9-4d59-a12a-7918a95c5525(ce3)" version="0" />
+    <module reference="9696cb19-1101-4360-84f4-0f37aece0316(ce3.css)" version="0" />
     <module reference="b6578dbc-c839-4c3b-9eb3-c6edf889705e(ce3.types)" version="0" />
     <module reference="5b1f863d-65a0-41a6-a801-33896be24202(jetbrains.mps.ide.editor)" version="0" />
     <module reference="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" version="0" />
