@@ -471,5 +471,104 @@
     <property role="TrG5h" value="AbstractCssSimpleFirstSelector" />
     <ref role="1TJDcQ" node="3_wha2Zr$XJ" resolve="AbstractCssSimpleSelector" />
   </node>
+  <node concept="1TIwiD" id="3_wha2ZvZKx">
+    <property role="EcuMT" value="4134379915124407329" />
+    <property role="3GE5qa" value="values" />
+    <property role="TrG5h" value="CssString" />
+    <ref role="1TJDcQ" node="3_wha2ZoMDW" resolve="AbstractCssValue" />
+    <node concept="1TJgyi" id="3_wha2ZvZK$" role="1TKVEl">
+      <property role="IQ2nx" value="4134379915124407332" />
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3_wha2ZvZKR">
+    <property role="EcuMT" value="4134379915124407351" />
+    <property role="3GE5qa" value="values" />
+    <property role="TrG5h" value="CssKeyword" />
+    <ref role="1TJDcQ" node="3_wha2ZoMDW" resolve="AbstractCssValue" />
+    <node concept="PrWs8" id="3_wha2ZvZKS" role="PzmwI">
+      <ref role="PrY4T" node="3_wha2ZoKYX" resolve="ICssIdentifier" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3_wha2ZwX45">
+    <property role="EcuMT" value="4134379915124658437" />
+    <property role="3GE5qa" value="values" />
+    <property role="TrG5h" value="CssLength" />
+    <ref role="1TJDcQ" node="3_wha2ZoMDW" resolve="AbstractCssValue" />
+    <node concept="1TJgyj" id="3_wha2ZwX46" role="1TKVEi">
+      <property role="IQ2ns" value="4134379915124658438" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="number" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="3_wha2ZoRrU" resolve="CssNumber" />
+    </node>
+    <node concept="1TJgyi" id="3_wha2ZwX4a" role="1TKVEl">
+      <property role="IQ2nx" value="4134379915124658442" />
+      <property role="TrG5h" value="unit" />
+      <ref role="AX2Wp" node="3_wha2ZwX48" resolve="CssUnit" />
+    </node>
+  </node>
+  <node concept="25R3W" id="3_wha2ZwX48">
+    <property role="3F6X1D" value="4134379915124658440" />
+    <property role="3GE5qa" value="values" />
+    <property role="TrG5h" value="CssUnit" />
+    <node concept="25R33" id="3_wha2ZwX4m" role="25R1y">
+      <property role="3tVfz5" value="4134379915124658454" />
+      <property role="TrG5h" value="ch" />
+    </node>
+    <node concept="25R33" id="3_wha2ZwX4o" role="25R1y">
+      <property role="3tVfz5" value="4134379915124658456" />
+      <property role="TrG5h" value="em" />
+    </node>
+    <node concept="25R33" id="3_wha2ZwX4r" role="25R1y">
+      <property role="3tVfz5" value="4134379915124658459" />
+      <property role="TrG5h" value="ex" />
+    </node>
+    <node concept="25R33" id="3_wha2ZwX4v" role="25R1y">
+      <property role="3tVfz5" value="4134379915124658463" />
+      <property role="TrG5h" value="rem" />
+    </node>
+    <node concept="25R33" id="3_wha2ZwX4$" role="25R1y">
+      <property role="3tVfz5" value="4134379915124658468" />
+      <property role="TrG5h" value="vh" />
+    </node>
+    <node concept="25R33" id="3_wha2ZwX4E" role="25R1y">
+      <property role="3tVfz5" value="4134379915124658474" />
+      <property role="TrG5h" value="vw" />
+    </node>
+    <node concept="25R33" id="3_wha2ZwX4L" role="25R1y">
+      <property role="3tVfz5" value="4134379915124658481" />
+      <property role="TrG5h" value="vmin" />
+    </node>
+    <node concept="25R33" id="3_wha2ZwX4T" role="25R1y">
+      <property role="3tVfz5" value="4134379915124658489" />
+      <property role="TrG5h" value="vmax" />
+    </node>
+    <node concept="25R33" id="3_wha2ZwX52" role="25R1y">
+      <property role="3tVfz5" value="4134379915124658498" />
+      <property role="TrG5h" value="px" />
+    </node>
+    <node concept="25R33" id="3_wha2ZwX5c" role="25R1y">
+      <property role="3tVfz5" value="4134379915124658508" />
+      <property role="TrG5h" value="cm" />
+    </node>
+    <node concept="25R33" id="3_wha2ZwX5n" role="25R1y">
+      <property role="3tVfz5" value="4134379915124658519" />
+      <property role="TrG5h" value="mm" />
+    </node>
+    <node concept="25R33" id="3_wha2ZwX5z" role="25R1y">
+      <property role="3tVfz5" value="4134379915124658531" />
+      <property role="TrG5h" value="in" />
+    </node>
+    <node concept="25R33" id="3_wha2ZwX5K" role="25R1y">
+      <property role="3tVfz5" value="4134379915124658544" />
+      <property role="TrG5h" value="pc" />
+    </node>
+    <node concept="25R33" id="3_wha2ZwX5Y" role="25R1y">
+      <property role="3tVfz5" value="4134379915124658558" />
+      <property role="TrG5h" value="pt" />
+    </node>
+  </node>
 </model>
 

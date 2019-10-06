@@ -22,6 +22,9 @@
       <concept id="2467211549460697056" name="ce3.types.structure.VoidType" flags="ng" index="PpsgP" />
     </language>
     <language id="70550421-e6c9-4d59-a12a-7918a95c5525" name="ce3">
+      <concept id="4134379915125336142" name="ce3.structure.CssToJs" flags="ng" index="26VANI">
+        <child id="4134379915125336143" name="style" index="26VANJ" />
+      </concept>
       <concept id="6972358298721371130" name="ce3.structure.ParamReference" flags="ng" index="qMw$k">
         <reference id="6972358298721371131" name="param" index="qMw$l" />
       </concept>
@@ -88,6 +91,7 @@
         <reference id="5711552720142770370" name="binding" index="1nhi8M" />
       </concept>
       <concept id="632814714727273482" name="ce3.structure.Component" flags="ng" index="1vfq6F">
+        <child id="4134379915124444416" name="style" index="26ScAw" />
         <child id="7962932020987309252" name="declarations" index="2Z2yyZ" />
         <child id="632814714730756515" name="props" index="1gSCK2" />
         <child id="632814714727273485" name="node" index="1vfq6G" />
@@ -185,6 +189,39 @@
       <concept id="6713311115387176128" name="org.mar9000.mps.ecmascript.structure.JSBindingIdentifier" flags="ng" index="1mvZK$" />
       <concept id="3681369884987046932" name="org.mar9000.mps.ecmascript.structure.JSEnvironmentReference" flags="ng" index="3ErYpN">
         <reference id="3681369884987046933" name="environment" index="3ErYpM" />
+      </concept>
+    </language>
+    <language id="9696cb19-1101-4360-84f4-0f37aece0316" name="ce3.css">
+      <concept id="4134379915122506821" name="ce3.css.structure.CssRuleset" flags="ng" index="260Fz_">
+        <child id="4134379915122506822" name="selector" index="260FzA" />
+        <child id="4134379915122506825" name="declarations" index="260FzD" />
+      </concept>
+      <concept id="4134379915122538234" name="ce3.css.structure.CssNumber" flags="ng" index="260N9q">
+        <property id="4134379915122538235" name="value" index="260N9r" />
+      </concept>
+      <concept id="4134379915122536687" name="ce3.css.structure.CssPropertyName" flags="ng" index="260Nhf" />
+      <concept id="4134379915122511804" name="ce3.css.structure.CssDeclaration" flags="ng" index="260OGs">
+        <child id="4134379915122536690" name="name" index="260Nhi" />
+        <child id="4134379915122518650" name="values" index="260QVq" />
+      </concept>
+      <concept id="4134379915122599042" name="ce3.css.structure.CssColorGreen" flags="ng" index="26120y" />
+      <concept id="4134379915122599044" name="ce3.css.structure.CssColorBlue" flags="ng" index="26120$" />
+      <concept id="4134379915122598980" name="ce3.css.structure.CssColorRed" flags="ng" index="26123$" />
+      <concept id="4134379915122598982" name="ce3.css.structure.CssColorYellow" flags="ng" index="26123A" />
+      <concept id="4134379915122790548" name="ce3.css.structure.CssStylesheetBody" flags="ng" index="261LgO">
+        <child id="4134379915122411190" name="statements" index="260s8m" />
+      </concept>
+      <concept id="4134379915123147658" name="ce3.css.structure.CssClassSelector" flags="ng" index="2638sE" />
+      <concept id="4134379915123248949" name="ce3.css.structure.CssSelectorGroup" flags="ng" index="263wIl">
+        <child id="4134379915123248950" name="selectors" index="263wIm" />
+      </concept>
+      <concept id="4134379915123249006" name="ce3.css.structure.CssSelectorSequence" flags="ng" index="263wJe">
+        <child id="4134379915123249008" name="selectors" index="263wJg" />
+      </concept>
+      <concept id="4134379915124407351" name="ce3.css.structure.CssKeyword" flags="ng" index="267Vyn" />
+      <concept id="4134379915124658437" name="ce3.css.structure.CssLength" flags="ng" index="26STm_">
+        <property id="4134379915124658442" name="unit" index="26STmE" />
+        <child id="4134379915124658438" name="number" index="26STmA" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -486,6 +523,115 @@
         </node>
         <node concept="PpsgG" id="28XiXknphEH" role="27$ByB">
           <node concept="Ppsgb" id="28XiXknpwxN" role="PpsgJ" />
+        </node>
+      </node>
+    </node>
+    <node concept="26VANI" id="3_wha2ZCrpC" role="26ScAw">
+      <node concept="261LgO" id="3_wha2ZCrpD" role="26VANJ">
+        <node concept="260Fz_" id="3_wha2ZCrpG" role="260s8m">
+          <node concept="260OGs" id="3_wha2ZCrpV" role="260FzD">
+            <node concept="260Nhf" id="3_wha2ZCrpW" role="260Nhi">
+              <property role="TrG5h" value="border" />
+            </node>
+            <node concept="26STm_" id="3_wha2ZCrq6" role="260QVq">
+              <property role="26STmE" value="3_wha2ZwX52/px" />
+              <node concept="260N9q" id="3_wha2ZCrq1" role="26STmA">
+                <property role="260N9r" value="2" />
+              </node>
+            </node>
+            <node concept="267Vyn" id="3_wha2ZCrqe" role="260QVq">
+              <property role="TrG5h" value="solid" />
+            </node>
+            <node concept="26123$" id="3_wha2ZCrqo" role="260QVq" />
+          </node>
+          <node concept="260OGs" id="3_wha2ZCrqu" role="260FzD">
+            <node concept="260Nhf" id="3_wha2ZCrqv" role="260Nhi">
+              <property role="TrG5h" value="padding" />
+            </node>
+            <node concept="26STm_" id="3_wha2ZCrqJ" role="260QVq">
+              <property role="26STmE" value="3_wha2ZwX52/px" />
+              <node concept="260N9q" id="3_wha2ZCrqE" role="26STmA">
+                <property role="260N9r" value="4" />
+              </node>
+            </node>
+          </node>
+          <node concept="263wIl" id="3_wha2ZCrpH" role="260FzA">
+            <node concept="263wJe" id="3_wha2ZCrpM" role="263wIm">
+              <node concept="2638sE" id="3_wha2ZCrpS" role="263wJg">
+                <property role="TrG5h" value="class_0" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="260Fz_" id="3_wha2ZCrqR" role="260s8m">
+          <node concept="260OGs" id="3_wha2ZCrqS" role="260FzD">
+            <node concept="260Nhf" id="3_wha2ZCrqT" role="260Nhi">
+              <property role="TrG5h" value="border" />
+            </node>
+            <node concept="26STm_" id="3_wha2ZCrqU" role="260QVq">
+              <property role="26STmE" value="3_wha2ZwX52/px" />
+              <node concept="260N9q" id="3_wha2ZCrqV" role="26STmA">
+                <property role="260N9r" value="2" />
+              </node>
+            </node>
+            <node concept="267Vyn" id="3_wha2ZCrqW" role="260QVq">
+              <property role="TrG5h" value="solid" />
+            </node>
+            <node concept="26120y" id="3_wha2ZCrsp" role="260QVq" />
+          </node>
+          <node concept="260OGs" id="3_wha2ZCrqY" role="260FzD">
+            <node concept="260Nhf" id="3_wha2ZCrqZ" role="260Nhi">
+              <property role="TrG5h" value="padding" />
+            </node>
+            <node concept="26STm_" id="3_wha2ZCrr0" role="260QVq">
+              <property role="26STmE" value="3_wha2ZwX52/px" />
+              <node concept="260N9q" id="3_wha2ZCrr1" role="26STmA">
+                <property role="260N9r" value="4" />
+              </node>
+            </node>
+          </node>
+          <node concept="263wIl" id="3_wha2ZCrr2" role="260FzA">
+            <node concept="263wJe" id="3_wha2ZCrr3" role="263wIm">
+              <node concept="2638sE" id="3_wha2ZCrr4" role="263wJg">
+                <property role="TrG5h" value="class_1" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="260Fz_" id="3_wha2ZCrrx" role="260s8m">
+          <node concept="260OGs" id="3_wha2ZCrry" role="260FzD">
+            <node concept="260Nhf" id="3_wha2ZCrrz" role="260Nhi">
+              <property role="TrG5h" value="border" />
+            </node>
+            <node concept="26STm_" id="3_wha2ZCrr$" role="260QVq">
+              <property role="26STmE" value="3_wha2ZwX52/px" />
+              <node concept="260N9q" id="3_wha2ZCrr_" role="26STmA">
+                <property role="260N9r" value="2" />
+              </node>
+            </node>
+            <node concept="267Vyn" id="3_wha2ZCrrA" role="260QVq">
+              <property role="TrG5h" value="solid" />
+            </node>
+            <node concept="26120$" id="3_wha2ZCrsv" role="260QVq" />
+          </node>
+          <node concept="260OGs" id="3_wha2ZCrrC" role="260FzD">
+            <node concept="260Nhf" id="3_wha2ZCrrD" role="260Nhi">
+              <property role="TrG5h" value="padding" />
+            </node>
+            <node concept="26STm_" id="3_wha2ZCrrE" role="260QVq">
+              <property role="26STmE" value="3_wha2ZwX52/px" />
+              <node concept="260N9q" id="3_wha2ZCrrF" role="26STmA">
+                <property role="260N9r" value="4" />
+              </node>
+            </node>
+          </node>
+          <node concept="263wIl" id="3_wha2ZCrrG" role="260FzA">
+            <node concept="263wJe" id="3_wha2ZCrrH" role="263wIm">
+              <node concept="2638sE" id="3_wha2ZCrrI" role="263wJg">
+                <property role="TrG5h" value="class_2" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>
@@ -1547,6 +1693,19 @@
         <ref role="1gPmzA" to="nfbi:z8dq5o7lP2" resolve="div" />
       </node>
     </node>
+    <node concept="1vfq6I" id="3_wha2ZxuQF" role="1vfq6G">
+      <node concept="1gPmzB" id="3_wha2ZxuSL" role="1gPmzY">
+        <ref role="1gPmzA" to="nfbi:3Khhk9mBnFR" resolve="hr" />
+      </node>
+    </node>
+    <node concept="1gVlqW" id="3_wha2ZxuUV" role="1vfq6G">
+      <property role="1gVlqZ" value="Css:" />
+    </node>
+    <node concept="1vfq6I" id="3_wha2ZxuZc" role="1vfq6G">
+      <node concept="1gPmzB" id="3_wha2Zxv1l" role="1gPmzY">
+        <ref role="1gPmzA" node="3_wha2Zw8NZ" resolve="Css" />
+      </node>
+    </node>
     <node concept="1vfq6I" id="3Khhk9mBnFE" role="1vfq6G">
       <node concept="1gPmzB" id="3Khhk9mBnFS" role="1gPmzY">
         <ref role="1gPmzA" to="nfbi:3Khhk9mBnFR" resolve="hr" />
@@ -1928,6 +2087,58 @@
     </node>
     <node concept="1gSCKQ" id="68qtNmAljuY" role="1gSCK2">
       <property role="TrG5h" value="time" />
+    </node>
+  </node>
+  <node concept="1vfq6F" id="3_wha2Zw8NZ">
+    <property role="3GE5qa" value="examples" />
+    <property role="TrG5h" value="Css" />
+    <node concept="1vfq6I" id="3_wha2ZwX3n" role="1vfq6G">
+      <node concept="1gVlqW" id="3_wha2ZxuOz" role="1vfq6V">
+        <property role="1gVlqZ" value="custom css component" />
+      </node>
+      <node concept="1vfq6M" id="3_wha2ZwX3t" role="1vfq6L">
+        <property role="TrG5h" value="class" />
+        <node concept="1gVlqW" id="3_wha2ZwX3x" role="1gVlq1">
+          <property role="1gVlqZ" value="my-class" />
+        </node>
+      </node>
+      <node concept="1gPmzB" id="3_wha2ZwX3p" role="1gPmzY">
+        <ref role="1gPmzA" to="nfbi:z8dq5o7lP2" resolve="div" />
+      </node>
+    </node>
+    <node concept="26VANI" id="3_wha2ZAUTj" role="26ScAw">
+      <node concept="261LgO" id="3_wha2ZAUTk" role="26VANJ">
+        <node concept="260Fz_" id="3_wha2ZwPat" role="260s8m">
+          <node concept="260OGs" id="3_wha2ZwX3z" role="260FzD">
+            <node concept="260Nhf" id="3_wha2ZwX3$" role="260Nhi">
+              <property role="TrG5h" value="background-color" />
+            </node>
+            <node concept="26123A" id="3_wha2ZwX3D" role="260QVq" />
+          </node>
+          <node concept="260OGs" id="3_wha2ZwX3G" role="260FzD">
+            <node concept="260Nhf" id="3_wha2ZwX3H" role="260Nhi">
+              <property role="TrG5h" value="border" />
+            </node>
+            <node concept="26STm_" id="3_wha2Zxs4v" role="260QVq">
+              <property role="26STmE" value="3_wha2ZwX52/px" />
+              <node concept="260N9q" id="3_wha2ZxiP6" role="26STmA">
+                <property role="260N9r" value="1" />
+              </node>
+            </node>
+            <node concept="267Vyn" id="3_wha2ZwX3S" role="260QVq">
+              <property role="TrG5h" value="solid" />
+            </node>
+            <node concept="26120y" id="3_wha2ZwX40" role="260QVq" />
+          </node>
+          <node concept="263wIl" id="3_wha2ZwPau" role="260FzA">
+            <node concept="263wJe" id="3_wha2ZwX3c" role="263wIm">
+              <node concept="2638sE" id="3_wha2ZwX3i" role="263wJg">
+                <property role="TrG5h" value="my-class" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
